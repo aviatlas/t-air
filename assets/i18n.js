@@ -1,0 +1,198 @@
+/* T-AIR — interface strings and label tables in both languages.
+   Data-side translations (role / armament / notes) live in the records
+   themselves as role_en / armament_en / notes_en; country is mapped here. */
+
+window.TAIR_I18N = (function () {
+  "use strict";
+
+  var STR = {
+    fa: {
+      dir: "rtl",
+      tagline: "اطلس هواپیماهای جهان",
+      heroSub: "اطلس هواپیماهای جهان",
+      heroLede: "از مسافربری و ملخی کلاسیک تا جنگنده و بمب‌افکن — نام هواپیما را بنویسید و ظرفیت یا خدمه، سرعت، برد، ابعاد، موتور، تسلیحات و پیشینه‌اش را بگیرید. مدل‌های ناوگان ایران جداگانه نشانه‌گذاری شده‌اند.",
+      searchPh: "مثلاً 737 MAX، اسپیتفایر، تامکت، میگ ۲۹، ATR، فوکر ۱۰۰",
+      searchAria: "جست‌وجوی هواپیما",
+      clearAria: "پاک کردن جست‌وجو",
+      themeAria: "تغییر تم",
+      langBtn: "EN",
+      langAria: "Switch to English",
+      skip: "پرش به نتایج",
+      resultsLabel: "فروند در نتایج",
+      empty1: "در T-AIR چیزی پیدا نشد",
+      empty2: "نام مدل را ساده‌تر بنویسید یا فیلترها را بردارید.",
+      loadFail: "فایل داده بارگذاری نشد",
+      footer: "داده‌ها از منابع عمومی سازندگان و دانشنامه‌ها گردآوری شده و برای مرجع سریع است، نه برای کاربرد عملیاتی؛ بخشی از ارقام هنوز با اسناد رسمی سازنده مقابله نشده است. عکس‌ها از ویکی‌پدیا بارگذاری می‌شوند. در برخی رکوردها «تعداد ساخته‌شده» مربوط به کل خانواده است، نه همان نسخه.",
+
+      themeSystem: "سیستم", themeLight: "روشن", themeDark: "تیره",
+
+      catAll: "همه", catCivil: "غیرنظامی", catMil: "نظامی",
+      allTypes: "همه‌ی گونه‌ها",
+      chipProp: "ملخی", chipJet: "جت",
+      chipIran: "در ناوگان ایران", chipProd: "خط تولید فعال",
+      sortLabel: "چیدمان",
+      sortRelevance: "مرتبط‌ترین", sortNewest: "تازه‌ترین", sortOldest: "قدیمی‌ترین",
+      sortSpeed: "بیشترین سرعت", sortRange: "بیشترین برد",
+      sortSeats: "بیشترین ظرفیت", sortName: "الفبایی",
+
+      statModels: "مدل ثبت‌شده", statCivil: "غیرنظامی",
+      statMil: "نظامی", statIran: "در ناوگان ایران",
+
+      kSeats: "ظرفیت", kRange: "برد", kIntro: "ورود",
+      kCrew: "خدمه", kSpeed: "سرعت",
+      uPax: "نفر", uCrew: "نفر", uKm: "کیلومتر", uYear: "میلادی", uKmh: "km/h",
+      barSeats: "ظرفیت معمول نسبت به پرظرفیت‌ترین هواپیمای فهرست",
+      barSpeed: "سرعت بیشینه نسبت به سریع‌ترین هواپیمای فهرست",
+
+      secPerfMil: "عملکرد", secPerfCivil: "ظرفیت و عملکرد",
+      secArm: "تسلیحات و بار", secDims: "ابعاد", secEngine: "موتور و پیشینه",
+      lCrew: "خدمه", lMaxSpeed: "سرعت بیشینه", lRange: "برد",
+      lCeiling: "سقف پرواز", lMtow: "حداکثر وزن برخاست",
+      lSeatsTyp: "ظرفیت معمول", lSeatsMax: "بیشترین ظرفیت", lCruise: "سرعت سفر",
+      lEngines: "موتورها", lEngineModel: "مدل موتور",
+      lFirstFlight: "نخستین پرواز", lIntroduced: "ورود به خدمت", lBuilt: "تعداد ساخته‌شده",
+      lLength: "طول", lSpan: "دهانه بال", lHeight: "ارتفاع",
+      uFrames: "فروند",
+      inIran: "در ناوگان ایران", familyTag: "خانواده ",
+      wikiBtn: "صفحه ویکی‌پدیا", familyBtn: "دیگر اعضای ",
+      closeAria: "بستن",
+      photoLoading: "در حال دریافت تصویر…", photoNone: "تصویری در دسترس نیست",
+      photoCredit: "عکس از ویکی‌پدیا · ",
+      uncrewed: "بدون سرنشین",
+      timelineTitle: "دهه‌ی ورود به خدمت",
+      timelineAll: "همه‌ی دهه‌ها",
+      compareAdd: "افزودن به مقایسه",
+      compareRemove: "برداشتن از مقایسه",
+      compareOpen: "مقایسه",
+      compareClear: "پاک کردن",
+      compareTitle: "مقایسه‌ی هواپیماها",
+      compareHint: "تا سه هواپیما را برای مقایسه انتخاب کنید.",
+      shareBtn: "کپی لینک",
+      shareDone: "لینک کپی شد",
+      field: "مشخصه"
+    },
+
+    en: {
+      dir: "ltr",
+      tagline: "World Aircraft Atlas",
+      heroSub: "World Aircraft Atlas",
+      heroLede: "From airliners and classic propliners to fighters and bombers — type an aircraft name and get its seating or crew, speed, range, dimensions, powerplant, armament and history. Types flown by Iran are marked separately.",
+      searchPh: "Try 737 MAX, Spitfire, Tomcat, MiG-29, ATR, Fokker 100",
+      searchAria: "Search aircraft",
+      clearAria: "Clear search",
+      themeAria: "Change theme",
+      langBtn: "فا",
+      langAria: "تغییر زبان به فارسی",
+      skip: "Skip to results",
+      resultsLabel: "aircraft in results",
+      empty1: "Nothing found in T-AIR",
+      empty2: "Try a simpler model name, or clear the filters.",
+      loadFail: "Could not load the data file",
+      footer: "Figures are compiled from manufacturers' public material and reference works for quick lookup, not for operational use; part of the data has not yet been checked against official documents. Photographs load from Wikipedia. On some records the production total is the family's rather than that specific variant's.",
+
+      themeSystem: "System", themeLight: "Light", themeDark: "Dark",
+
+      catAll: "All", catCivil: "Civil", catMil: "Military",
+      allTypes: "All types",
+      chipProp: "Propeller", chipJet: "Jet",
+      chipIran: "Flown by Iran", chipProd: "In production",
+      sortLabel: "Sort",
+      sortRelevance: "Most relevant", sortNewest: "Newest", sortOldest: "Oldest",
+      sortSpeed: "Fastest", sortRange: "Longest range",
+      sortSeats: "Most seats", sortName: "A–Z",
+
+      statModels: "aircraft", statCivil: "civil",
+      statMil: "military", statIran: "flown by Iran",
+
+      kSeats: "Seats", kRange: "Range", kIntro: "Entered service",
+      kCrew: "Crew", kSpeed: "Speed",
+      uPax: "pax", uCrew: "", uKm: "km", uYear: "", uKmh: "km/h",
+      barSeats: "Typical seating against the highest-capacity aircraft listed",
+      barSpeed: "Top speed against the fastest aircraft listed",
+
+      secPerfMil: "Performance", secPerfCivil: "Capacity and performance",
+      secArm: "Armament and payload", secDims: "Dimensions", secEngine: "Powerplant and history",
+      lCrew: "Crew", lMaxSpeed: "Top speed", lRange: "Range",
+      lCeiling: "Service ceiling", lMtow: "Max takeoff weight",
+      lSeatsTyp: "Typical seating", lSeatsMax: "Maximum seating", lCruise: "Cruise speed",
+      lEngines: "Engines", lEngineModel: "Engine",
+      lFirstFlight: "First flight", lIntroduced: "Entered service", lBuilt: "Number built",
+      lLength: "Length", lSpan: "Wingspan", lHeight: "Height",
+      uFrames: "built",
+      inIran: "Flown by Iran", familyTag: "",
+      wikiBtn: "Wikipedia article", familyBtn: "More from ",
+      closeAria: "Close",
+      photoLoading: "Loading photograph…", photoNone: "No photograph available",
+      photoCredit: "Photo via Wikipedia · ",
+      uncrewed: "Uncrewed",
+      timelineTitle: "Decade of entry into service",
+      timelineAll: "All decades",
+      compareAdd: "Add to comparison",
+      compareRemove: "Remove from comparison",
+      compareOpen: "Compare",
+      compareClear: "Clear",
+      compareTitle: "Aircraft comparison",
+      compareHint: "Pick up to three aircraft to compare.",
+      shareBtn: "Copy link",
+      shareDone: "Link copied",
+      field: "Specification"
+    }
+  };
+
+  var TYPE = {
+    narrowbody: { fa: "باریک‌پیکر", en: "Narrow-body" },
+    widebody:   { fa: "پهن‌پیکر", en: "Wide-body" },
+    regional:   { fa: "منطقه‌ای", en: "Regional" },
+    turboprop:  { fa: "توربوپراپ", en: "Turboprop" },
+    freighter:  { fa: "باری", en: "Freighter" },
+    piston:     { fa: "ملخی کلاسیک", en: "Propliner" },
+    fighter:    { fa: "جنگنده", en: "Fighter" },
+    bomber:     { fa: "بمب‌افکن", en: "Bomber" },
+    attack:     { fa: "تهاجمی", en: "Attack" },
+    transport:  { fa: "ترابری نظامی", en: "Military transport" },
+    trainer:    { fa: "آموزشی", en: "Trainer" },
+    recon:      { fa: "شناسایی", en: "Reconnaissance" },
+    maritime:   { fa: "گشت دریایی", en: "Maritime patrol" },
+    tanker:     { fa: "سوخت‌رسان", en: "Tanker" },
+    awacs:      { fa: "هشدار زودهنگام", en: "AEW&C" },
+    utility:    { fa: "چندمنظوره", en: "Utility" },
+    helicopter: { fa: "بالگرد", en: "Helicopter" },
+    uav:        { fa: "پهپاد", en: "Uncrewed" }
+  };
+
+  var ENGINE = {
+    jet:       { fa: "جت", en: "Jet" },
+    turboprop: { fa: "توربوپراپ", en: "Turboprop" },
+    piston:    { fa: "پیستونی", en: "Piston" },
+    turboshaft:{ fa: "توربوشفت", en: "Turboshaft" },
+    electric:  { fa: "برقی", en: "Electric" },
+    rocket:    { fa: "موشکی", en: "Rocket" }
+  };
+
+  var STATUS = {
+    production:  { fa: "در حال تولید", en: "In production", cls: "tag--ok" },
+    active:      { fa: "در سرویس", en: "In service", cls: "tag--ok" },
+    development: { fa: "در دست توسعه", en: "In development", cls: "tag--warn" },
+    retired:     { fa: "بازنشسته", en: "Retired", cls: "tag--dim" }
+  };
+
+  var COUNTRY = {
+    "آمریکا": "United States", "بریتانیا": "United Kingdom",
+    "شوروی": "Soviet Union", "روسیه": "Russia", "شوروی/روسیه": "Soviet Union / Russia",
+    "آلمان": "Germany", "فرانسه": "France", "ایتالیا": "Italy",
+    "ژاپن": "Japan", "چین": "China", "اروپا": "Europe",
+    "کانادا": "Canada", "کانادا/اروپا": "Canada / Europe",
+    "برزیل": "Brazil", "سوئد": "Sweden", "سوئیس": "Switzerland",
+    "هلند": "Netherlands", "اسپانیا": "Spain",
+    "اسپانیا و اندونزی": "Spain / Indonesia",
+    "فرانسه و آلمان": "France / Germany",
+    "اوکراین": "Ukraine", "اوکراین/ایران": "Ukraine / Iran",
+    "ایران": "Iran", "هند": "India", "پاکستان": "Pakistan",
+    "تایوان": "Taiwan", "کره جنوبی": "South Korea",
+    "لهستان": "Poland", "رومانی": "Romania", "صربستان": "Serbia",
+    "چکسلواکی": "Czechoslovakia", "جمهوری چک": "Czech Republic",
+    "فنلاند": "Finland"
+  };
+
+  return { STR: STR, TYPE: TYPE, ENGINE: ENGINE, STATUS: STATUS, COUNTRY: COUNTRY };
+})();
