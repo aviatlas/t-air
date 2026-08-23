@@ -10,7 +10,7 @@ FIXES = {
     "boeing-727-200": {"firstFlight": 1967, "built": 1260},
 
     # A310-300 first flew 8 Jul 1985; 1982 is the A310-200's first flight.
-    "airbus-a310-300": {"firstFlight": 1985},
+    "airbus-a310-300": {"firstFlight": 1985, "introduced": 1985},
 
     # -320B first flew 31 Jan 1962 and entered service with Pan Am in Jun 1962;
     # 1957/1959 are the 707-120 / 707-320 dates. 1010 is the whole-707 total,

@@ -69,7 +69,14 @@ window.TAIR_I18N = (function () {
       compareHint: "تا سه هواپیما را برای مقایسه انتخاب کنید.",
       shareBtn: "کپی لینک",
       shareDone: "لینک کپی شد",
-      field: "مشخصه"
+      field: "مشخصه",
+      familyCount: "کل خانواده",
+      familyCountTip: "این عدد تولید کل خانواده است، نه فقط این نسخه.",
+      exportCsv: "خروجی CSV",
+      exportJson: "خروجی JSON",
+      exportBlocked: "دانلود در نمای درون‌قابی ممکن نیست — نسخه‌ی میزبانی‌شده یا فایل محلی را باز کنید.",
+      aboutLink: "درباره‌ی داده‌ها",
+      aboutTitle: "درباره‌ی داده‌های T-AIR"
     },
 
     en: {
@@ -135,7 +142,14 @@ window.TAIR_I18N = (function () {
       compareHint: "Pick up to three aircraft to compare.",
       shareBtn: "Copy link",
       shareDone: "Link copied",
-      field: "Specification"
+      field: "Specification",
+      familyCount: "family total",
+      familyCountTip: "This figure is the whole family's production, not this variant's.",
+      exportCsv: "Export CSV",
+      exportJson: "Export JSON",
+      exportBlocked: "Downloads are blocked inside the embedded viewer — open the hosted or local copy.",
+      aboutLink: "About the data",
+      aboutTitle: "About the T-AIR data"
     }
   };
 
@@ -191,7 +205,8 @@ window.TAIR_I18N = (function () {
     "تایوان": "Taiwan", "کره جنوبی": "South Korea",
     "لهستان": "Poland", "رومانی": "Romania", "صربستان": "Serbia",
     "چکسلواکی": "Czechoslovakia", "جمهوری چک": "Czech Republic",
-    "فنلاند": "Finland"
+    "فنلاند": "Finland",
+    "اسرائیل": "Israel", "ترکیه": "Türkiye"
   };
 
   return { STR: STR, TYPE: TYPE, ENGINE: ENGINE, STATUS: STATUS, COUNTRY: COUNTRY };

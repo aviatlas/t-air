@@ -502,6 +502,49 @@ main { padding-block: 22px 64px; }
   letter-spacing: .06em; font-variant-numeric: tabular-nums;
 }
 .resultmeta span { font-family: var(--fa); font-size: 12.5px; }
+.resultmeta__tools { margin-inline-start: auto; display: flex; gap: 7px; }
+.minibtn {
+  border: 1px solid var(--line); background: transparent;
+  border-radius: 999px; padding: 3px 11px;
+  font-family: var(--fa); font-size: 12px; color: var(--muted);
+  cursor: pointer; transition: border-color .15s, color .15s;
+}
+.minibtn:hover { border-color: var(--accent); color: var(--accent); }
+
+.linkish {
+  border: 0; background: transparent; padding: 0; cursor: pointer;
+  color: var(--accent); font-family: var(--fa); font-size: 12.5px;
+  text-decoration: underline; text-underline-offset: 3px;
+}
+
+.qual { font-family: var(--fa); font-size: 11px; color: var(--muted); }
+
+.toast {
+  position: fixed; inset-block-end: 22px; inset-inline: 0;
+  margin-inline: auto; width: max-content; max-width: 90vw;
+  background: var(--ink); color: var(--bg);
+  padding: 10px 18px; border-radius: 999px;
+  font-size: 13px; z-index: 70; box-shadow: var(--shadow-lg);
+}
+.toast[hidden] { display: none; }
+
+/* the methodology sheet is the one place with running prose */
+.sheet--about { width: min(720px, 100%); }
+.sheet__body.prose { display: block; gap: 0; line-height: 1.85; }
+.prose p { margin: 0 0 14px; color: var(--ink-2); }
+.prose h4 {
+  margin: 20px 0 6px; font-size: 13px; color: var(--ink);
+  letter-spacing: .01em;
+}
+.prose h4:first-child { margin-top: 0; }
+.prose ul { margin: 0 0 14px; padding-inline-start: 20px; color: var(--ink-2); }
+.prose li { margin-bottom: 7px; }
+.prose b { color: var(--ink); font-weight: 600; }
+.prose code {
+  font-family: var(--mono); font-size: 12.5px;
+  background: var(--surface-2); padding: 1px 5px; border-radius: var(--r-sm);
+  direction: ltr; display: inline-block;
+}
 
 .grid {
   display: grid;
@@ -793,6 +836,7 @@ footer { border-top: 1px solid var(--line); background: var(--surface); }
 }
 .footer__brand { display: flex; align-items: center; gap: 8px; }
 .footer__row p { margin: 0; color: var(--muted); font-size: 12.5px; max-width: 74ch; }
+.footer__row { row-gap: 8px; }
 
 /* ---------- type tints (encode aircraft class) ----------------------------- */
 

@@ -4,11 +4,32 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>T-AIR</title>
-<meta name="description" content="T-AIR — searchable specifications for 573 civil and military aircraft. جست‌وجوی مشخصات فنی هواپیماهای مسافربری، ملخی و نظامی جهان.">
+<meta name="description" content="T-AIR — searchable specifications for 656 civil and military aircraft: airliners, propliners, fighters, helicopters and drones. In Persian and English. جست‌وجوی مشخصات فنی هواپیماهای جهان.">
+<meta name="theme-color" content="#0b6f80" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080d13" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="T-AIR — World Aircraft Atlas">
+<meta property="og:description" content="Searchable specifications for 656 civil and military aircraft, in Persian and English.">
+<meta property="og:image" content="assets/social-card.png">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Dataset",
+ "name": "T-AIR — World Aircraft Atlas",
+ "description": "Specifications for 656 civil and military aircraft: type, capacity or crew, speed, range, dimensions, powerplant, armament and production history, in Persian and English.",
+ "inLanguage": ["fa", "en"],
+ "keywords": ["aircraft", "aviation", "airliner", "fighter", "helicopter", "UAV", "specifications"],
+ "creator": {"@type": "Organization", "name": "T-AIR"},
+ "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "data/aircraft.json"}]
+}
+</script>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Archivo:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700&family=IBM+Plex+Sans+Condensed:wght@400;600&family=IBM+Plex+Mono:wght@400;500&family=Archivo:wght@400;600;800&display=swap">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -94,19 +115,23 @@
         <kbd>/</kbd>
       </div>
     </div>
-    <div class="filters" id="filters"></div>
-    <div class="filters filters--types" id="typeFilters"></div>
-    <div class="timeline" id="timeline"></div>
+    <div class="filters" id="filters" role="group" aria-label="filters"></div>
+    <div class="filters filters--types" id="typeFilters" role="group" aria-label="types"></div>
+    <div class="timeline" id="timeline" role="group" aria-label="decades"></div>
   </div>
 </div>
 
 <!-- ── results ─────────────────────────────────────────────────────────── -->
 <main class="wrap" id="results">
-  <div class="resultmeta">
+  <div class="resultmeta" aria-live="polite">
     <b id="count">—</b>
     <span data-i18n="resultsLabel">فروند در نتایج</span>
+    <div class="resultmeta__tools">
+      <button class="minibtn" id="csvBtn" type="button" data-i18n="exportCsv">خروجی CSV</button>
+      <button class="minibtn" id="jsonBtn" type="button" data-i18n="exportJson">خروجی JSON</button>
+    </div>
   </div>
-  <div class="grid" id="grid"></div>
+  <div class="grid" id="grid" role="list"></div>
   <button class="morebtn" id="more" type="button" hidden><span></span></button>
   <div class="empty" id="empty" hidden>
     <svg class="mark mark--md" viewBox="0 0 48 48" aria-hidden="true">
@@ -132,8 +157,11 @@
       <span class="wordmark wordmark--sm">T-AIR</span>
     </div>
     <p data-i18n="footer"></p>
+    <button class="linkish" id="aboutBtn" type="button" data-i18n="aboutLink">درباره‌ی داده‌ها</button>
   </div>
 </footer>
+
+<div class="toast" id="toast" role="status" hidden></div>
 
 <div class="tray" id="tray" hidden></div>
 

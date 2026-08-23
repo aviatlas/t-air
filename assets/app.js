@@ -202,6 +202,11 @@
       });
     });
 
+    $filters.setAttribute("aria-label", t("sortLabel"));
+    $types.setAttribute("aria-label", t("allTypes"));
+    $timeline.setAttribute("aria-label", t("timelineTitle"));
+    $grid.setAttribute("aria-label", t("resultsLabel"));
+
     var lb = document.getElementById("langBtn");
     lb.querySelector("span").textContent = t("langBtn");
     lb.setAttribute("aria-label", t("langAria"));
@@ -428,6 +433,7 @@
       b.type = "button";
       b.disabled = !n;
       b.title = d(dec) + "s — " + d(n);
+      b.setAttribute("aria-label", d(dec) + "s: " + d(n));
       b.setAttribute("aria-pressed", state.decade === dec ? "true" : "false");
       var fill = el("span", "timeline__fill");
       fill.style.height = (n ? Math.max(6, n / peak * 100) : 0) + "%";
@@ -508,7 +514,10 @@
         return (a.engineCount == null ? "—" : d(a.engineCount)) + " × " + engineLabel(a.engineKind);
       }],
       [t("lEngineModel"), function (a) { return a.engineModel || "—"; }],
-      [t("lBuilt"), function (a) { return a.built == null ? "—" : num(a.built); }, "built"]
+      [t("lBuilt"), function (a) {
+        return a.built == null ? "—"
+             : num(a.built) + (a.builtFamily ? " *" : "");
+      }, "built"]
     ];
     if (anyMil) {
       rows.splice(2, 0, [t("lCrew"), function (a) {
@@ -598,6 +607,7 @@
   function card(a) {
     var mil = isMil(a);
     var wrap = el("div", "cardwrap" + (inCompare(a.id) ? " is-picked" : ""));
+    wrap.setAttribute("role", "listitem");
     var pick = el("button", "card__pick", inCompare(a.id) ? "\u2713" : "+");
     pick.type = "button";
     pick.setAttribute("aria-pressed", inCompare(a.id) ? "true" : "false");
@@ -715,6 +725,9 @@
   }
 
   $more.addEventListener("click", function () { shown += PAGE; render(true); });
+  document.getElementById("csvBtn").addEventListener("click", exportCsv);
+  document.getElementById("jsonBtn").addEventListener("click", exportJson);
+  document.getElementById("aboutBtn").addEventListener("click", openAbout);
 
   /* ------------------------------------------------------------ detail sheet */
 
@@ -913,7 +926,14 @@
     g3.appendChild(specRow(t("lEngineModel"), a.engineModel || "—"));
     g3.appendChild(specRow(t("lFirstFlight"), a.firstFlight ? d(a.firstFlight) : "—", true));
     g3.appendChild(specRow(t("lIntroduced"), a.introduced ? d(a.introduced) : "—", true));
-    g3.appendChild(specRow(t("lBuilt"), a.built == null ? "—" : num(a.built) + " " + t("uFrames"), true));
+    var builtRow = specRow(t("lBuilt"),
+      a.built == null ? "—" : (num(a.built) + " " + t("uFrames")).trim(), true);
+    if (a.builtFamily) {
+      var qual = el("small", "qual", " · " + t("familyCount"));
+      qual.title = t("familyCountTip");
+      builtRow.querySelector("dd").appendChild(qual);
+    }
+    g3.appendChild(builtRow);
     s3.appendChild(g3);
     body.appendChild(s3);
 
@@ -1004,6 +1024,16 @@
   });
 
   /* arrow keys walk the result grid once a card has focus */
+  /* keep Tab inside the open dialog */
+  $scrim.addEventListener("keydown", function (e) {
+    if (e.key !== "Tab" || $scrim.hidden) return;
+    var f = $scrim.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])');
+    if (!f.length) return;
+    var first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+
   document.addEventListener("keydown", function (e) {
     var cards = null, i = -1;
     if (["ArrowRight", "ArrowLeft", "ArrowDown", "ArrowUp"].indexOf(e.key) > -1 &&
@@ -1027,6 +1057,177 @@
       $q.select();
     }
   });
+
+  /* ---------------------------------------------------------------- export */
+
+  /* The artifact viewer runs the page in an iframe and blocks page-initiated
+     downloads, so say that plainly instead of failing silently. */
+  var EMBEDDED = (function () {
+    try { return window.self !== window.top; } catch (e) { return true; }
+  })();
+
+  var EXPORT_FIELDS = ["id", "category", "type", "mfr", "model", "family", "country",
+                       "firstFlight", "introduced", "status", "seatsTypical", "seatsMax",
+                       "crew", "rangeKm", "speedKmh", "ceilingM", "mtowKg",
+                       "lengthM", "spanM", "heightM", "engineCount", "engineKind",
+                       "engineModel", "built", "builtFamily", "iran", "wiki",
+                       "role", "role_en", "armament", "armament_en", "notes", "notes_en"];
+
+  function csvCell(v) {
+    if (v == null) return "";
+    var s = String(v);
+    return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+  }
+
+  function download(name, text, mime) {
+    if (EMBEDDED) { toast(t("exportBlocked")); return; }
+    var blob = new Blob(["\ufeff" + text], { type: mime + ";charset=utf-8" });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(url); }, 2000);
+  }
+
+  var toastTimer;
+  function toast(msg) {
+    var box = document.getElementById("toast");
+    box.textContent = msg;
+    box.hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { box.hidden = true; }, 4200);
+  }
+
+  function exportCsv() {
+    var list = results();
+    var rows = [EXPORT_FIELDS.join(",")];
+    list.forEach(function (a) {
+      rows.push(EXPORT_FIELDS.map(function (f) { return csvCell(a[f]); }).join(","));
+    });
+    download("t-air-" + list.length + ".csv", rows.join("\n"), "text/csv");
+  }
+
+  function exportJson() {
+    var list = results().map(function (a) {
+      var o = {};
+      EXPORT_FIELDS.forEach(function (f) { if (a[f] != null) o[f] = a[f]; });
+      return o;
+    });
+    download("t-air-" + list.length + ".json",
+             JSON.stringify({ source: "T-AIR", count: list.length, aircraft: list }, null, 1),
+             "application/json");
+  }
+
+  /* ----------------------------------------------------------------- about */
+
+  function openAbout() {
+    lastFocus = document.activeElement;
+    $scrim.textContent = "";
+    var sheet = el("div", "sheet sheet--about");
+
+    var head = el("div", "sheet__head");
+    var title = el("div", "sheet__title");
+    title.appendChild(el("span", "card__mfr", "T-AIR"));
+    var h2 = el("h2", null, t("aboutTitle"));
+    h2.id = "sheetTitle";
+    h2.style.fontFamily = "var(--fa)";
+    title.appendChild(h2);
+    head.appendChild(title);
+    var close = el("button", "close-btn");
+    close.type = "button";
+    close.setAttribute("aria-label", t("closeAria"));
+    close.innerHTML = '<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m6 6 12 12M18 6 6 18"/></svg>';
+    close.addEventListener("click", closeSheet);
+    head.appendChild(close);
+    sheet.appendChild(head);
+
+    var body = el("div", "sheet__body prose");
+    var civ = DATA.filter(function (a) { return a.category === "civil"; }).length;
+    var fam = DATA.filter(function (a) { return a.builtFamily; }).length;
+    var mfrs = {};
+    DATA.forEach(function (a) { mfrs[a.mfr] = 1; });
+    body.innerHTML = aboutHtml({
+      total: d(DATA.length), civil: d(civ), mil: d(DATA.length - civ),
+      mfrs: d(Object.keys(mfrs).length),
+      iran: d(DATA.filter(function (a) { return a.iran; }).length),
+      family: d(fam)
+    });
+    sheet.appendChild(body);
+
+    $scrim.appendChild(sheet);
+    $scrim.hidden = false;
+    document.body.style.overflow = "hidden";
+    close.focus();
+  }
+
+  function aboutHtml(n) {
+    if (lang === "fa") {
+      return [
+        "<p>T-AIR یک مرجع سریع مشخصات هواپیماست: " + n.total + " مدل (" + n.civil +
+        " غیرنظامی، " + n.mil + " نظامی) از " + n.mfrs + " سازنده، که " + n.iran +
+        " فروندشان در ناوگان ایران بوده‌اند.</p>",
+        "<h4>منابع</h4>",
+        "<p>ارقام از مواد عمومی سازندگان و دانشنامه‌ها گردآوری شده است. این یک مرجع " +
+        "سریع است، نه سند عملیاتی؛ برای هر کاربرد واقعی به اسناد رسمی سازنده مراجعه کنید.</p>",
+        "<h4>قراردادها</h4>",
+        "<ul>",
+        "<li><b>نسخه در برابر خانواده</b> — هر رکورد یک نسخه است، ولی گاهی تنها عددِ " +
+        "منتشرشده برای کل خانواده وجود دارد. " + n.family + " رکورد این‌طورند و کنار " +
+        "عددشان «کل خانواده» نوشته شده است.</li>",
+        "<li><b>برد</b> — برد استاندارد بدون مخزن کمکی؛ برای نظامی‌ها گاهی برد فِری است، نه شعاع عملیاتی.</li>",
+        "<li><b>سرعت</b> — برای مسافربری سرعت سفر، برای نظامی سرعت بیشینه.</li>",
+        "<li><b>دهانه بال</b> — برای بالگردها قطر روتور اصلی ثبت شده است.</li>",
+        "<li><b>خدمه</b> — برای پهپادها صفر است؛ این یک مقدار خالی نیست، خودِ تعریف این دسته است.</li>",
+        "<li><b>سقف پرواز</b> — سقف سرویس، نه سقف شناوری بالگرد.</li>",
+        "</ul>",
+        "<h4>ممیزی</h4>",
+        "<p>اصلاحات داده به‌صورت لایه‌ی جدا در <code>scripts/fixes/</code> ثبت می‌شود، " +
+        "نه ویرایش مستقیم جدول‌ها، تا معلوم بماند چه چیزی و چرا عوض شده. هر فایل یک " +
+        "فهرست <code>UNRESOLVED</code> هم دارد: مواردی که هنوز حل نشده‌اند.</p>",
+        "<h4>عکس‌ها</h4>",
+        "<p>عکس‌ها از ویکی‌مدیا کامانز می‌آیند و فقط فایل‌هایی برداشته می‌شوند که " +
+        "مجوز آزاد دارند. نام عکاس و مجوز زیر هر عکس نوشته می‌شود.</p>",
+        "<h4>خروجی داده</h4>",
+        "<p>دکمه‌های CSV و JSON بالای نتایج، همان مجموعه‌ای را که فیلتر کرده‌اید " +
+        "بیرون می‌دهند. داخل نمای درون‌قابی کار نمی‌کنند؛ نسخه‌ی میزبانی‌شده یا فایل محلی را باز کنید.</p>"
+      ].join("");
+    }
+    return [
+      "<p>T-AIR is a quick specification reference: " + n.total + " aircraft (" + n.civil +
+      " civil, " + n.mil + " military) from " + n.mfrs + " manufacturers, " + n.iran +
+      " of which have flown in Iranian service.</p>",
+      "<h4>Sources</h4>",
+      "<p>Figures are compiled from manufacturers' public material and reference works. " +
+      "This is a quick reference, not an operational document; for any real use, go to " +
+      "the manufacturer's own documentation.</p>",
+      "<h4>Conventions</h4>",
+      "<ul>",
+      "<li><b>Variant vs family</b> — each record is one variant, but sometimes the only " +
+      "published production figure covers the whole family. " + n.family + " records are " +
+      "in that position and are marked <i>family total</i> next to the number.</li>",
+      "<li><b>Range</b> — standard range without auxiliary tanks; for military types this " +
+      "is sometimes ferry range rather than combat radius.</li>",
+      "<li><b>Speed</b> — cruise speed for airliners, maximum speed for military aircraft.</li>",
+      "<li><b>Wingspan</b> — for helicopters this holds the main rotor diameter.</li>",
+      "<li><b>Crew</b> — zero for uncrewed aircraft. That is the definition of the class, " +
+      "not a missing value.</li>",
+      "<li><b>Ceiling</b> — service ceiling, not a helicopter's hover ceiling.</li>",
+      "</ul>",
+      "<h4>Auditing</h4>",
+      "<p>Corrections are recorded as a separate layer in <code>scripts/fixes/</code> rather " +
+      "than edited into the source tables, so what changed and why stays readable. Each file " +
+      "also carries an <code>UNRESOLVED</code> list of questions still open.</p>",
+      "<h4>Photographs</h4>",
+      "<p>Photographs come from Wikimedia Commons, and only files under a free licence are " +
+      "used. The photographer and licence are printed under each picture.</p>",
+      "<h4>Data export</h4>",
+      "<p>The CSV and JSON buttons above the results export exactly the set you have " +
+      "filtered to. They do not work inside the embedded viewer — open the hosted or local copy.</p>"
+    ].join("");
+  }
 
   /* ------------------------------------------------------------------ boot */
 

@@ -170,7 +170,7 @@ EXCLUDE = {
 }
 
 BLANK = {"seatsTypical": N, "seatsMax": N, "crew": N,
-         "ceilingM": N, "armament": N, "role": N}
+         "ceilingM": N, "armament": N, "role": N, "builtFamily": False}
 
 
 def to_obj(row, cols, category):
@@ -193,7 +193,7 @@ def apply_corrections(data):
     DROP = [id, ...] for records that should not be in the database at all.
     """
     import glob
-    fixes, drop = {}, set()
+    fixes, drop, family = {}, set(), set()
     here = os.path.dirname(os.path.abspath(__file__))
     for path in sorted(glob.glob(os.path.join(here, "fixes", "*.py"))):
         name = os.path.splitext(os.path.basename(path))[0]
@@ -203,8 +203,14 @@ def apply_corrections(data):
         for k, v in getattr(mod, "FIXES", {}).items():
             fixes.setdefault(k, {}).update(v)
         drop.update(getattr(mod, "DROP", []))
+        family.update(getattr(mod, "FAMILY_COUNT", []))
 
     by_id = {d["id"]: d for d in data}
+    for k in family:
+        if k in by_id:
+            # the interface marks these so a reader does not read a family
+            # total as this one variant's output
+            by_id[k]["builtFamily"] = True
     applied = 0
     for k, patch in fixes.items():
         rec = by_id.get(k)
