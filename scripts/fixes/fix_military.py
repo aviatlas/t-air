@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 """Audit of the military records.
 
-Reviewed all 374 records against known figures, looking for the failure mode
+Reviewed all 374 fixed-wing military records — rotorcraft and uncrewed types
+are audited in fill_rotary_uav.py and fix_audit3.py — against known figures,
+looking for the failure mode
 the civil audit surfaced: a record named for one variant but carrying the
 whole family's first-flight year or production total. Only mismatches of five
 years or more, and production counts off by a clear multiple, are corrected

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-"""Audit of the 199 civil records — every record read field by field, then the
+"""Audit of the 199 fixed-wing civil records — the 15 civil rotorcraft are
+audited in fill_rotary_uav.py. Every record read field by field, then the
 least certain ones checked against the English Wikipedia article for the type.
 The dominant error class is a variant record carrying the *family's* first-flight
 year or the *programme's* total production count instead of the variant's own."""
@@ -55,7 +56,7 @@ FIXES = {
     "boeing-777-200er": {"firstFlight": 1996},
 }
 
-DROP = []  # no duplicates and no non-existent types found among the 199
+DROP = []  # no duplicates and no non-existent types among the 199 fixed-wing
 
 UNRESOLVED = [
     "airbus-a310-300: introduced 1983 is the A310-200's date and is impossible "

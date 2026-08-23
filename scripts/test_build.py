@@ -82,6 +82,15 @@ check("no jets before the jet age",
        if a["engineKind"] == "jet" and (a.get("firstFlight") or 9999) < 1939])
 check("ceilings are below the stratosphere limit",
       [a["id"] for a in AIRCRAFT if (a.get("ceilingM") or 0) > 30000])
+# The military rotorcraft table was once written (speed, range) into
+# (range, speed) columns, which put Sea Kings at 1230 km/h. Retreating-blade
+# stall keeps a helicopter under about 400 km/h; the tiltrotors below convert
+# to wing-borne flight and are the only legitimate exceptions.
+TILTROTOR = {"bell-boeing-v-22"}
+check("rotorcraft are not flying at jet speeds",
+      [a["id"] for a in AIRCRAFT
+       if a["type"] == "helicopter" and a["id"] not in TILTROTOR
+       and (a.get("speedKmh") or 0) > 420])
 check("speeds are below Mach 3.5",
       [a["id"] for a in AIRCRAFT if (a.get("speedKmh") or 0) > 4300])
 
@@ -118,6 +127,21 @@ check("every country has an English name",
 check("family-total flag only where a count exists",
       [a["id"] for a in AIRCRAFT if a.get("builtFamily") and a.get("built") is None])
 check("wiki title is present", [a["id"] for a in AIRCRAFT if not a.get("wiki")])
+
+# A repeated key in a FIXES literal silently discards the earlier correction,
+# which is invisible in the build banner — the count still goes up.
+import ast
+import glob
+dupes = []
+for path in sorted(glob.glob(os.path.join(ROOT, "scripts", "fixes", "*.py"))):
+    tree = ast.parse(open(path, encoding="utf-8").read())
+    for node in ast.walk(tree):
+        if not isinstance(node, ast.Dict):
+            continue
+        keys = [k.value for k in node.keys if isinstance(k, ast.Constant)]
+        dupes += [f"{os.path.basename(path)}: {k}"
+                  for k, n in collections.Counter(keys).items() if n > 1]
+check("no correction is shadowed by a repeated key", dupes)
 
 print()
 if FAILURES:

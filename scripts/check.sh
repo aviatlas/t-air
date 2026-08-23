@@ -19,7 +19,13 @@ if [ -d node_modules/playwright ] || node -e "require('playwright')" 2>/dev/null
   echo "== interface checks"
   node scripts/test_ui.js
 else
-  echo "== interface checks skipped (npm install playwright to enable)"
+  echo "== WARNING: interface checks SKIPPED — playwright is not installed"
+  echo "   npm install playwright && npx playwright install chromium"
+  SKIPPED=1
 fi
 echo
-echo "all good"
+if [ "${SKIPPED:-0}" = "1" ]; then
+  echo "data is good; the interface was not tested"
+else
+  echo "all good"
+fi

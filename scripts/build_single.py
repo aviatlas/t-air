@@ -76,15 +76,14 @@ def build():
     # so hand it only what goes inside — <title> and the font <link> included.
     head = re.search(r"<head>(.*?)</head>", html, re.S).group(1)
     body = re.search(r"<body>(.*?)</body>", html, re.S).group(1)
+    # Keep the whole head except the lines the publisher supplies itself
+    # (charset, viewport) and the ones that point at files the artifact does
+    # not carry — a relative icon or social-card href resolves to nothing
+    # there, and the JSON-LD contentUrl would be a dead link.
+    drop = ("charset", "viewport", 'rel="icon"', "og:image", "twitter:image")
     keep = "\n".join(
         line for line in head.splitlines()
-        if any(k in line for k in ("<title>", "fonts.googleapis", "fonts.gstatic",
-                                   "<style>", "</style>")) or line.startswith(("  ", "/*", "}", ".", ":", "@", "*"))
-    )
-    # simpler + safer: keep the whole head except charset/viewport meta
-    keep = "\n".join(
-        line for line in head.splitlines()
-        if "charset" not in line and "viewport" not in line
+        if not any(k in line for k in drop)
     )
     frag = ('<script>document.documentElement.lang="fa";'
             'document.documentElement.dir="rtl";</script>\n' + keep + body)

@@ -25,7 +25,8 @@ jobs:
       - name: Fail if the build changed a committed file
         run: |
           git diff --exit-code -- data/aircraft.json dist/ \
-            || (echo "::error::data/aircraft.json or dist/ is out of date — run scripts/check.sh and commit the result" && exit 1)
+              scripts/military_data.py scripts/civil_extra.py \
+            || (echo "::error::a generated file is out of date — run scripts/check.sh and commit the result" && exit 1)
 
       - uses: actions/setup-node@v4
         with:

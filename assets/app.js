@@ -1201,7 +1201,7 @@
       return [
         "<p>T-AIR یک مرجع سریع مشخصات هواپیماست: " + n.total + " مدل (" + n.civil +
         " غیرنظامی، " + n.mil + " نظامی) از " + n.mfrs + " سازنده، که " + n.iran +
-        " فروندشان در ناوگان ایران بوده‌اند.</p>",
+        " مدلشان در ناوگان ایران بوده یا هست.</p>",
         "<h4>منابع</h4>",
         "<p>ارقام از مواد عمومی سازندگان و دانشنامه‌ها گردآوری شده است. این یک مرجع " +
         "سریع است، نه سند عملیاتی؛ برای هر کاربرد واقعی به اسناد رسمی سازنده مراجعه کنید.</p>",
@@ -1215,6 +1215,8 @@
         "<li><b>دهانه بال</b> — برای بالگردها قطر روتور اصلی ثبت شده است.</li>",
         "<li><b>خدمه</b> — برای پهپادها صفر است؛ این یک مقدار خالی نیست، خودِ تعریف این دسته است.</li>",
         "<li><b>سقف پرواز</b> — سقف سرویس، نه سقف شناوری بالگرد.</li>",
+        "<li><b>وضعیت</b> — «در حال تولید» یعنی خط تولید باز است، «در سرویس» یعنی " +
+        "تولیدش تمام شده ولی هنوز پرواز می‌کند، و «بازنشسته» یعنی دیگر پرواز نمی‌کند.</li>",
         "</ul>",
         "<h4>ممیزی</h4>",
         "<p>اصلاحات داده به‌صورت لایه‌ی جدا در <code>scripts/fixes/</code> ثبت می‌شود، " +
@@ -1225,7 +1227,8 @@
         "مجوز آزاد دارند. نام عکاس و مجوز زیر هر عکس نوشته می‌شود.</p>",
         "<h4>خروجی داده</h4>",
         "<p>دکمه‌های CSV و JSON بالای نتایج، همان مجموعه‌ای را که فیلتر کرده‌اید " +
-        "بیرون می‌دهند. داخل نمای درون‌قابی کار نمی‌کنند؛ نسخه‌ی میزبانی‌شده یا فایل محلی را باز کنید.</p>"
+        "بیرون می‌دهند. داخل نمای درون‌قابی، مرورگر پیش از ذخیره تأیید می‌گیرد و " +
+        "ممکن است CSV را نپذیرد؛ در آن صورت JSON را بگیرید.</p>"
       ].join("");
     }
     return [
@@ -1248,6 +1251,9 @@
       "<li><b>Crew</b> — zero for uncrewed aircraft. That is the definition of the class, " +
       "not a missing value.</li>",
       "<li><b>Ceiling</b> — service ceiling, not a helicopter's hover ceiling.</li>",
+      "<li><b>Status</b> — <i>in production</i> means the line is open, <i>in service</i> " +
+      "means production has ended but the type still flies, and <i>retired</i> means it " +
+      "no longer flies.</li>",
       "</ul>",
       "<h4>Auditing</h4>",
       "<p>Corrections are recorded as a separate layer in <code>scripts/fixes/</code> rather " +
@@ -1258,7 +1264,8 @@
       "used. The photographer and licence are printed under each picture.</p>",
       "<h4>Data export</h4>",
       "<p>The CSV and JSON buttons above the results export exactly the set you have " +
-      "filtered to. They do not work inside the embedded viewer — open the hosted or local copy.</p>"
+      "filtered to. Inside the embedded viewer the browser confirms each save first and " +
+      "may refuse CSV; take the JSON in that case.</p>"
     ].join("");
   }
 
