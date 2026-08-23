@@ -125,7 +125,7 @@ window.TAIR_I18N = (function () {
       lEngines: "Engines", lEngineModel: "Engine",
       lFirstFlight: "First flight", lIntroduced: "Entered service", lBuilt: "Number built",
       lLength: "Length", lSpan: "Wingspan", lHeight: "Height",
-      uFrames: "built",
+      uFrames: "",
       inIran: "Flown by Iran", familyTag: "",
       wikiBtn: "Wikipedia article", familyBtn: "More from ",
       closeAria: "Close",
