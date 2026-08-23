@@ -74,7 +74,9 @@ window.TAIR_I18N = (function () {
       familyCountTip: "این عدد تولید کل خانواده است، نه فقط این نسخه.",
       exportCsv: "خروجی CSV",
       exportJson: "خروجی JSON",
-      exportBlocked: "دانلود در نمای درون‌قابی ممکن نیست — نسخه‌ی میزبانی‌شده یا فایل محلی را باز کنید.",
+      exportBlocked: "دانلود در این نما ممکن نیست — نسخه‌ی میزبانی‌شده یا فایل محلی را باز کنید.",
+      exportSaved: "فایل ذخیره شد",
+      exportCsvBlocked: "خروجی CSV در این نما در دسترس نیست؛ JSON را امتحان کنید.",
       aboutLink: "درباره‌ی داده‌ها",
       aboutTitle: "درباره‌ی داده‌های T-AIR"
     },
@@ -147,7 +149,9 @@ window.TAIR_I18N = (function () {
       familyCountTip: "This figure is the whole family's production, not this variant's.",
       exportCsv: "Export CSV",
       exportJson: "Export JSON",
-      exportBlocked: "Downloads are blocked inside the embedded viewer — open the hosted or local copy.",
+      exportBlocked: "Downloads are not available in this view — open the hosted or local copy.",
+      exportSaved: "File saved",
+      exportCsvBlocked: "CSV is not available in this view; try JSON instead.",
       aboutLink: "About the data",
       aboutTitle: "About the T-AIR data"
     }

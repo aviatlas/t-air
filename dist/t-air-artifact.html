@@ -1245,7 +1245,9 @@ window.TAIR_I18N = (function () {
       familyCountTip: "این عدد تولید کل خانواده است، نه فقط این نسخه.",
       exportCsv: "خروجی CSV",
       exportJson: "خروجی JSON",
-      exportBlocked: "دانلود در نمای درون‌قابی ممکن نیست — نسخه‌ی میزبانی‌شده یا فایل محلی را باز کنید.",
+      exportBlocked: "دانلود در این نما ممکن نیست — نسخه‌ی میزبانی‌شده یا فایل محلی را باز کنید.",
+      exportSaved: "فایل ذخیره شد",
+      exportCsvBlocked: "خروجی CSV در این نما در دسترس نیست؛ JSON را امتحان کنید.",
       aboutLink: "درباره‌ی داده‌ها",
       aboutTitle: "درباره‌ی داده‌های T-AIR"
     },
@@ -1318,7 +1320,9 @@ window.TAIR_I18N = (function () {
       familyCountTip: "This figure is the whole family's production, not this variant's.",
       exportCsv: "Export CSV",
       exportJson: "Export JSON",
-      exportBlocked: "Downloads are blocked inside the embedded viewer — open the hosted or local copy.",
+      exportBlocked: "Downloads are not available in this view — open the hosted or local copy.",
+      exportSaved: "File saved",
+      exportCsvBlocked: "CSV is not available in this view; try JSON instead.",
       aboutLink: "About the data",
       aboutTitle: "About the T-AIR data"
     }
@@ -2467,7 +2471,40 @@ window.TAIR_I18N = (function () {
     return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
   }
 
+  /* The claude.ai viewer mediates saves through its own capability; a hosted
+     or local copy has no such host and uses an object URL. Ask once. */
+  var dlNs = null, dlAsked = false;
+  function downloadsHost() {
+    if (dlAsked) return Promise.resolve(dlNs);
+    dlAsked = true;
+    if (!(window.claude && typeof window.claude.use === "function")) {
+      return Promise.resolve(null);
+    }
+    return window.claude.use("downloads").then(
+      function (ns) { dlNs = ns; return ns; },
+      function () { return null; }
+    );
+  }
+
   function download(name, text, mime) {
+    downloadsHost().then(function (ns) {
+      if (ns) {
+        ns.save({ filename: name, data: text }).then(
+          function () { toast(t("exportSaved")); },
+          function (err) {
+            var code = err && err.code;
+            if (code === "declined" || code === "rate_limited") return;
+            toast(code === "extension_not_enabled" || code === "rejected_extension"
+              ? t("exportCsvBlocked") : t("exportBlocked"));
+          }
+        );
+        return;
+      }
+      saveViaLink(name, text, mime);
+    });
+  }
+
+  function saveViaLink(name, text, mime) {
     if (EMBEDDED) { toast(t("exportBlocked")); return; }
     var blob = new Blob(["\ufeff" + text], { type: mime + ";charset=utf-8" });
     var url = URL.createObjectURL(blob);

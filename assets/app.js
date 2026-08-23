@@ -1079,7 +1079,40 @@
     return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
   }
 
+  /* The claude.ai viewer mediates saves through its own capability; a hosted
+     or local copy has no such host and uses an object URL. Ask once. */
+  var dlNs = null, dlAsked = false;
+  function downloadsHost() {
+    if (dlAsked) return Promise.resolve(dlNs);
+    dlAsked = true;
+    if (!(window.claude && typeof window.claude.use === "function")) {
+      return Promise.resolve(null);
+    }
+    return window.claude.use("downloads").then(
+      function (ns) { dlNs = ns; return ns; },
+      function () { return null; }
+    );
+  }
+
   function download(name, text, mime) {
+    downloadsHost().then(function (ns) {
+      if (ns) {
+        ns.save({ filename: name, data: text }).then(
+          function () { toast(t("exportSaved")); },
+          function (err) {
+            var code = err && err.code;
+            if (code === "declined" || code === "rate_limited") return;
+            toast(code === "extension_not_enabled" || code === "rejected_extension"
+              ? t("exportCsvBlocked") : t("exportBlocked"));
+          }
+        );
+        return;
+      }
+      saveViaLink(name, text, mime);
+    });
+  }
+
+  function saveViaLink(name, text, mime) {
     if (EMBEDDED) { toast(t("exportBlocked")); return; }
     var blob = new Blob(["\ufeff" + text], { type: mime + ";charset=utf-8" });
     var url = URL.createObjectURL(blob);
