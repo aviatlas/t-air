@@ -513,7 +513,7 @@ main { padding-block: 22px 64px; }
 .cardwrap > .card { flex: 1; }
 
 .card__pick {
-  position: absolute; inset-block-start: 9px; inset-inline-start: 9px;
+  position: absolute; inset-block-start: 9px; inset-inline-start: 9px; z-index: 3;
   width: 22px; height: 22px; border-radius: 50%;
   border: 1px solid var(--line); background: var(--surface);
   color: var(--muted); font-size: 13px; line-height: 1;
@@ -551,7 +551,31 @@ main { padding-block: 22px 64px; }
   inset-inline: 0;
   height: 3px;
   background: var(--tint, var(--accent));
+  z-index: 2;
 }
+
+/* picture band: a photograph when the local library has one, a tinted
+   silhouette when it does not, so the grid keeps one rhythm either way */
+.card__shot {
+  margin: -15px -16px 0;
+  aspect-ratio: 16 / 9;
+  background: var(--surface-2);
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  border-bottom: 1px solid var(--line-soft);
+}
+.card__shot img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
+.card__shot.is-empty {
+  background: color-mix(in srgb, var(--tint, var(--accent)) 7%, var(--surface-2));
+}
+.card__shot.is-empty svg {
+  width: 46%; height: auto; color: var(--tint, var(--accent)); opacity: .3;
+}
+.card:hover .card__shot img { transform: scale(1.02); }
+.card__shot img { transition: transform .3s ease; }
+@media (prefers-reduced-motion: reduce) { .card__shot img { transition: none; } }
 .card:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow);
@@ -560,7 +584,7 @@ main { padding-block: 22px 64px; }
 }
 .card:hover .seatbar__fill { opacity: 1; }
 
-.card__head { display: flex; align-items: flex-start; gap: 10px; }
+.card__head { display: flex; align-items: flex-start; gap: 10px; padding-top: 2px; }
 .card__mfr {
   font-family: var(--mono); font-size: 10.5px;
   letter-spacing: .12em; text-transform: uppercase;

@@ -139,6 +139,14 @@
 
   var DATA = [];
   var byId = {};
+  /* photos.json is written by scripts/fetch_photos.py and is optional: with no
+     local photo library the sheet still pulls a picture from Wikipedia live,
+     and the cards fall back to a silhouette. */
+  var PHOTOS = {};
+  var INLINE = window.__PHOTOS_INLINE__ || {};
+  /* the cards only grow a picture band once a photo library exists; until
+     scripts/fetch_photos.py has run, the compact card is the better card */
+  var HAS_PHOTOS = false;
   var MAX_SEATS = 1, MAX_SPEED = 1;
   var shown = PAGE;
   var state = { q: "", cat: "", type: "", engine: "", iran: false, prod: false,
@@ -604,6 +612,24 @@
     b.type = "button";
     b.dataset.id = a.id;
 
+    if (HAS_PHOTOS) {
+    var shot = el("figure", "card__shot");
+    var src = photoSrc(a, "thumb");
+    if (src) {
+      var img = new Image();
+      img.loading = "lazy";
+      img.decoding = "async";
+      img.alt = "";
+      img.src = src;
+      img.addEventListener("error", function () { shot.classList.add("is-empty"); });
+      shot.appendChild(img);
+    } else {
+      shot.classList.add("is-empty");
+      shot.appendChild(silhouette());
+    }
+    b.appendChild(shot);
+    }
+
     var head = el("div", "card__head");
     var top = el("div");
     top.appendChild(el("span", "card__mfr", a.mfr));
@@ -732,6 +758,24 @@
   }
 
   function loadPhoto(a, figure) {
+    var local = photoSrc(a, "");
+    if (local) {
+      var big = new Image();
+      big.alt = a.model;
+      big.onload = function () {
+        figure.textContent = "";
+        figure.classList.remove("is-empty");
+        figure.appendChild(big);
+        figure.appendChild(el("figcaption", null, photoCredit(a)));
+      };
+      big.onerror = function () { fetchRemote(a, figure); };
+      big.src = local;
+      return;
+    }
+    fetchRemote(a, figure);
+  }
+
+  function fetchRemote(a, figure) {
     function fail() {
       var msg = figure.querySelector(".photo-fallback span");
       if (msg) msg.textContent = t("photoNone");
@@ -758,6 +802,18 @@
         img.src = src;
       })
       .catch(fail);
+  }
+
+  function photoSrc(a, size) {
+    if (INLINE[a.id]) return INLINE[a.id];
+    if (!PHOTOS[a.id]) return null;
+    return "assets/photos/" + (size ? size + "/" : "") + a.id + ".webp";
+  }
+
+  function photoCredit(a) {
+    var meta = PHOTOS[a.id];
+    if (!meta) return t("photoCredit") + (a.wiki || a.model);
+    return meta.credit + " · " + meta.licence + " · Wikimedia Commons";
   }
 
   var lastFocus = null;
@@ -1011,6 +1067,7 @@
   }
 
   function boot(data) {
+    HAS_PHOTOS = Object.keys(PHOTOS).length > 0 || Object.keys(INLINE).length > 0;
     DATA = data.map(function (a) {
       a._hay = haystack(a);
       a._model = norm(a.model);
@@ -1029,12 +1086,26 @@
 
   applyLang();
 
+  function loadPhotoIndex() {
+    if (window.__PHOTOS__) {
+      PHOTOS = window.__PHOTOS__.photos || {};
+      return Promise.resolve();
+    }
+    return fetch("data/photos.json")
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) { if (j) PHOTOS = j.photos || {}; })
+      .catch(function () { /* no local library yet */ });
+  }
+
   if (window.__AIRCRAFT__) {
+    PHOTOS = (window.__PHOTOS__ || {}).photos || {};
     boot(window.__AIRCRAFT__.aircraft);
   } else {
-    fetch("data/aircraft.json")
-      .then(function (r) { return r.json(); })
-      .then(function (j) { boot(j.aircraft); })
+    Promise.all([
+      fetch("data/aircraft.json").then(function (r) { return r.json(); }),
+      loadPhotoIndex()
+    ])
+      .then(function (res) { boot(res[0].aircraft); })
       .catch(function () {
         $empty.hidden = false;
         $empty.querySelector("strong").textContent = t("loadFail");

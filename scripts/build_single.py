@@ -15,6 +15,39 @@ def read(*p):
         return f.read()
 
 
+def inline_photos():
+    """Embed the 180 px photo set as data URIs, if fetch_photos.py has run.
+
+    The single-file build has to carry its pictures with it — the artifact
+    host blocks outside requests — so the tiny tier exists purely for this.
+    Returns a script tag, or an empty string when there is no library yet.
+    """
+    import base64
+    idx = os.path.join(ROOT, "data", "photos.json")
+    tiny = os.path.join(ROOT, "assets", "photos", "tiny")
+    if not (os.path.exists(idx) and os.path.isdir(tiny)):
+        return ""
+    meta = json.load(open(idx, encoding="utf-8"))
+    inline, total = {}, 0
+    for aid in meta.get("photos", {}):
+        path = os.path.join(tiny, aid + ".webp")
+        if not os.path.exists(path):
+            continue
+        raw = open(path, "rb").read()
+        total += len(raw)
+        inline[aid] = "data:image/webp;base64," + base64.b64encode(raw).decode()
+    if total > 11 * 1024 * 1024:
+        print(f"  ! tiny photo set is {total/1048576:.1f} MB — too large to inline, "
+              "skipping (the hosted build still shows photos)")
+        return ""
+    print(f"  inlined {len(inline)} photos, {total/1048576:.1f} MB")
+    return ("<script>window.__PHOTOS__=" +
+            json.dumps({"photos": meta.get("photos", {})}, ensure_ascii=False,
+                       separators=(",", ":")) +
+            ";window.__PHOTOS_INLINE__=" +
+            json.dumps(inline, separators=(",", ":")) + ";</script>\n")
+
+
 def build():
     html = read("index.html")
     css = read("assets", "styles.css")
@@ -27,7 +60,7 @@ def build():
         "<style>\n" + css + "\n</style>")
     html = html.replace(
         '<script src="assets/i18n.js"></script>',
-        "<script>\n" + i18n + "\n</script>")
+        inline_photos() + "<script>\n" + i18n + "\n</script>")
     html = html.replace(
         '<script src="assets/app.js"></script>',
         "<script>window.__AIRCRAFT__ = " + json.dumps(json.loads(data),
