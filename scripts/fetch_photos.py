@@ -27,6 +27,7 @@ forever — delete that list to re-check.
 import io
 import json
 import os
+import re
 import sys
 import time
 
@@ -79,6 +80,26 @@ def lead_images(titles):
     return out
 
 
+# Only licences that allow reuse and modification by anyone. This is an
+# allowlist on purpose: Commons is mostly free, but its licence templates are
+# many and a blocklist would let an unusual restrictive one through, and this
+# repository is going to be public.
+FREE_PREFIXES = ("cc0", "cc by", "cc-by", "public domain", "pd-", "pd ",
+                 "gfdl", "fal", "wtfpl", "attribution")
+FORBIDDEN = ("nc", "nd", "non-commercial", "noncommercial", "no derivative",
+             "fair", "all rights reserved", "copyright", "©", "with permission")
+
+
+def free_licence(licence):
+    """True only for a licence that lets anyone reuse and adapt the file."""
+    if not licence:
+        return False
+    low = licence.lower()
+    if any(bad in low.split() or bad in low for bad in FORBIDDEN):
+        return False
+    return any(low.startswith(p) for p in FREE_PREFIXES)
+
+
 def commons_file(file_title):
     """URL, author and licence for a file — but only if Commons hosts it."""
     data = get(COMMONS, {
@@ -96,10 +117,9 @@ def commons_file(file_title):
         return (meta.get(key, {}).get("value") or "").strip()
 
     licence = field("LicenseShortName")
-    if not licence or "fair use" in licence.lower():
+    if not free_licence(licence):
         return None
 
-    import re
     author = re.sub(r"<[^>]+>", "", field("Artist")).strip()
     return {
         "url": info.get("url"),
@@ -110,7 +130,31 @@ def commons_file(file_title):
     }
 
 
+MAX_BYTES = 25 * 1024 * 1024      # no lead image on Commons is anywhere near this
+Image.MAX_IMAGE_PIXELS = 80_000_000   # refuse a decompression bomb outright
+
+
+def download_image(url):
+    """Fetch one image, refusing anything that is not a bounded image file
+    served by Wikimedia's own file host."""
+    if not url or not url.startswith("https://upload.wikimedia.org/"):
+        raise ValueError(f"refusing a non-Wikimedia URL: {url!r}")
+    r = requests.get(url, headers={"User-Agent": UA}, timeout=60, stream=True)
+    r.raise_for_status()
+    ctype = (r.headers.get("Content-Type") or "").split(";")[0].strip()
+    if not ctype.startswith("image/"):
+        raise ValueError(f"not an image: {ctype!r}")
+    buf = io.BytesIO()
+    for chunk in r.iter_content(64 * 1024):
+        buf.write(chunk)
+        if buf.tell() > MAX_BYTES:
+            raise ValueError(f"over {MAX_BYTES // 1048576} MB, skipped")
+    return buf.getvalue()
+
+
 def save_sizes(raw, aid):
+    if not re.fullmatch(r"[a-z0-9-]+", aid):
+        raise ValueError(f"unsafe record id: {aid!r}")
     img = Image.open(io.BytesIO(raw))
     if img.mode not in ("RGB", "L"):
         img = img.convert("RGB")
@@ -168,7 +212,7 @@ def main():
             fail += len(records)
             continue
         try:
-            raw = requests.get(meta["url"], headers={"User-Agent": UA}, timeout=60).content
+            raw = download_image(meta["url"])
             time.sleep(PAUSE)
         except Exception as e:                       # noqa: BLE001
             print(f"  ! download {title}: {e}")

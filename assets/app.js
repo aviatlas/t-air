@@ -150,7 +150,7 @@
   var MAX_SEATS = 1, MAX_SPEED = 1;
   var shown = PAGE;
   var state = { q: "", cat: "", type: "", engine: "", iran: false, prod: false,
-                decade: null, sort: "relevance" };
+                checked: false, decade: null, sort: "relevance" };
   var compare = [];   /* ids, at most three */
 
   var $q = document.getElementById("q");
@@ -277,6 +277,7 @@
       if (state.engine === "jet" && a.engineKind !== "jet") return false;
       if (state.iran && !a.iran) return false;
       if (state.prod && a.status !== "production") return false;
+      if (state.checked && !a.checked) return false;
       if (state.decade != null) {
         var y = a.introduced || a.firstFlight;
         if (!y || Math.floor(y / 10) * 10 !== state.decade) return false;
@@ -350,6 +351,9 @@
     }, "chip--iran"));
     $filters.appendChild(chip(t("chipProd"), state.prod, function () {
       state.prod = !state.prod; render();
+    }));
+    $filters.appendChild(chip(t("provFilter"), state.checked, function () {
+      state.checked = !state.checked; render();
     }));
 
     var wrap = el("div", "sortwrap");
@@ -635,7 +639,7 @@
       shot.appendChild(img);
     } else {
       shot.classList.add("is-empty");
-      shot.appendChild(silhouette());
+      shot.appendChild(silhouette(a));
     }
     b.appendChild(shot);
     }
@@ -735,14 +739,139 @@
   var REF_CIVIL = { label: "Airbus A320", lengthM: 37.6, spanM: 35.8, heightM: 11.8 };
   var REF_MIL   = { label: "F-16C", lengthM: 15.0, spanM: 9.96, heightM: 4.88 };
 
-  function silhouette() {
-    var ns = "http://www.w3.org/2000/svg";
-    var svg = document.createElementNS(ns, "svg");
-    svg.setAttribute("viewBox", "0 0 120 60");
-    svg.setAttribute("fill", "currentColor");
-    var p = document.createElementNS(ns, "path");
-    p.setAttribute("d", "M60 4c2.6 0 4.4 4.6 4.8 12.4L110 32v4.4l-45 -8.6v14l10.5 7.4V52L60 48.4 44.5 52v-2.8L55 41.8v-14L10 36.4V32l45.2 -15.6C55.6 8.6 57.4 4 60 4Z");
-    svg.appendChild(p);
+  /* ---------------------------------------------------------- silhouettes */
+
+  /* Plan-view outlines, nose left, in a 120 × 60 box. They are drawn from the
+     record rather than picked once, so a single-engine piston fighter gets a
+     nose propeller and a four-engine propliner gets four — the shape carries
+     real information instead of being decoration. Nothing here is traced from
+     a photograph or a drawing; they are built from primitives in code. */
+
+  var SVG_NS = "http://www.w3.org/2000/svg";
+
+  function svgEl(name, attrs) {
+    var n = document.createElementNS(SVG_NS, name);
+    for (var k in attrs) if (attrs.hasOwnProperty(k)) n.setAttribute(k, attrs[k]);
+    return n;
+  }
+
+  /* A fuselage: rounded nose at the left, tapering to a rounded tail. Drawn
+     blunt on purpose — a long thin spike reads as a dart, not an aircraft. */
+  function body(x0, x1, halfW) {
+    var y = 30, w = halfW;
+    return "M" + (x0 + 5) + " " + y +
+           "C" + (x0 - 1) + " " + (y - w * 0.5) + " " + (x0 + 3) + " " + (y - w) +
+           " " + (x0 + 15) + " " + (y - w) +
+           "L" + (x1 - 5) + " " + (y - w * 0.72) +
+           "C" + x1 + " " + (y - w * 0.5) + " " + x1 + " " + (y + w * 0.5) +
+           " " + (x1 - 5) + " " + (y + w * 0.72) +
+           "L" + (x0 + 15) + " " + (y + w) +
+           "C" + (x0 + 3) + " " + (y + w) + " " + (x0 - 1) + " " + (y + w * 0.5) +
+           " " + (x0 + 5) + " " + y + "Z";
+  }
+
+  /* a wing pair: root at xr, tip at xt, sweeping back by `sweep` */
+  function wings(xr, chord, span, sweep) {
+    var out = [];
+    [-1, 1].forEach(function (s) {
+      out.push("M" + xr + " " + (30 + s * 3) +
+               "L" + (xr + sweep) + " " + (30 + s * span) +
+               "L" + (xr + sweep + chord) + " " + (30 + s * span) +
+               "L" + (xr + chord * 1.6) + " " + (30 + s * 3) + "Z");
+    });
+    return out;
+  }
+
+  var SHAPES = {
+    jet: function () {
+      return { paths: [body(8, 112, 6.5)]
+        .concat(wings(52, 9, 25, 20))
+        .concat(wings(94, 6, 13, 11)),
+        circles: [] };
+    },
+    wide: function () {
+      return { paths: [body(6, 114, 8.5)]
+        .concat(wings(46, 12, 28, 24))
+        .concat(wings(96, 7, 15, 12)),
+        circles: [] };
+    },
+    prop: function (n) {
+      var discs = [];
+      if (n <= 1) {
+        discs.push({ cx: 12, cy: 30, r: 10 });
+      } else {
+        var span = 26, step = span / (n / 2 + 0.4);
+        for (var i = 1; i <= n / 2; i++) {
+          discs.push({ cx: 44, cy: 30 - i * step, r: 7 });
+          discs.push({ cx: 44, cy: 30 + i * step, r: 7 });
+        }
+      }
+      return { paths: [body(12, 110, 6)]
+        .concat(wings(46, 12, 26, 2))
+        .concat(wings(96, 7, 14, 3)),
+        circles: discs };
+    },
+    fighter: function () {
+      return { paths: [body(6, 110, 5.5),
+        /* delta wing, sharply swept */
+        "M50 27L70 6L82 6L86 27Z", "M50 33L70 54L82 54L86 33Z",
+        /* twin tailplanes */
+        "M96 28L106 16L112 16L112 28Z", "M96 32L106 44L112 44L112 32Z"],
+        circles: [] };
+    },
+    bomber: function () {
+      return { paths: [body(6, 114, 7),
+        "M46 27L74 4L88 4L92 27Z", "M46 33L74 56L88 56L92 33Z",
+        "M98 28L108 18L114 18L114 28Z", "M98 32L108 42L114 42L114 32Z"],
+        circles: [] };
+    },
+    heli: function () {
+      return { paths: ["M30 30C30 22 38 18 48 18L64 22L66 28L66 32L64 38L48 42C38 42 30 38 30 30Z",
+        /* tail boom and fin */
+        "M66 28L102 28.8L102 31.2L66 32Z", "M98 30L104 20L107 20.6L102 30Z"],
+        circles: [{ cx: 48, cy: 30, r: 26, ring: true }, { cx: 105, cy: 21, r: 5.5, ring: true }] };
+    },
+    uav: function () {
+      return { paths: ["M14 30C14 24 22 21 32 21L96 27L96 33L32 39C22 39 14 36 14 30Z",
+        /* long straight wing */
+        "M52 27L56 4L64 4L64 27Z", "M52 33L56 56L64 56L64 33Z",
+        /* V-tail */
+        "M92 29L104 14L108 15L100 30Z", "M92 31L104 46L108 45L100 30Z"],
+        circles: [] };
+    },
+    awacs: function () {
+      var s = SHAPES.jet();
+      s.circles = [{ cx: 82, cy: 30, r: 13, ring: true }];
+      return s;
+    }
+  };
+
+  function shapeFor(a) {
+    if (!a) return SHAPES.jet();
+    if (a.type === "uav") return SHAPES.uav();
+    if (a.type === "awacs") return SHAPES.awacs();
+    if (a.type === "helicopter" || a.engineKind === "turboshaft") return SHAPES.heli();
+    if (a.engineKind === "piston" || a.engineKind === "turboprop") {
+      return SHAPES.prop(a.engineCount || 2);
+    }
+    if (a.type === "fighter" || a.type === "attack" || a.type === "trainer" ||
+        a.type === "recon") return SHAPES.fighter();
+    if (a.type === "bomber") return SHAPES.bomber();
+    if (a.type === "widebody") return SHAPES.wide();
+    return SHAPES.jet();
+  }
+
+  function silhouette(a) {
+    var spec = shapeFor(a);
+    var svg = svgEl("svg", { viewBox: "0 0 120 60", fill: "currentColor",
+                             "aria-hidden": "true" });
+    spec.paths.forEach(function (d) { svg.appendChild(svgEl("path", { d: d })); });
+    spec.circles.forEach(function (c) {
+      svg.appendChild(svgEl("circle", c.ring
+        ? { cx: c.cx, cy: c.cy, r: c.r, fill: "none", stroke: "currentColor",
+            "stroke-width": 1.6, opacity: 0.75 }
+        : { cx: c.cx, cy: c.cy, r: c.r, opacity: 0.8 }));
+    });
     return svg;
   }
 
@@ -779,7 +908,7 @@
         figure.textContent = "";
         figure.classList.remove("is-empty");
         figure.appendChild(big);
-        figure.appendChild(el("figcaption", null, photoCredit(a)));
+        figure.appendChild(creditNode(a));
       };
       big.onerror = function () { fetchRemote(a, figure); };
       big.src = local;
@@ -796,14 +925,19 @@
     }
     var title = encodeURIComponent(a.wiki || a.model);
     fetch("https://en.wikipedia.org/api/rest_v1/page/summary/" + title, {
-      headers: { Accept: "application/json" }
+      headers: { Accept: "application/json" },
+      referrerPolicy: "no-referrer"
     })
       .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
       .then(function (j) {
         var src = (j.originalimage && j.originalimage.source) ||
                   (j.thumbnail && j.thumbnail.source);
-        if (!src) { fail(); return; }
+        /* The URL comes from a third party. Images do not execute, but there
+           is no reason to fetch one from anywhere except Wikimedia's own file
+           host, so anything else is refused. */
+        if (!src || !/^https:\/\/upload\.wikimedia\.org\//.test(src)) { fail(); return; }
         var img = new Image();
+        img.referrerPolicy = "no-referrer";
         img.alt = a.model;
         img.onload = function () {
           figure.textContent = "";
@@ -829,6 +963,23 @@
     return meta.credit + " · " + meta.licence + " · Wikimedia Commons";
   }
 
+  /* CC BY and CC BY-SA ask for the author, the licence, and a link back to
+     the work. Plain text satisfies the first two; the link is this. */
+  function creditNode(a) {
+    var cap = el("figcaption");
+    var meta = PHOTOS[a.id];
+    if (!meta || !meta.page) {
+      cap.textContent = photoCredit(a);
+      return cap;
+    }
+    var link = el("a", null, photoCredit(a));
+    link.href = meta.page;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    cap.appendChild(link);
+    return cap;
+  }
+
   var lastFocus = null;
 
   function openSheet(a) {
@@ -840,7 +991,7 @@
 
     var fig = el("figure", "sheet__photo");
     var fb = el("div", "photo-fallback");
-    fb.appendChild(silhouette());
+    fb.appendChild(silhouette(a));
     fb.appendChild(el("span", null, t("photoLoading")));
     fig.appendChild(fb);
     sheet.appendChild(fig);
@@ -937,6 +1088,14 @@
     s3.appendChild(g3);
     body.appendChild(s3);
 
+    // Provenance. A record that has been read against its cited source says
+    // so; one that has not says that instead. Silence on an unchecked record
+    // would let a reader assume the whole database was checked.
+    var prov = el("div", "prov" + (a.checked ? " prov--ok" : ""));
+    prov.appendChild(el("span", "prov__dot"));
+    prov.appendChild(el("span", null, a.checked ? t("provChecked") : t("provUnchecked")));
+    body.appendChild(prov);
+
     var links = el("div", "sheet__links");
     var wl = el("a", "linkbtn", t("wikiBtn"));
     wl.href = "https://en.wikipedia.org/wiki/" + encodeURIComponent((a.wiki || a.model).replace(/ /g, "_"));
@@ -951,7 +1110,8 @@
       closeSheet();
       $q.value = a.family || a.mfr;
       state.q = $q.value;
-      state.cat = ""; state.type = ""; state.engine = ""; state.iran = false; state.prod = false;
+      state.cat = ""; state.type = ""; state.engine = "";
+      state.iran = false; state.prod = false; state.checked = false;
       render();
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
@@ -1076,6 +1236,10 @@
   function csvCell(v) {
     if (v == null) return "";
     var s = String(v);
+    /* A cell beginning with = + - @ or a control character is executed as a
+       formula by Excel and Sheets when the file is opened. Prefix an
+       apostrophe so it is read as text — the standard mitigation. */
+    if (/^[=+\-@\t\r]/.test(s)) s = "'" + s;
     return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
   }
 
@@ -1186,7 +1350,8 @@
       total: d(DATA.length), civil: d(civ), mil: d(DATA.length - civ),
       mfrs: d(Object.keys(mfrs).length),
       iran: d(DATA.filter(function (a) { return a.iran; }).length),
-      family: d(fam)
+      family: d(fam),
+      checked: d(DATA.filter(function (a) { return a.checked; }).length)
     });
     sheet.appendChild(body);
 
@@ -1205,6 +1370,10 @@
         "<h4>منابع</h4>",
         "<p>ارقام از مواد عمومی سازندگان و دانشنامه‌ها گردآوری شده است. این یک مرجع " +
         "سریع است، نه سند عملیاتی؛ برای هر کاربرد واقعی به اسناد رسمی سازنده مراجعه کنید.</p>",
+        "<p><b>" + n.checked + " رکورد از " + n.total + " رکورد</b> فیلد به فیلد با مقاله‌ی " +
+        "ویکی‌پدیای همان مدل مقایسه شده و در صفحه‌ی هر مدل علامت خورده است. بقیه هنوز " +
+        "مقایسه نشده‌اند و همین را هم صریح می‌گویند؛ سکوت درباره‌ی رکورد بررسی‌نشده " +
+        "خواننده را به اشتباه می‌انداخت. با فیلتر «فقط بررسی‌شده» می‌توانید تنها همان‌ها را ببینید.</p>",
         "<h4>قراردادها</h4>",
         "<ul>",
         "<li><b>نسخه در برابر خانواده</b> — هر رکورد یک نسخه است، ولی گاهی تنها عددِ " +
@@ -1218,6 +1387,14 @@
         "<li><b>وضعیت</b> — «در حال تولید» یعنی خط تولید باز است، «در سرویس» یعنی " +
         "تولیدش تمام شده ولی هنوز پرواز می‌کند، و «بازنشسته» یعنی دیگر پرواز نمی‌کند.</li>",
         "</ul>",
+        "<h4>حق نشر و منبع</h4>",
+        "<p>بخشی از داده‌ها از ویکی‌پدیای انگلیسی گرفته شده که متنش با مجوز " +
+        "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" target=\"_blank\" " +
+        "rel=\"noopener noreferrer\">CC BY-SA 4.0</a> منتشر می‌شود؛ همین دیتابیس هم با " +
+        "همان مجوز منتشر شده است. داده‌ها <b>تغییر کرده‌اند</b>: واحدها متریک شده، برای هر " +
+        "نسخه یک رکورد جدا ساخته شده، توضیح‌ها به فارسی نوشته شده و خطاهای پیداشده اصلاح " +
+        "شده است. متن مقاله‌ها بازنشر نشده. کد سایت با مجوز MIT است و عکس‌ها مجوز عکاس " +
+        "خودشان را نگه می‌دارند.</p>",
         "<h4>ممیزی</h4>",
         "<p>اصلاحات داده به‌صورت لایه‌ی جدا در <code>scripts/fixes/</code> ثبت می‌شود، " +
         "نه ویرایش مستقیم جدول‌ها، تا معلوم بماند چه چیزی و چرا عوض شده. هر فایل یک " +
@@ -1239,6 +1416,10 @@
       "<p>Figures are compiled from manufacturers' public material and reference works. " +
       "This is a quick reference, not an operational document; for any real use, go to " +
       "the manufacturer's own documentation.</p>",
+      "<p><b>" + n.checked + " of " + n.total + " records</b> have been read field by field " +
+      "against their type's Wikipedia article and are marked as such on the record. The rest " +
+      "say plainly that they have not been — staying silent about an unchecked record would " +
+      "mislead. The <i>source-checked only</i> filter shows just the checked ones.</p>",
       "<h4>Conventions</h4>",
       "<ul>",
       "<li><b>Variant vs family</b> — each record is one variant, but sometimes the only " +
@@ -1255,6 +1436,14 @@
       "means production has ended but the type still flies, and <i>retired</i> means it " +
       "no longer flies.</li>",
       "</ul>",
+      "<h4>Copyright and sources</h4>",
+      "<p>Part of this data is derived from the English Wikipedia, whose text is " +
+      "available under <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" " +
+      "target=\"_blank\" rel=\"noopener noreferrer\">CC BY-SA 4.0</a>; this database " +
+      "carries the same licence. It has been <b>changed</b>: units made metric, one " +
+      "record per variant, descriptions written fresh in Persian and English, and errors " +
+      "corrected where an audit found them. No article text is reproduced. The site code " +
+      "is MIT; photographs keep their own photographers' licences.</p>",
       "<h4>Auditing</h4>",
       "<p>Corrections are recorded as a separate layer in <code>scripts/fixes/</code> rather " +
       "than edited into the source tables, so what changed and why stays readable. Each file " +

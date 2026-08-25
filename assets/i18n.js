@@ -78,6 +78,9 @@ window.TAIR_I18N = (function () {
       exportSaved: "فایل ذخیره شد",
       exportCsvBlocked: "خروجی CSV در این نما در دسترس نیست؛ JSON را امتحان کنید.",
       aboutLink: "درباره‌ی داده‌ها",
+      provChecked: "این رکورد فیلد به فیلد با مقاله‌ی ویکی‌پدیای همین مدل مقایسه شده است",
+      provUnchecked: "این رکورد هنوز با منبع مقایسه نشده است",
+      provFilter: "فقط بررسی‌شده",
       aboutTitle: "درباره‌ی داده‌های T-AIR"
     },
 
@@ -153,6 +156,9 @@ window.TAIR_I18N = (function () {
       exportSaved: "File saved",
       exportCsvBlocked: "CSV is not available in this view; try JSON instead.",
       aboutLink: "About the data",
+      provChecked: "Checked field by field against this type's Wikipedia article",
+      provUnchecked: "Not yet checked against a source",
+      provFilter: "Source-checked only",
       aboutTitle: "About the T-AIR data"
     }
   };

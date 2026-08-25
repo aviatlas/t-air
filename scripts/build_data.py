@@ -193,7 +193,7 @@ def apply_corrections(data):
     DROP = [id, ...] for records that should not be in the database at all.
     """
     import glob
-    fixes, drop, family = {}, set(), set()
+    fixes, drop, family, verified = {}, set(), set(), set()
     here = os.path.dirname(os.path.abspath(__file__))
     for path in sorted(glob.glob(os.path.join(here, "fixes", "*.py"))):
         name = os.path.splitext(os.path.basename(path))[0]
@@ -204,8 +204,15 @@ def apply_corrections(data):
             fixes.setdefault(k, {}).update(v)
         drop.update(getattr(mod, "DROP", []))
         family.update(getattr(mod, "FAMILY_COUNT", []))
+        # VERIFIED lists records that were read against their cited source,
+        # field by field. The interface says so on the record, and says
+        # nothing on the ones that were not — the absence is the honest part.
+        verified.update(getattr(mod, "VERIFIED", []))
 
     by_id = {d["id"]: d for d in data}
+    for k in verified:
+        if k in by_id:
+            by_id[k]["checked"] = True
     for k in family:
         if k in by_id:
             # the interface marks these so a reader does not read a family
@@ -220,7 +227,7 @@ def apply_corrections(data):
             if rec.get(field) != val:
                 rec[field] = val
                 applied += 1
-    return applied, drop
+    return applied, drop, len(verified)
 
 
 def attach_english(data):
@@ -267,17 +274,19 @@ def main():
             [to_obj(r, MIL_COLS, "military") for r in MIL_ROWS])
     data = [d for d in data if d["id"] not in EXCLUDE]
     translated = attach_english(data)
-    applied, drop = apply_corrections(data)
+    applied, drop, checked = apply_corrections(data)
     data = [d for d in data if d["id"] not in drop]
     check(data)
     data.sort(key=lambda d: (d["category"], d["mfr"], d["model"]))
     with open(out, "w", encoding="utf-8") as f:
-        json.dump({"version": 2, "count": len(data), "aircraft": data},
+        json.dump({"version": 3, "count": len(data),
+                   "checkedAgainst": "en.wikipedia.org", "checkedCount": checked,
+                   "aircraft": data},
                   f, ensure_ascii=False, separators=(",", ":"))
     civ = sum(1 for d in data if d["category"] == "civil")
     print(f"wrote {len(data)} aircraft ({civ} civil, {len(data)-civ} military, "
           f"{translated} with English text, {applied} audited corrections, "
-          f"{len(drop)} dropped) -> {out}")
+          f"{checked} source-checked, {len(drop)} dropped) -> {out}")
 
 
 if __name__ == "__main__":
