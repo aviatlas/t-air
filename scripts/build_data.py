@@ -194,6 +194,7 @@ def apply_corrections(data):
     """
     import glob
     fixes, drop, family, verified = {}, set(), set(), set()
+    checked_on = None
     here = os.path.dirname(os.path.abspath(__file__))
     for path in sorted(glob.glob(os.path.join(here, "fixes", "*.py"))):
         name = os.path.splitext(os.path.basename(path))[0]
@@ -208,6 +209,9 @@ def apply_corrections(data):
         # field by field. The interface says so on the record, and says
         # nothing on the ones that were not — the absence is the honest part.
         verified.update(getattr(mod, "VERIFIED", []))
+        # the month the reading was done — a mark means "agreed with the
+        # article then", and an article can change afterwards
+        checked_on = getattr(mod, "CHECKED_ON", None) or checked_on
 
     by_id = {d["id"]: d for d in data}
     for k in verified:
@@ -227,7 +231,7 @@ def apply_corrections(data):
             if rec.get(field) != val:
                 rec[field] = val
                 applied += 1
-    return applied, drop, len(verified)
+    return applied, drop, len(verified), checked_on
 
 
 def attach_english(data):
@@ -274,13 +278,14 @@ def main():
             [to_obj(r, MIL_COLS, "military") for r in MIL_ROWS])
     data = [d for d in data if d["id"] not in EXCLUDE]
     translated = attach_english(data)
-    applied, drop, checked = apply_corrections(data)
+    applied, drop, checked, checked_on = apply_corrections(data)
     data = [d for d in data if d["id"] not in drop]
     check(data)
     data.sort(key=lambda d: (d["category"], d["mfr"], d["model"]))
     with open(out, "w", encoding="utf-8") as f:
         json.dump({"version": 3, "count": len(data),
                    "checkedAgainst": "en.wikipedia.org", "checkedCount": checked,
+                   "checkedOn": checked_on,
                    "aircraft": data},
                   f, ensure_ascii=False, separators=(",", ":"))
     civ = sum(1 for d in data if d["category"] == "civil")

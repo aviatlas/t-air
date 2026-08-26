@@ -48,6 +48,36 @@ def inline_photos():
             json.dumps(inline, separators=(",", ":")) + ";</script>\n")
 
 
+def inline_fonts(html):
+    """Fold a local font sheet into the page, as data URIs.
+
+    Only does anything once scripts/fetch_fonts.py has run. The single-file
+    build has to carry everything it needs — a relative url(fonts/…) would
+    resolve to nothing once the file is moved — so the woff2 files ride along
+    base64-encoded. That costs roughly a third more than the raw files; the
+    alternative is a page that renders in the wrong typeface.
+    """
+    import base64
+    sheet = os.path.join(ROOT, "assets", "fonts.css")
+    if '"assets/fonts.css"' not in html or not os.path.exists(sheet):
+        return html
+    css = read("assets", "fonts.css")
+
+    def embed(match):
+        name = match.group(1)
+        path = os.path.join(ROOT, "assets", "fonts", name)
+        if not os.path.exists(path):
+            return match.group(0)
+        raw = open(path, "rb").read()
+        return ("url(data:font/woff2;base64," +
+                base64.b64encode(raw).decode() + ")")
+
+    css = re.sub(r"url\(fonts/([^)]+)\)", embed, css)
+    print(f"  inlined the font sheet, {len(css)/1024:.0f} KB")
+    return html.replace('<link rel="stylesheet" href="assets/fonts.css">',
+                        "<style>\n" + css + "\n</style>")
+
+
 def build():
     html = read("index.html")
     css = read("assets", "styles.css")
@@ -55,6 +85,7 @@ def build():
     i18n = read("assets", "i18n.js")
     data = read("data", "aircraft.json")
 
+    html = inline_fonts(html)
     html = html.replace(
         '<link rel="stylesheet" href="assets/styles.css">',
         "<style>\n" + css + "\n</style>")

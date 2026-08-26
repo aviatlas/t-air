@@ -28,10 +28,17 @@ scripts/merge_parts.py  parts/*.py → military_data.py + civil_extra.py
 scripts/build_single.py → dist/ نسخه‌ی تک‌فایلی
 scripts/fixes/*.py      لایه‌ی اصلاحات ممیزی داده
 scripts/fetch_photos.py دانلود عکس‌های آزاد از ویکی‌مدیا کامانز
+scripts/fetch_fonts.py  محلی‌کردن فونت‌ها (بدون وابستگی به Google Fonts)
 scripts/test_build.py   ۳۵ بررسی روی دیتابیس ساخته‌شده
 scripts/test_ui.js      ۲۴ بررسی رابط با Playwright
 scripts/check.sh        اجرای کل خط لوله و هر دو مجموعه‌ی تست
 ```
+
+## اعتبار داده
+
+**۳۱۳ رکورد از ۶۵۶** فیلد به فیلد با مقاله‌ی ویکی‌پدیای همان مدل مقایسه شده و در
+صفحه‌ی هر مدل علامت خورده است؛ رکوردهای بررسی‌نشده صریحاً می‌گویند بررسی نشده‌اند.
+مجموع اصلاحات ثبت‌شده: **۴۹۷** مورد، در `scripts/fixes/` با دلیل هر کدام.
 
 ## قابلیت‌های رابط
 

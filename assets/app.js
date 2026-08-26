@@ -147,6 +147,9 @@
   /* the cards only grow a picture band once a photo library exists; until
      scripts/fetch_photos.py has run, the compact card is the better card */
   var HAS_PHOTOS = false;
+  /* the month the source reading was done; a mark means the record agreed
+     with its article then, and an article can change afterwards */
+  var CHECKED_ON = "";
   var MAX_SEATS = 1, MAX_SPEED = 1;
   var shown = PAGE;
   var state = { q: "", cat: "", type: "", engine: "", iran: false, prod: false,
@@ -1093,7 +1096,10 @@
     // would let a reader assume the whole database was checked.
     var prov = el("div", "prov" + (a.checked ? " prov--ok" : ""));
     prov.appendChild(el("span", "prov__dot"));
-    prov.appendChild(el("span", null, a.checked ? t("provChecked") : t("provUnchecked")));
+    prov.appendChild(el("span", null,
+      a.checked
+        ? t("provChecked") + (CHECKED_ON ? " · " + d(CHECKED_ON) : "")
+        : t("provUnchecked")));
     body.appendChild(prov);
 
     var links = el("div", "sheet__links");
@@ -1351,7 +1357,8 @@
       mfrs: d(Object.keys(mfrs).length),
       iran: d(DATA.filter(function (a) { return a.iran; }).length),
       family: d(fam),
-      checked: d(DATA.filter(function (a) { return a.checked; }).length)
+      checked: d(DATA.filter(function (a) { return a.checked; }).length),
+      on: d(CHECKED_ON)
     });
     sheet.appendChild(body);
 
@@ -1371,7 +1378,8 @@
         "<p>ارقام از مواد عمومی سازندگان و دانشنامه‌ها گردآوری شده است. این یک مرجع " +
         "سریع است، نه سند عملیاتی؛ برای هر کاربرد واقعی به اسناد رسمی سازنده مراجعه کنید.</p>",
         "<p><b>" + n.checked + " رکورد از " + n.total + " رکورد</b> فیلد به فیلد با مقاله‌ی " +
-        "ویکی‌پدیای همان مدل مقایسه شده و در صفحه‌ی هر مدل علامت خورده است. بقیه هنوز " +
+        "ویکی‌پدیای همان مدل مقایسه شده — خواندنِ " + n.on + " — و در صفحه‌ی هر مدل علامت " +
+        "خورده است. بقیه هنوز " +
         "مقایسه نشده‌اند و همین را هم صریح می‌گویند؛ سکوت درباره‌ی رکورد بررسی‌نشده " +
         "خواننده را به اشتباه می‌انداخت. با فیلتر «فقط بررسی‌شده» می‌توانید تنها همان‌ها را ببینید.</p>",
         "<h4>قراردادها</h4>",
@@ -1417,7 +1425,8 @@
       "This is a quick reference, not an operational document; for any real use, go to " +
       "the manufacturer's own documentation.</p>",
       "<p><b>" + n.checked + " of " + n.total + " records</b> have been read field by field " +
-      "against their type's Wikipedia article and are marked as such on the record. The rest " +
+      "against their type's Wikipedia article, read in " + n.on + ", and are marked as such " +
+      "on the record. The rest " +
       "say plainly that they have not been — staying silent about an unchecked record would " +
       "mislead. The <i>source-checked only</i> filter shows just the checked ones.</p>",
       "<h4>Conventions</h4>",
@@ -1529,13 +1538,17 @@
 
   if (window.__AIRCRAFT__) {
     PHOTOS = (window.__PHOTOS__ || {}).photos || {};
+    CHECKED_ON = window.__AIRCRAFT__.checkedOn || "";
     boot(window.__AIRCRAFT__.aircraft);
   } else {
     Promise.all([
       fetch("data/aircraft.json").then(function (r) { return r.json(); }),
       loadPhotoIndex()
     ])
-      .then(function (res) { boot(res[0].aircraft); })
+      .then(function (res) {
+        CHECKED_ON = res[0].checkedOn || "";
+        boot(res[0].aircraft);
+      })
       .catch(function () {
         $empty.hidden = false;
         $empty.querySelector("strong").textContent = t("loadFail");
