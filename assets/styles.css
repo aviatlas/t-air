@@ -1021,3 +1021,37 @@ footer { border-top: 1px solid var(--line); background: var(--surface); }
 }
 .prov--ok { color: var(--ink); border-color: color-mix(in oklab, var(--ok) 32%, var(--line)); }
 .prov--ok .prov__dot { background: var(--ok); opacity: 1; }
+
+/* ------------------------------------------------------------------ print ---
+   A record printed from the detail sheet should come out as a spec sheet:
+   the figures, the description, the source — and none of the furniture that
+   only makes sense on screen. Someone printing this is taking it to a desk or
+   a classroom, so it prints in black on white regardless of the theme. */
+@media print {
+  .topbar, .hero, .dock, .timeline, .tray, .minibtn, .close-btn, .sheet__links,
+  #more, #toast, .card__pick, .skip, footer { display: none !important; }
+
+  :root, :root[data-theme="dark"] {
+    --bg: #fff; --surface: #fff; --surface-2: #fff;
+    --ink: #000; --ink-2: #333; --line: #bbb; --line-soft: #ddd;
+  }
+  body { background: #fff; color: #000; }
+
+  /* the open record becomes the page */
+  #scrim { position: static; background: none; padding: 0; display: block; }
+  .sheet {
+    box-shadow: none; border: 0; max-height: none; width: 100%;
+    max-width: none; border-radius: 0;
+  }
+  .sheet__photo { max-height: 8cm; }
+  .sheet__body { overflow: visible; }
+
+  /* with no sheet open, print the result grid as a plain list */
+  #grid { display: block; }
+  .cardwrap { break-inside: avoid; page-break-inside: avoid; margin: 0 0 4mm; }
+  .card { box-shadow: none; border: 1px solid #ccc; }
+  .card__shot { display: none; }
+
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; color: #555; }
+  .prov { border-color: #bbb; }
+}

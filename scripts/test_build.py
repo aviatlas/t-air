@@ -143,6 +143,23 @@ for path in sorted(glob.glob(os.path.join(ROOT, "scripts", "fixes", "*.py"))):
                   for k, n in collections.Counter(keys).items() if n > 1]
 check("no correction is shadowed by a repeated key", dupes)
 
+# The static per-record pages are what a search engine and a link preview see;
+# a record without one is invisible outside the app.
+pages = os.path.join(ROOT, "a")
+check("every record has a static page",
+      [a["id"] for a in AIRCRAFT
+       if not os.path.exists(os.path.join(pages, a["id"] + ".html"))])
+check("no orphan page left behind by a dropped record",
+      [f for f in (os.listdir(pages) if os.path.isdir(pages) else [])
+       if f.endswith(".html") and f[:-5] not in ids])
+
+# Offline support is only real if the worker's shell list matches the files
+# that actually exist — addAll fails the whole install on one missing file.
+sw = open(os.path.join(ROOT, "sw.js"), encoding="utf-8").read()
+shell = re.findall(r'"\./([^"]*)"', sw)
+check("the service worker shell exists",
+      [f for f in shell if f and not os.path.exists(os.path.join(ROOT, f))])
+
 print()
 if FAILURES:
     print(f"{len(FAILURES)} check(s) failed\n")

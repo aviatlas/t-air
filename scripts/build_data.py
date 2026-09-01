@@ -218,9 +218,11 @@ def apply_corrections(data):
         if k in by_id:
             by_id[k]["checked"] = True
     for k in family:
-        if k in by_id:
-            # the interface marks these so a reader does not read a family
-            # total as this one variant's output
+        # The flag qualifies a number: it says "this count is the whole type,
+        # not this variant". On a record with no count it qualifies nothing and
+        # would render as a label with no figure beside it, so it is dropped
+        # rather than carried.
+        if k in by_id and by_id[k].get("built") is not None:
             by_id[k]["builtFamily"] = True
     applied = 0
     for k, patch in fixes.items():

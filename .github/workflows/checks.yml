@@ -21,10 +21,11 @@ jobs:
           python3 scripts/build_data.py
           python3 scripts/test_build.py
           python3 scripts/build_single.py
+          python3 scripts/build_pages.py
 
       - name: Fail if the build changed a committed file
         run: |
-          git diff --exit-code -- data/aircraft.json dist/ \
+          git diff --exit-code -- data/aircraft.json dist/ a/ \
               scripts/military_data.py scripts/civil_extra.py \
             || (echo "::error::a generated file is out of date — run scripts/check.sh and commit the result" && exit 1)
 

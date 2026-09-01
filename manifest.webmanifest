@@ -1,0 +1,19 @@
+{
+  "name": "T-AIR — اطلس هواپیماهای جهان",
+  "short_name": "T-AIR",
+  "description": "مشخصات فنی ۶۵۶ هواپیمای کشوری و نظامی، دوزبانه و قابل جست‌وجو.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "fa",
+  "dir": "rtl",
+  "background_color": "#f7f9fb",
+  "theme_color": "#0b6f80",
+  "categories": ["education", "reference", "travel"],
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

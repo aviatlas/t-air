@@ -78,6 +78,28 @@ def inline_fonts(html):
                         "<style>\n" + css + "\n</style>")
 
 
+def stamp_worker(data):
+    """Give sw.js a cache name that changes when the build does.
+
+    Without this, a returning reader is served whatever the worker cached the
+    first time — a site that quietly never updates is worse than one with no
+    cache at all. The signature is a short digest of the data file, so any
+    change to the database (which is what a deploy is, in practice) mints a
+    new cache and the activate handler drops the old one.
+    """
+    import hashlib
+    path = os.path.join(ROOT, "sw.js")
+    if not os.path.exists(path):
+        return
+    sig = hashlib.sha1(data.encode("utf-8")).hexdigest()[:10]
+    src = read("sw.js")
+    new = re.sub(r'const CACHE = "[^"]*";', f'const CACHE = "t-air-{sig}";', src, count=1)
+    if new != src:
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(new)
+        print(f"  service worker cache: t-air-{sig}")
+
+
 def build():
     html = read("index.html")
     css = read("assets", "styles.css")
@@ -85,6 +107,10 @@ def build():
     i18n = read("assets", "i18n.js")
     data = read("data", "aircraft.json")
 
+    stamp_worker(data)
+    # the single-file build is one file with no origin of its own: a manifest
+    # link and an apple-touch icon would both point at nothing
+    html = re.sub(r'\s*<link rel="(manifest|apple-touch-icon)"[^>]*>', "", html)
     html = inline_fonts(html)
     html = html.replace(
         '<link rel="stylesheet" href="assets/styles.css">',

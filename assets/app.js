@@ -1536,6 +1536,17 @@
       .catch(function () { /* no local library yet */ });
   }
 
+  /* Offline. Only on a real https origin: the single-file build and a
+     file:// copy have nothing to cache and no worker scope, and registering
+     from there just throws. Failure is silent because an unavailable cache
+     changes nothing about how the page works. */
+  if ("serviceWorker" in navigator && location.protocol === "https:" &&
+      !window.__AIRCRAFT__) {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("sw.js").catch(function () {});
+    });
+  }
+
   if (window.__AIRCRAFT__) {
     PHOTOS = (window.__PHOTOS__ || {}).photos || {};
     CHECKED_ON = window.__AIRCRAFT__.checkedOn || "";

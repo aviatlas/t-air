@@ -15,6 +15,9 @@ echo
 echo "== build single-file"
 python3 scripts/build_single.py
 echo
+echo "== build per-record pages"
+python3 scripts/build_pages.py
+echo
 if [ -d node_modules/playwright ] || node -e "require('playwright')" 2>/dev/null; then
   echo "== interface checks"
   node scripts/test_ui.js
