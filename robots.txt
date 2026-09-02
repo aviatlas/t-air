@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://ta100900.github.io/t-air/sitemap.xml
