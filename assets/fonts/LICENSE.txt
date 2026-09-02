@@ -1,0 +1,13 @@
+These fonts are licensed under the SIL Open Font License, Version 1.1.
+
+    Vazirmatn               https://github.com/rastikerdar/vazirmatn
+    IBM Plex Sans Condensed https://github.com/IBM/plex
+    IBM Plex Mono           https://github.com/IBM/plex
+    Archivo                 https://github.com/Omnibus-Type/Archivo
+
+The full licence text is at https://scripts.sil.org/OFL
+
+In short: you may use, study, modify and redistribute these fonts, including
+inside a commercial product, as long as you do not sell them on their own and
+as long as this notice travels with them. If you modify one, it has to be
+renamed.
