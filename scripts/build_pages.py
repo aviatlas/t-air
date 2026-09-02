@@ -180,6 +180,69 @@ footer {{ margin-top: 34px; padding-top: 16px; border-top: 1px solid var(--line)
 """
 
 
+INDEX_PAGE = """<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>فهرست همه‌ی هواپیماها | T-AIR</title>
+<meta name="description" content="فهرست کامل {count} هواپیمای اطلس T-AIR، به تفکیک سازنده.">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<style>
+:root {{ color-scheme: light dark; --bg:#f7f9fb; --ink:#0c1620; --muted:#5b7085;
+        --line:#dfe6ec; --accent:#0b6f80; }}
+@media (prefers-color-scheme: dark) {{
+  :root {{ --bg:#080d13; --ink:#e0e8ef; --muted:#8fa3b5; --line:#1e2c3a; --accent:#3fc6d8; }}
+}}
+body {{ margin:0; background:var(--bg); color:var(--ink); padding:24px 16px 64px;
+        font-family:Vazirmatn,"Segoe UI",Tahoma,system-ui,sans-serif; line-height:1.7; }}
+main {{ max-width:940px; margin:0 auto; }}
+a {{ color:var(--accent); }}
+h1 {{ font-size:26px; margin:16px 0 6px; }}
+.lede {{ color:var(--muted); margin:0 0 28px; font-size:15px; }}
+h2 {{ font-size:16px; margin:26px 0 8px; padding-bottom:6px;
+      border-bottom:1px solid var(--line); direction:ltr; text-align:right;
+      font-family:"Segoe UI",system-ui,sans-serif; }}
+ul {{ list-style:none; padding:0; margin:0; columns:3; column-gap:24px; }}
+@media (max-width:760px) {{ ul {{ columns:2; }} }}
+@media (max-width:480px) {{ ul {{ columns:1; }} }}
+li {{ break-inside:avoid; font-size:14px; direction:ltr; text-align:right; }}
+li a {{ text-decoration:none; }}
+li a:hover {{ text-decoration:underline; }}
+</style>
+</head>
+<body>
+<main>
+<a href="../" style="font-size:14px">‹ اطلس هواپیماهای T-AIR</a>
+<h1>فهرست همه‌ی هواپیماها</h1>
+<p class="lede">{count} مدل، به ترتیب سازنده. هر نام به صفحه‌ی مشخصات همان هواپیما می‌رود.</p>
+{body}
+</main>
+</body>
+</html>
+"""
+
+
+def write_index():
+    """A browsable index of every record.
+
+    Search engines reach a page by following a link to it. Nothing in the atlas
+    links to a/, so without this page the 656 static pages would sit there
+    unvisited — the sitemap helps, but only after someone submits it. It is also
+    the fastest way for a person to see the whole collection at once.
+    """
+    by_mfr = {}
+    for a in sorted(AIRCRAFT, key=lambda r: (r["mfr"].lower(), r["model"].lower())):
+        by_mfr.setdefault(a["mfr"], []).append(a)
+    parts = []
+    for mfr, items in by_mfr.items():
+        links = "".join(
+            f'<li><a href="{e(a["id"])}.html">{e(a["model"])}</a></li>' for a in items)
+        parts.append(f"<h2>{e(mfr)}</h2>\n<ul>{links}</ul>")
+    with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f:
+        f.write(INDEX_PAGE.format(count=fa(len(AIRCRAFT)), body="\n".join(parts)))
+
+
 def build():
     os.makedirs(OUT, exist_ok=True)
     made = 0
@@ -236,6 +299,8 @@ def build():
         with open(os.path.join(OUT, a["id"] + ".html"), "w", encoding="utf-8") as f:
             f.write(page)
         made += 1
+
+    write_index()
 
     # A sitemap only means something with an absolute address, so it is written
     # when one is known and skipped when it is not.

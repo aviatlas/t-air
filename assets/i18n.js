@@ -81,6 +81,7 @@ window.TAIR_I18N = (function () {
       provChecked: "این رکورد فیلد به فیلد با مقاله‌ی ویکی‌پدیای همین مدل مقایسه شده است",
       provUnchecked: "این رکورد هنوز با منبع مقایسه نشده است",
       provFilter: "فقط بررسی‌شده",
+      indexLink: "فهرست همه‌ی هواپیماها",
       aboutTitle: "درباره‌ی داده‌های T-AIR"
     },
 
@@ -159,6 +160,7 @@ window.TAIR_I18N = (function () {
       provChecked: "Checked field by field against this type's Wikipedia article",
       provUnchecked: "Not yet checked against a source",
       provFilter: "Source-checked only",
+      indexLink: "Index of every aircraft",
       aboutTitle: "About the T-AIR data"
     }
   };

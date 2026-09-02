@@ -151,7 +151,7 @@ check("every record has a static page",
        if not os.path.exists(os.path.join(pages, a["id"] + ".html"))])
 check("no orphan page left behind by a dropped record",
       [f for f in (os.listdir(pages) if os.path.isdir(pages) else [])
-       if f.endswith(".html") and f[:-5] not in ids])
+       if f.endswith(".html") and f != "index.html" and f[:-5] not in ids])
 
 # Offline support is only real if the worker's shell list matches the files
 # that actually exist — addAll fails the whole install on one missing file.
