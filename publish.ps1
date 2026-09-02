@@ -91,7 +91,7 @@ if ($dirty) {
 Say "اتصال به GitHub"
 $remote = git remote get-url origin 2>$null
 if (-not $remote) {
-  Write-Host "  اگر هنوز مخزن نساخته‌اید: https://github.com/new"
+  Write-Host "  مخزن باید از قبل روی GitHub ساخته شده باشد: https://github.com/new"
   Write-Host "  نام t-air ، حالت Public ، و هیچ‌کدام از تیک‌های README/gitignore/license را نزنید."
   $user = Read-Host "`nنام کاربری GitHub شما"
   if (-not $user) { Write-Host "بدون نام کاربری نمی‌شود ادامه داد." -ForegroundColor Red; exit 1 }
