@@ -31,6 +31,7 @@ scripts/build_single.py → dist/ نسخه‌ی تک‌فایلی
 scripts/fixes/*.py      لایه‌ی اصلاحات ممیزی داده
 scripts/fetch_photos.py دانلود عکس‌های آزاد از ویکی‌مدیا کامانز
 scripts/fetch_fonts.py  محلی‌کردن فونت‌ها (بدون وابستگی به Google Fonts)
+.github/workflows/assets.yml  اجرای همین دو اسکریپت روی سرورهای GitHub
 scripts/build_pages.py  صفحه‌ی ایستای هر رکورد + sitemap
 scripts/test_build.py   ۳۹ بررسی روی دیتابیس ساخته‌شده
 scripts/test_ui.js      ۲۴ بررسی رابط با Playwright

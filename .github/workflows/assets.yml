@@ -1,0 +1,83 @@
+# Fetch the typefaces and the photograph library on GitHub's runners.
+#
+# Both scripts need the open internet, which is exactly what a CI runner has
+# and what the machine this project is usually developed on may not. Running
+# them here means nobody has to run them locally, and the result is committed
+# straight back to the repository.
+#
+# Start it by hand: Actions → "Fetch fonts and photographs" → Run workflow.
+# Photographs take a while (about 650 files from Wikimedia Commons, with a
+# pause between requests so as not to hammer them), so they are opt-in per run.
+
+name: Fetch fonts and photographs
+
+on:
+  workflow_dispatch:
+    inputs:
+      fonts:
+        description: "Download the four typefaces into the repository"
+        type: boolean
+        default: true
+      photos:
+        description: "Download the photograph library (slow, ~50 MB)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install what the scripts need
+        run: pip install requests pillow
+
+      - name: Typefaces
+        if: ${{ inputs.fonts }}
+        run: python3 scripts/fetch_fonts.py
+
+      - name: Photographs
+        if: ${{ inputs.photos }}
+        run: python3 scripts/fetch_photos.py
+
+      - name: Rebuild everything the new files feed into
+        run: |
+          python3 scripts/merge_parts.py
+          python3 scripts/build_data.py
+          python3 scripts/build_single.py
+          python3 scripts/build_pages.py
+
+      - name: Check before committing
+        # A run that fetched something broken should fail here rather than
+        # push it — the same 39 checks the repository gates every commit on.
+        run: python3 scripts/test_build.py
+
+      - name: Commit the result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "nothing changed — the assets were already in place"
+          else
+            git commit -m "Fetch assets: fonts=${{ inputs.fonts }} photos=${{ inputs.photos }}"
+            git push
+          fi
+
+      - name: Say what landed
+        run: |
+          echo "### Assets" >> $GITHUB_STEP_SUMMARY
+          if [ -d assets/fonts ]; then
+            echo "- fonts: $(ls assets/fonts | wc -l) files, $(du -sh assets/fonts | cut -f1)" >> $GITHUB_STEP_SUMMARY
+          fi
+          if [ -d assets/photos ]; then
+            echo "- photographs: $(find assets/photos -name '*.webp' | wc -l) files, $(du -sh assets/photos | cut -f1)" >> $GITHUB_STEP_SUMMARY
+          fi
