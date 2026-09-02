@@ -1,126 +1,114 @@
-# T-AIR — یک اسکریپت برای همه‌ی کارهایی که روی این کامپیوتر انجام می‌شود.
+# T-AIR - everything that has to run on this machine, in one script.
 #
-#   در PowerShell، داخل همین پوشه:
-#       .\publish.ps1
+#   .\publish.ps1
 #
-# چه می‌کند: فونت‌ها را محلی می‌کند، سایت را دوباره می‌سازد، بررسی‌ها را اجرا
-# می‌کند، کامیت می‌زند، مخزن را به GitHub وصل می‌کند و پوش می‌کند.
+# Fetches the typefaces, rebuilds, runs the checks, commits, and pushes to
+# GitHub. It does not create the repository or turn on Pages - both are two
+# clicks in a browser.
 #
-# چه نمی‌کند: مخزن را روی GitHub نمی‌سازد و Pages را روشن نمی‌کند — هر دو کار
-# دو کلیک در مرورگرند و اسکریپت سر جایش می‌ایستد تا انجامشان بدهید.
-#
-# اگر وسط کار خطا خورد، هیچ چیزی خراب نمی‌شود: هر مرحله جداست و می‌توانید
-# دوباره اجرایش کنید.
+# Messages are in English on purpose: the Windows console mangles Persian.
+# Nothing here is destructive; if a step fails you can just run it again.
 
 $ErrorActionPreference = "Stop"
 
-function Say($msg)  { Write-Host "`n$msg" -ForegroundColor Cyan }
-function Warn($msg) { Write-Host "  $msg" -ForegroundColor Yellow }
-function Good($msg) { Write-Host "  $msg" -ForegroundColor Green }
+function Say($m)  { Write-Host "`n$m" -ForegroundColor Cyan }
+function Warn($m) { Write-Host "  $m" -ForegroundColor Yellow }
+function Good($m) { Write-Host "  $m" -ForegroundColor Green }
+function Bad($m)  { Write-Host "  $m" -ForegroundColor Red }
 
-# --------------------------------------------------------------- پیش‌نیازها
-Say "بررسی پیش‌نیازها"
+Say "1. Checking what is installed"
 
 try { $null = git --version } catch {
-  Write-Host "git نصب نیست: https://git-scm.com/download/win" -ForegroundColor Red; exit 1
+  Bad "git is not installed: https://git-scm.com/download/win"; exit 1
 }
-Good "git هست"
+Good "git found"
 
 $py = $null
 foreach ($c in @("python", "python3", "py")) {
-  try { $null = & $c --version 2>$null; $py = $c; break } catch { }
+  try { $null = & $c --version 2>$null; if ($LASTEXITCODE -eq 0) { $py = $c; break } } catch { }
 }
 if (-not $py) {
-  Write-Host "python نصب نیست: https://www.python.org/downloads/" -ForegroundColor Red
-  Write-Host "موقع نصب تیک 'Add python.exe to PATH' را بزنید." -ForegroundColor Red
+  Bad "python is not installed: https://www.python.org/downloads/"
+  Bad "tick 'Add python.exe to PATH' during setup"
   exit 1
 }
-Good "python هست ($py)"
+Good "python found ($py)"
 
 if (-not (Test-Path "index.html")) {
-  Write-Host "این پوشه پروژه نیست. داخل پوشه‌ای اجرا کنید که index.html دارد." -ForegroundColor Red
+  Bad "This is not the project folder - run it where index.html is."
   exit 1
 }
 
-# ------------------------------------------------------------------ هویت git
 $name = git config user.name
 if (-not $name) {
-  $name = Read-Host "نام شما برای کامیت‌ها"
-  git config user.name $name
-  $mail = Read-Host "ایمیل شما"
-  git config user.email $mail
+  git config user.name "Taha"
+  git config user.email "t7693903@gmail.com"
+  $name = "Taha"
 }
-Good "کامیت‌ها به نام $name ثبت می‌شوند"
+Good "commits will be authored by $name"
 
-# -------------------------------------------------------------------- فونت‌ها
-Say "محلی کردن فونت‌ها"
-Write-Host "  چرا: تا وقتی فونت از سرور گوگل می‌آید، بازدیدکننده‌ای که به آن"
-Write-Host "  دسترسی ندارد سایت را با فونت پیش‌فرض مرورگر می‌بیند."
+Say "2. Self-hosting the typefaces"
+Write-Host "   Why: while the fonts come from Google's servers, a visitor who"
+Write-Host "   cannot reach them sees the site in the browser's default font."
 
-& $py -m pip install --quiet requests pillow
+& $py -m pip install --quiet --disable-pip-version-check requests pillow
 $fontsOk = $true
-try { & $py scripts\fetch_fonts.py } catch { $fontsOk = $false }
-if (-not $fontsOk) {
-  Warn "به Google Fonts نرسیدیم. اگر VPN دارید، روشنش کنید و بعداً"
-  Warn "فقط این را بزنید:  $py scripts\fetch_fonts.py"
-  Warn "فعلاً بدون آن ادامه می‌دهیم — سایت کار می‌کند، فقط فونتش از گوگل می‌آید."
+try { & $py scripts\fetch_fonts.py; if ($LASTEXITCODE -ne 0) { $fontsOk = $false } }
+catch { $fontsOk = $false }
+if ($fontsOk) {
+  Good "fonts are in the repository"
 } else {
-  Good "فونت‌ها داخل مخزن آمدند"
+  Warn "Could not reach Google Fonts. Carrying on without them."
+  Warn "You can do it later on GitHub: Actions -> Fetch fonts and photographs."
 }
 
-# --------------------------------------------------------------- ساخت و تست
-Say "ساخت دوباره و اجرای بررسی‌ها"
+Say "3. Rebuilding and running the checks"
 & $py scripts\merge_parts.py
 & $py scripts\build_data.py
 & $py scripts\test_build.py
+if ($LASTEXITCODE -ne 0) { Bad "A data check failed - stopping."; exit 1 }
 & $py scripts\build_single.py
 & $py scripts\build_pages.py
-Good "همه‌ی بررسی‌های داده پاس شد"
+Good "all data checks passed"
 
-# -------------------------------------------------------------------- کامیت
-$dirty = git status --porcelain
-if ($dirty) {
+Say "4. Committing"
+if (git status --porcelain) {
   git add -A
   git commit -m "Self-host the typefaces and rebuild"
-  Good "کامیت ثبت شد"
+  Good "committed"
 } else {
-  Good "چیزی برای کامیت نبود"
+  Good "nothing to commit"
 }
 
-# ------------------------------------------------------------------ اتصال
-Say "اتصال به GitHub"
+Say "5. Pushing to GitHub"
 $remote = git remote get-url origin 2>$null
 if (-not $remote) {
-  Write-Host "  مخزن باید از قبل روی GitHub ساخته شده باشد: https://github.com/new"
-  Write-Host "  نام t-air ، حالت Public ، و هیچ‌کدام از تیک‌های README/gitignore/license را نزنید."
-  $user = Read-Host "`nنام کاربری GitHub شما"
-  if (-not $user) { Write-Host "بدون نام کاربری نمی‌شود ادامه داد." -ForegroundColor Red; exit 1 }
+  $user = Read-Host "GitHub username"
+  if (-not $user) { Bad "Cannot push without it."; exit 1 }
   git remote add origin "https://github.com/$user/t-air.git"
-  $remote = "https://github.com/$user/t-air.git"
+  $remote = git remote get-url origin
 }
-Good "مقصد: $remote"
-
-Say "پوش"
+Good "remote: $remote"
 git branch -M main
 git push -u origin main
+if ($LASTEXITCODE -ne 0) {
+  Bad "The push failed. Copy the message above into the chat."
+  exit 1
+}
 
-# ------------------------------------------------------------------ پایان
 $user = ($remote -replace ".*github\.com[:/]", "") -replace "/.*", ""
-Say "تمام شد"
+Say "Done."
 Write-Host @"
-  یک کار در مرورگر مانده:
+  One thing left, in the browser:
 
-    مخزن → Settings → Pages
-    Source: Deploy from a branch
-    Branch: main   Folder: / (root)   →  Save
+     repository -> Settings -> Pages
+     Source: Deploy from a branch
+     Branch: main    Folder: / (root)    -> Save
 
-  یکی دو دقیقه بعد سایت اینجاست:
+  A minute or two later the site is at:
 
-    https://$user.github.io/t-air/
+     https://$user.github.io/t-air/
 
-  بعد از اینکه بالا آمد، برای عکس‌ها:
-
-    $py scripts\fetch_photos.py
-    $py scripts\build_single.py
-    git add -A ; git commit -m "Add photograph library" ; git push
+  Fonts and photographs can then be fetched on GitHub itself:
+     Actions -> Fetch fonts and photographs -> Run workflow
 "@ -ForegroundColor Green
