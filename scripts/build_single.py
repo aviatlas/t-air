@@ -74,8 +74,14 @@ def inline_fonts(html):
 
     css = re.sub(r"url\(fonts/([^)]+)\)", embed, css)
     print(f"  inlined the font sheet, {len(css)/1024:.0f} KB")
-    return html.replace('<link rel="stylesheet" href="assets/fonts.css">',
+    html = html.replace('<link rel="stylesheet" href="assets/fonts.css">',
                         "<style>\n" + css + "\n</style>")
+    # The hosted page serves its fonts as files, so its policy says
+    # font-src 'self' and should keep saying that. This build carries the
+    # same fonts as data: URIs, which that policy refuses — the browser
+    # silently drops them and the page renders in a fallback face. Relax the
+    # directive in this copy only, where 'self' means nothing anyway.
+    return html.replace("font-src 'self';", "font-src 'self' data:;")
 
 
 def stamp_worker(data):

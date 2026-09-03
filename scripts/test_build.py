@@ -153,6 +153,16 @@ check("no orphan page left behind by a dropped record",
       [f for f in (os.listdir(pages) if os.path.isdir(pages) else [])
        if f.endswith(".html") and f != "index.html" and f[:-5] not in ids])
 
+# The single-file build carries its fonts as data: URIs. A policy of
+# font-src 'self' refuses those, and the only symptom is a page quietly
+# rendering in a fallback face — worth a check rather than a surprise.
+single = os.path.join(ROOT, "dist", "t-air.html")
+if os.path.exists(os.path.join(ROOT, "assets", "fonts.css")) and os.path.exists(single):
+    head = open(single, encoding="utf-8").read()[:8000]
+    m = re.search(r"font-src ([^;\"]*)", head)
+    check("the single-file build allows its own inlined fonts",
+          [] if (m and "data:" in m.group(1)) else ["font-src is " + (m.group(1) if m else "absent")])
+
 # Offline support is only real if the worker's shell list matches the files
 # that actually exist — addAll fails the whole install on one missing file.
 sw = open(os.path.join(ROOT, "sw.js"), encoding="utf-8").read()
