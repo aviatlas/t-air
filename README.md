@@ -1,5 +1,17 @@
 # T-AIR — اطلس هواپیماهای جهان
 
+<p align="center">
+  <a href="https://ta100900.github.io/t-air/">
+    <img src="assets/screenshot.png" alt="T-AIR — جست‌وجوی مشخصات ۶۵۶ هواپیما، و صفحه‌ی جزئیات یک مدل" width="100%">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://ta100900.github.io/t-air/"><b>سایت زنده</b></a> ·
+  <a href="https://ta100900.github.io/t-air/a/">فهرست همه‌ی هواپیماها</a> ·
+  <a href="LICENSE-DATA.md">داده با CC BY-SA 4.0</a>
+</p>
+
 **T-AIR** سایت جست‌وجوی مشخصات فنی هواپیماهای جهان است — از مسافربری و ملخی کلاسیک
 تا جنگنده، بمب‌افکن، ترابری نظامی و آموزشی.
 نشان T-AIR یک دم T‌شکل (T-tail) است — پیکربندی دمِ فوکر ۱۰۰، MD-80 و Tu-154،
@@ -33,6 +45,7 @@ scripts/fetch_photos.py دانلود عکس‌های آزاد از ویکی‌م
 scripts/fetch_fonts.py  محلی‌کردن فونت‌ها (بدون وابستگی به Google Fonts)
 .github/workflows/assets.yml  اجرای همین دو اسکریپت روی سرورهای GitHub
 scripts/build_pages.py  صفحه‌ی ایستای هر رکورد + sitemap
+scripts/shot.js + shot.py  ساخت دوباره‌ی تصویر بالای همین فایل
 scripts/test_build.py   ۳۹ بررسی روی دیتابیس ساخته‌شده
 scripts/test_ui.js      ۲۴ بررسی رابط با Playwright
 scripts/check.sh        اجرای کل خط لوله و هر دو مجموعه‌ی تست
