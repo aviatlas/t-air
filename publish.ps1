@@ -90,6 +90,22 @@ if (-not $remote) {
 }
 Good "remote: $remote"
 git branch -M main
+
+# Work also lands on GitHub from the browser and from the runner, so this
+# copy can be behind. Rebase on top of whatever is there before pushing;
+# without it the push is simply rejected and the script looks broken.
+git fetch origin
+$behind = git rev-list --count HEAD..origin/main 2>$null
+if ($behind -and [int]$behind -gt 0) {
+  Say "   $behind commit(s) on GitHub that are not here - rebasing"
+  git pull --rebase origin main
+  if ($LASTEXITCODE -ne 0) {
+    Bad "The rebase hit a conflict. Copy the message above into the chat."
+    exit 1
+  }
+  Good "up to date with GitHub"
+}
+
 git push -u origin main
 if ($LASTEXITCODE -ne 0) {
   Bad "The push failed. Copy the message above into the chat."
