@@ -1,1 +1,3777 @@
-{"photos": {}, "missing": []}
+{
+ "photos": {
+  "atr-42-500": {
+   "credit": "Laurent ERRERA from L'Union, France",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:ATR_42-500_Hop!_(HOP)_F-GPYK_-_MSN_537_(10276128103).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:ATR_42-500_Hop!_(HOP)_F-GPYK_-_MSN_537_(10276128103).jpg"
+  },
+  "atr-42-600": {
+   "credit": "Laurent ERRERA from L'Union, France",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:ATR_42-500_Hop!_(HOP)_F-GPYK_-_MSN_537_(10276128103).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:ATR_42-500_Hop!_(HOP)_F-GPYK_-_MSN_537_(10276128103).jpg"
+  },
+  "atr-72-500": {
+   "credit": "Ken Fielding",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:F-WWEZ_(948)_ATR.72-212A(500)_FlyFireFly_TLS_30AUG11_(6097869500)_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:F-WWEZ_(948)_ATR.72-212A(500)_FlyFireFly_TLS_30AUG11_(6097869500)_(cropped).jpg"
+  },
+  "atr-72-600": {
+   "credit": "Ken Fielding",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:F-WWEZ_(948)_ATR.72-212A(500)_FlyFireFly_TLS_30AUG11_(6097869500)_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:F-WWEZ_(948)_ATR.72-212A(500)_FlyFireFly_TLS_30AUG11_(6097869500)_(cropped).jpg"
+  },
+  "airbus-a220-100": {
+   "credit": "Romain COUPY",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Airbus_A220-300.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Airbus_A220-300.jpg"
+  },
+  "airbus-a220-300": {
+   "credit": "Romain COUPY",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Airbus_A220-300.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Airbus_A220-300.jpg"
+  },
+  "airbus-a300-600r": {
+   "credit": "Aero Icarus from Zürich, Switzerland",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Iran_Air_Airbus_A300-605R;_EP-IBD@FRA;06.07.2011_603ks_(5915220574).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Iran_Air_Airbus_A300-605R;_EP-IBD@FRA;06.07.2011_603ks_(5915220574).jpg"
+  },
+  "airbus-a300b2": {
+   "credit": "Aero Icarus from Zürich, Switzerland",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Iran_Air_Airbus_A300-605R;_EP-IBD@FRA;06.07.2011_603ks_(5915220574).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Iran_Air_Airbus_A300-605R;_EP-IBD@FRA;06.07.2011_603ks_(5915220574).jpg"
+  },
+  "airbus-a300b4": {
+   "credit": "Aero Icarus from Zürich, Switzerland",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Iran_Air_Airbus_A300-605R;_EP-IBD@FRA;06.07.2011_603ks_(5915220574).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Iran_Air_Airbus_A300-605R;_EP-IBD@FRA;06.07.2011_603ks_(5915220574).jpg"
+  },
+  "airbus-a310-200": {
+   "credit": "Konstantin Von Wedelstaedt",
+   "licence": "GFDL 1.2",
+   "file": "File:Air_Transat_A310_(C-GTSF)_@_LHR,_Aug_2009.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Air_Transat_A310_(C-GTSF)_@_LHR,_Aug_2009.jpg"
+  },
+  "airbus-a310-300": {
+   "credit": "Konstantin Von Wedelstaedt",
+   "licence": "GFDL 1.2",
+   "file": "File:Air_Transat_A310_(C-GTSF)_@_LHR,_Aug_2009.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Air_Transat_A310_(C-GTSF)_@_LHR,_Aug_2009.jpg"
+  },
+  "airbus-a318": {
+   "credit": "ERIC  SALARD from Paris, FRANCE",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:F-GUGI_CDG_(49806325246).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:F-GUGI_CDG_(49806325246).jpg"
+  },
+  "airbus-a319": {
+   "credit": "Joao Carlos Medau from Campinas, Brazil",
+   "licence": "CC BY 2.0",
+   "file": "File:United_Airbus_A319_(13942617705).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:United_Airbus_A319_(13942617705).jpg"
+  },
+  "airbus-a319neo": {
+   "credit": "BriYYZ from Toronto, Canada",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:IndiGo_Airbus_A320neo_F-WWDG_(to_VT-ITI)_(28915135713).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:IndiGo_Airbus_A320neo_F-WWDG_(to_VT-ITI)_(28915135713).jpg"
+  },
+  "airbus-a320-200": {
+   "credit": "Pedro Aragão",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Airbus_A320-214,_Airbus_Industrie_JP7617615.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Airbus_A320-214,_Airbus_Industrie_JP7617615.jpg"
+  },
+  "airbus-a321-200": {
+   "credit": "Alan Wilson from Stilton, Peterborough, Cambs, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Airbus_A321-231(w)_‘N915US’_American_Airlines_(28442733186).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Airbus_A321-231(w)_%E2%80%98N915US%E2%80%99_American_Airlines_(28442733186).jpg"
+  },
+  "airbus-a321lr": {
+   "credit": "N509FZ",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:HA-LVA@PEK_(20200403093313).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:HA-LVA@PEK_(20200403093313).jpg"
+  },
+  "airbus-a321xlr": {
+   "credit": "N509FZ",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:HA-LVA@PEK_(20200403093313).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:HA-LVA@PEK_(20200403093313).jpg"
+  },
+  "airbus-a321neo": {
+   "credit": "N509FZ",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:HA-LVA@PEK_(20200403093313).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:HA-LVA@PEK_(20200403093313).jpg"
+  },
+  "airbus-a330-200": {
+   "credit": "4300streetcar",
+   "licence": "CC BY 4.0",
+   "file": "File:Delta_Air_Lines_Airbus_A330-300_N830NW_departing_Boston_July_2026_1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Delta_Air_Lines_Airbus_A330-300_N830NW_departing_Boston_July_2026_1.jpg"
+  },
+  "airbus-a330-200f": {
+   "credit": "4300streetcar",
+   "licence": "CC BY 4.0",
+   "file": "File:Delta_Air_Lines_Airbus_A330-300_N830NW_departing_Boston_July_2026_1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Delta_Air_Lines_Airbus_A330-300_N830NW_departing_Boston_July_2026_1.jpg"
+  },
+  "airbus-a330-300": {
+   "credit": "4300streetcar",
+   "licence": "CC BY 4.0",
+   "file": "File:Delta_Air_Lines_Airbus_A330-300_N830NW_departing_Boston_July_2026_1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Delta_Air_Lines_Airbus_A330-300_N830NW_departing_Boston_July_2026_1.jpg"
+  },
+  "airbus-a330-800neo": {
+   "credit": "New York-air",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Airbus_A330neo_F-WTTN_37.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Airbus_A330neo_F-WTTN_37.jpg"
+  },
+  "airbus-a330-900neo": {
+   "credit": "New York-air",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Airbus_A330neo_F-WTTN_37.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Airbus_A330neo_F-WTTN_37.jpg"
+  },
+  "airbus-a340-200": {
+   "credit": "MarcelX42",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Frankfurt_Airport_Lufthansa_Airbus_A340-313_D-AIGY_(DSC02566).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Frankfurt_Airport_Lufthansa_Airbus_A340-313_D-AIGY_(DSC02566).jpg"
+  },
+  "airbus-a340-300": {
+   "credit": "MarcelX42",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Frankfurt_Airport_Lufthansa_Airbus_A340-313_D-AIGY_(DSC02566).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Frankfurt_Airport_Lufthansa_Airbus_A340-313_D-AIGY_(DSC02566).jpg"
+  },
+  "airbus-a340-500": {
+   "credit": "MarcelX42",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Frankfurt_Airport_Lufthansa_Airbus_A340-313_D-AIGY_(DSC02566).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Frankfurt_Airport_Lufthansa_Airbus_A340-313_D-AIGY_(DSC02566).jpg"
+  },
+  "airbus-a340-600": {
+   "credit": "MarcelX42",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Frankfurt_Airport_Lufthansa_Airbus_A340-313_D-AIGY_(DSC02566).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Frankfurt_Airport_Lufthansa_Airbus_A340-313_D-AIGY_(DSC02566).jpg"
+  },
+  "airbus-a350-1000": {
+   "credit": "Steve Lynes",
+   "licence": "CC BY 2.0",
+   "file": "File:EGLF_-_Airbus_A350-941_-_F-WZNW.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:EGLF_-_Airbus_A350-941_-_F-WZNW.jpg"
+  },
+  "airbus-a350-900": {
+   "credit": "Steve Lynes",
+   "licence": "CC BY 2.0",
+   "file": "File:EGLF_-_Airbus_A350-941_-_F-WZNW.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:EGLF_-_Airbus_A350-941_-_F-WZNW.jpg"
+  },
+  "airbus-a350f": {
+   "credit": "Steve Lynes",
+   "licence": "CC BY 2.0",
+   "file": "File:EGLF_-_Airbus_A350-941_-_F-WZNW.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:EGLF_-_Airbus_A350-941_-_F-WZNW.jpg"
+  },
+  "airbus-a380-800": {
+   "credit": "Maarten Visser from Capelle aan den IJssel, Nederland",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:A6-EDY_A380_Emirates_31_jan_2013_jfk_(8442269364)_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:A6-EDY_A380_Emirates_31_jan_2013_jfk_(8442269364)_(cropped).jpg"
+  },
+  "airbus-h125": {
+   "credit": "fir0002  flagstaffotos [at] gmail.com\n\t\tCanon 20D + Canon 400mm f/5.6 L",
+   "licence": "GFDL 1.2",
+   "file": "File:RAN_squirrel_helicopter_at_melb_GP_08.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:RAN_squirrel_helicopter_at_melb_GP_08.jpg"
+  },
+  "airbus-h135": {
+   "credit": "Tim Felce (Airwolfhound)",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:EC-135_-_RIAT_2011_(6199185182).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:EC-135_-_RIAT_2011_(6199185182).jpg"
+  },
+  "airbus-h145": {
+   "credit": "Greg Kramer",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Stanford_EC145.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Stanford_EC145.jpg"
+  },
+  "airspeed-ambassador": {
+   "credit": "Adrian Pingstone",
+   "licence": "Public domain",
+   "file": "File:Ambassador.arp.750pix.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Ambassador.arp.750pix.jpg"
+  },
+  "antonov-an-140": {
+   "credit": "Dmitry A. Mottl",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Antonov_An-140_1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Antonov_An-140_1.jpg"
+  },
+  "hesa-iran-140": {
+   "credit": "Dmitry A. Mottl",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Antonov_An-140_1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Antonov_An-140_1.jpg"
+  },
+  "antonov-an-148": {
+   "credit": "Alex Beltyukov",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Антонов_Ан-148_01-02,_Киев_-_Антонов_(Гостомель)_RP29608.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2_%D0%90%D0%BD-148_01-02,_%D0%9A%D0%B8%D0%B5%D0%B2_-_%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2_(%D0%93%D0%BE%D1%81%D1%82%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C)_RP29608.jpg"
+  },
+  "antonov-an-24": {
+   "credit": "Dmitriy Pichugin",
+   "licence": "GFDL 1.2",
+   "file": "File:Volga-Avia_Antonov_An-24.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Volga-Avia_Antonov_An-24.jpg"
+  },
+  "avro-rj70": {
+   "credit": "BAE Systems",
+   "licence": "Public domain",
+   "file": "File:Logo_BAE_Avro_RJ.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Logo_BAE_Avro_RJ.jpg"
+  },
+  "avro-rj85": {
+   "credit": "BAE Systems",
+   "licence": "Public domain",
+   "file": "File:Logo_BAE_Avro_RJ.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Logo_BAE_Avro_RJ.jpg"
+  },
+  "bae-146-200": {
+   "credit": "BAE Systems",
+   "licence": "Public domain",
+   "file": "File:Logo_BAE_Avro_RJ.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Logo_BAE_Avro_RJ.jpg"
+  },
+  "bae-146-300": {
+   "credit": "BAE Systems",
+   "licence": "Public domain",
+   "file": "File:Logo_BAE_Avro_RJ.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Logo_BAE_Avro_RJ.jpg"
+  },
+  "avro-york": {
+   "credit": "Unknown",
+   "licence": "Public domain",
+   "file": "File:Avro_York.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Avro_York.jpg"
+  },
+  "concorde": {
+   "credit": "Eduard Marmet",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:British_Airways_Concorde_G-BOAC_03.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:British_Airways_Concorde_G-BOAC_03.jpg"
+  },
+  "bac-one-eleven-500": {
+   "credit": "Aero Icarus from Zürich, Switzerland",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:TAROM_BAC_1-11-500;_YR-BCI@ZRH;02.10.1995_(8353902456).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:TAROM_BAC_1-11-500;_YR-BCI@ZRH;02.10.1995_(8353902456).jpg"
+  },
+  "beechcraft-1900d": {
+   "credit": "Eugene Butler",
+   "licence": "GFDL 1.2",
+   "file": "File:Beech_1900D,_Air_New_Zealand_Link_(Eagle_Airways)_JP6920497.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Beech_1900D,_Air_New_Zealand_Link_(Eagle_Airways)_JP6920497.jpg"
+  },
+  "bell-206b": {
+   "credit": "Mfield - Matthew Field, http://www.photography.mattfield.com",
+   "licence": "CC BY 2.5",
+   "file": "File:LAPD_Bell_206_Jetranger.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:LAPD_Bell_206_Jetranger.jpg"
+  },
+  "bell-407": {
+   "credit": "Robert Kowal",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Nassau_County_Police_Bell_407.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Nassau_County_Police_Bell_407.jpg"
+  },
+  "bell-412": {
+   "credit": "Sardaka",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:(1)Police_Helicopter_039.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:(1)Police_Helicopter_039.jpg"
+  },
+  "boeing-247": {
+   "credit": "San Diego Air &amp; Space Museum Archives",
+   "licence": "Public domain",
+   "file": "File:Boeing,_247.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Boeing,_247.jpg"
+  },
+  "boeing-307": {
+   "credit": "Sunil Gupta",
+   "licence": "GFDL 1.2",
+   "file": "File:Boeing_307_Stratoliner,_Pan_Am_JP5629675.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Boeing_307_Stratoliner,_Pan_Am_JP5629675.jpg"
+  },
+  "boeing-377": {
+   "credit": "San Diego Air &amp; Space Museum Archives",
+   "licence": "Public domain",
+   "file": "File:Pan_Am_Stratocruiser_San_Francisco.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Pan_Am_Stratocruiser_San_Francisco.jpg"
+  },
+  "boeing-707-120": {
+   "credit": "Mike Freer",
+   "licence": "GFDL 1.2",
+   "file": "File:Boeing_707-321B_Pan_Am_Freer.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Boeing_707-321B_Pan_Am_Freer.jpg"
+  },
+  "boeing-707-320b": {
+   "credit": "Mike Freer",
+   "licence": "GFDL 1.2",
+   "file": "File:Boeing_707-321B_Pan_Am_Freer.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Boeing_707-321B_Pan_Am_Freer.jpg"
+  },
+  "boeing-707-320c": {
+   "credit": "Mike Freer",
+   "licence": "GFDL 1.2",
+   "file": "File:Boeing_707-321B_Pan_Am_Freer.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Boeing_707-321B_Pan_Am_Freer.jpg"
+  },
+  "boeing-707-tanker": {
+   "credit": "Mike Freer",
+   "licence": "GFDL 1.2",
+   "file": "File:Boeing_707-321B_Pan_Am_Freer.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Boeing_707-321B_Pan_Am_Freer.jpg"
+  },
+  "boeing-717-200": {
+   "credit": "Anna Zvereva from Tallinn, Estonia",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Delta_Air_Lines,_N991AT,_Boeing_717-23S_(49593115578).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Delta_Air_Lines,_N991AT,_Boeing_717-23S_(49593115578).jpg"
+  },
+  "boeing-720b": {
+   "credit": "Steve Fitzgerald",
+   "licence": "GFDL 1.2",
+   "file": "File:Cyprus_Airways_Boeing_720B_G-BCBB_LHR_1978-8-24.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Cyprus_Airways_Boeing_720B_G-BCBB_LHR_1978-8-24.png"
+  },
+  "boeing-727-100": {
+   "credit": "Iberia Airlines",
+   "licence": "CC BY 2.0",
+   "file": "File:B-727_Iberia_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:B-727_Iberia_(cropped).jpg"
+  },
+  "boeing-727-200": {
+   "credit": "Iberia Airlines",
+   "licence": "CC BY 2.0",
+   "file": "File:B-727_Iberia_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:B-727_Iberia_(cropped).jpg"
+  },
+  "boeing-737-max-10": {
+   "credit": "KirkXWB",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Alaska_737_Max_9.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Alaska_737_Max_9.jpg"
+  },
+  "boeing-737-max-7": {
+   "credit": "KirkXWB",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Alaska_737_Max_9.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Alaska_737_Max_9.jpg"
+  },
+  "boeing-737-max-8": {
+   "credit": "KirkXWB",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Alaska_737_Max_9.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Alaska_737_Max_9.jpg"
+  },
+  "boeing-737-max-9": {
+   "credit": "KirkXWB",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Alaska_737_Max_9.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Alaska_737_Max_9.jpg"
+  },
+  "boeing-737-100": {
+   "credit": "File:South African Airlink Boeing 737-200 Smith.jpg: Montague Smith\nderivative work: Altair78",
+   "licence": "GFDL 1.2",
+   "file": "File:South_African_Airlink_Boeing_737-200_Advanced_Smith.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:South_African_Airlink_Boeing_737-200_Advanced_Smith.jpg"
+  },
+  "boeing-737-200": {
+   "credit": "File:South African Airlink Boeing 737-200 Smith.jpg: Montague Smith\nderivative work: Altair78",
+   "licence": "GFDL 1.2",
+   "file": "File:South_African_Airlink_Boeing_737-200_Advanced_Smith.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:South_African_Airlink_Boeing_737-200_Advanced_Smith.jpg"
+  },
+  "boeing-737-300": {
+   "credit": "Dylan Ashe from San Jose, USA",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Classic_Colors_Southwest_Airlines_N648SW_Boeing_737-3H4_SJC.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Classic_Colors_Southwest_Airlines_N648SW_Boeing_737-3H4_SJC.jpg"
+  },
+  "boeing-737-400": {
+   "credit": "Dylan Ashe from San Jose, USA",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Classic_Colors_Southwest_Airlines_N648SW_Boeing_737-3H4_SJC.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Classic_Colors_Southwest_Airlines_N648SW_Boeing_737-3H4_SJC.jpg"
+  },
+  "boeing-737-500": {
+   "credit": "Dylan Ashe from San Jose, USA",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Classic_Colors_Southwest_Airlines_N648SW_Boeing_737-3H4_SJC.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Classic_Colors_Southwest_Airlines_N648SW_Boeing_737-3H4_SJC.jpg"
+  },
+  "boeing-737-600": {
+   "credit": "4300streetcar",
+   "licence": "CC BY 4.0",
+   "file": "File:Delta_Boeing_737-800_N371DA_departing_Boston_June_2025.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Delta_Boeing_737-800_N371DA_departing_Boston_June_2025.jpg"
+  },
+  "boeing-737-700": {
+   "credit": "4300streetcar",
+   "licence": "CC BY 4.0",
+   "file": "File:Delta_Boeing_737-800_N371DA_departing_Boston_June_2025.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Delta_Boeing_737-800_N371DA_departing_Boston_June_2025.jpg"
+  },
+  "boeing-737-800": {
+   "credit": "4300streetcar",
+   "licence": "CC BY 4.0",
+   "file": "File:Delta_Boeing_737-800_N371DA_departing_Boston_June_2025.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Delta_Boeing_737-800_N371DA_departing_Boston_June_2025.jpg"
+  },
+  "boeing-737-900": {
+   "credit": "4300streetcar",
+   "licence": "CC BY 4.0",
+   "file": "File:Delta_Boeing_737-800_N371DA_departing_Boston_June_2025.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Delta_Boeing_737-800_N371DA_departing_Boston_June_2025.jpg"
+  },
+  "boeing-737-900er": {
+   "credit": "4300streetcar",
+   "licence": "CC BY 4.0",
+   "file": "File:Delta_Boeing_737-800_N371DA_departing_Boston_June_2025.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Delta_Boeing_737-800_N371DA_departing_Boston_June_2025.jpg"
+  },
+  "boeing-747-100": {
+   "credit": "Iberia Airlines",
+   "licence": "CC BY 2.0",
+   "file": "File:B-747_Iberia.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:B-747_Iberia.jpg"
+  },
+  "boeing-747-100sr": {
+   "credit": "Iberia Airlines",
+   "licence": "CC BY 2.0",
+   "file": "File:B-747_Iberia.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:B-747_Iberia.jpg"
+  },
+  "boeing-747-200b": {
+   "credit": "Iberia Airlines",
+   "licence": "CC BY 2.0",
+   "file": "File:B-747_Iberia.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:B-747_Iberia.jpg"
+  },
+  "boeing-747-300": {
+   "credit": "Iberia Airlines",
+   "licence": "CC BY 2.0",
+   "file": "File:B-747_Iberia.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:B-747_Iberia.jpg"
+  },
+  "boeing-747-400": {
+   "credit": "MarcelX42",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Frankfurt_Airport_Lufthansa_Boeing_747-430_D-ABVY_(DSC09727).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Frankfurt_Airport_Lufthansa_Boeing_747-430_D-ABVY_(DSC09727).jpg"
+  },
+  "boeing-747-400er": {
+   "credit": "MarcelX42",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Frankfurt_Airport_Lufthansa_Boeing_747-430_D-ABVY_(DSC09727).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Frankfurt_Airport_Lufthansa_Boeing_747-430_D-ABVY_(DSC09727).jpg"
+  },
+  "boeing-747-400f": {
+   "credit": "MarcelX42",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Frankfurt_Airport_Lufthansa_Boeing_747-430_D-ABVY_(DSC09727).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Frankfurt_Airport_Lufthansa_Boeing_747-430_D-ABVY_(DSC09727).jpg"
+  },
+  "boeing-747-8i": {
+   "credit": "Juke Schweizer",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:D-ABYT_at_FRA.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:D-ABYT_at_FRA.jpg"
+  },
+  "boeing-747-8f": {
+   "credit": "Juke Schweizer",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:D-ABYT_at_FRA.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:D-ABYT_at_FRA.jpg"
+  },
+  "boeing-747sp": {
+   "credit": "Aktug Ates",
+   "licence": "GFDL 1.2",
+   "file": "File:Boeing_747SP-94,_Syrianair_-_Syrian_Arab_Airlines_JP6045151.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Boeing_747SP-94,_Syrianair_-_Syrian_Arab_Airlines_JP6045151.jpg"
+  },
+  "boeing-757-200": {
+   "credit": "4300streetcar",
+   "licence": "CC BY 4.0",
+   "file": "File:Delta_757-200_N713TW_on_final_approach_to_Boston_Dec_2024_2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Delta_757-200_N713TW_on_final_approach_to_Boston_Dec_2024_2.jpg"
+  },
+  "boeing-757-200pf": {
+   "credit": "4300streetcar",
+   "licence": "CC BY 4.0",
+   "file": "File:Delta_757-200_N713TW_on_final_approach_to_Boston_Dec_2024_2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Delta_757-200_N713TW_on_final_approach_to_Boston_Dec_2024_2.jpg"
+  },
+  "boeing-757-300": {
+   "credit": "4300streetcar",
+   "licence": "CC BY 4.0",
+   "file": "File:Delta_757-200_N713TW_on_final_approach_to_Boston_Dec_2024_2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Delta_757-200_N713TW_on_final_approach_to_Boston_Dec_2024_2.jpg"
+  },
+  "boeing-767-200er": {
+   "credit": "Delta_Air_Lines_B767-300_N130DL.jpg: Richard Snyder from San Jose, CA, United States of America\nderivative work: Altair7",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Delta_Air_Lines_B767-332_N130DL.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Delta_Air_Lines_B767-332_N130DL.jpg"
+  },
+  "boeing-767-300er": {
+   "credit": "Delta_Air_Lines_B767-300_N130DL.jpg: Richard Snyder from San Jose, CA, United States of America\nderivative work: Altair7",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Delta_Air_Lines_B767-332_N130DL.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Delta_Air_Lines_B767-332_N130DL.jpg"
+  },
+  "boeing-767-300f": {
+   "credit": "Delta_Air_Lines_B767-300_N130DL.jpg: Richard Snyder from San Jose, CA, United States of America\nderivative work: Altair7",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Delta_Air_Lines_B767-332_N130DL.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Delta_Air_Lines_B767-332_N130DL.jpg"
+  },
+  "boeing-767-400er": {
+   "credit": "Delta_Air_Lines_B767-300_N130DL.jpg: Richard Snyder from San Jose, CA, United States of America\nderivative work: Altair7",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Delta_Air_Lines_B767-332_N130DL.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Delta_Air_Lines_B767-332_N130DL.jpg"
+  },
+  "boeing-777-200er": {
+   "credit": "Aero Icarus from Zürich, Switzerland",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Cathay_Pacific_Boeing_777-200;_B-HNL@HKG.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Cathay_Pacific_Boeing_777-200;_B-HNL@HKG.jpg"
+  },
+  "boeing-777-200lr": {
+   "credit": "Aero Icarus from Zürich, Switzerland",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Cathay_Pacific_Boeing_777-200;_B-HNL@HKG.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Cathay_Pacific_Boeing_777-200;_B-HNL@HKG.jpg"
+  },
+  "boeing-777-300er": {
+   "credit": "Aero Icarus from Zürich, Switzerland",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Cathay_Pacific_Boeing_777-200;_B-HNL@HKG.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Cathay_Pacific_Boeing_777-200;_B-HNL@HKG.jpg"
+  },
+  "boeing-777f": {
+   "credit": "Aero Icarus from Zürich, Switzerland",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Cathay_Pacific_Boeing_777-200;_B-HNL@HKG.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Cathay_Pacific_Boeing_777-200;_B-HNL@HKG.jpg"
+  },
+  "boeing-777-8": {
+   "credit": "Dan Nevill from Seattle, WA, United States",
+   "licence": "CC BY 2.0",
+   "file": "File:777X_Roll-Out_(40407373023)_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:777X_Roll-Out_(40407373023)_(cropped).jpg"
+  },
+  "boeing-777-9": {
+   "credit": "Dan Nevill from Seattle, WA, United States",
+   "licence": "CC BY 2.0",
+   "file": "File:777X_Roll-Out_(40407373023)_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:777X_Roll-Out_(40407373023)_(cropped).jpg"
+  },
+  "boeing-787-10": {
+   "credit": "pjs2005 from Hampshire, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Boeing_787_N1015B_ANA_Airlines_(27611880663)_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Boeing_787_N1015B_ANA_Airlines_(27611880663)_(cropped).jpg"
+  },
+  "boeing-787-8": {
+   "credit": "pjs2005 from Hampshire, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Boeing_787_N1015B_ANA_Airlines_(27611880663)_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Boeing_787_N1015B_ANA_Airlines_(27611880663)_(cropped).jpg"
+  },
+  "boeing-787-9": {
+   "credit": "pjs2005 from Hampshire, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Boeing_787_N1015B_ANA_Airlines_(27611880663)_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Boeing_787_N1015B_ANA_Airlines_(27611880663)_(cropped).jpg"
+  },
+  "bombardier-crj1000": {
+   "credit": "Mark Harkin",
+   "licence": "CC BY 2.0",
+   "file": "File:EC-JTU_(8544702097).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:EC-JTU_(8544702097).jpg"
+  },
+  "bombardier-crj550": {
+   "credit": "Mark Harkin",
+   "licence": "CC BY 2.0",
+   "file": "File:EC-JTU_(8544702097).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:EC-JTU_(8544702097).jpg"
+  },
+  "bombardier-crj700": {
+   "credit": "Mark Harkin",
+   "licence": "CC BY 2.0",
+   "file": "File:EC-JTU_(8544702097).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:EC-JTU_(8544702097).jpg"
+  },
+  "bombardier-crj900": {
+   "credit": "Mark Harkin",
+   "licence": "CC BY 2.0",
+   "file": "File:EC-JTU_(8544702097).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:EC-JTU_(8544702097).jpg"
+  },
+  "bombardier-crj200": {
+   "credit": "ERIC  SALARD from PARIS, FRANCE",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:N466SW_LAX_(30314755488).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:N466SW_LAX_(30314755488).jpg"
+  },
+  "bristol-britannia": {
+   "credit": "RuthAS",
+   "licence": "CC BY 3.0",
+   "file": "File:Bristol_175_Britannia_312_G-AOVT_BOAC_Ringway_04.08.62_edited-3.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bristol_175_Britannia_312_G-AOVT_BOAC_Ringway_04.08.62_edited-3.jpg"
+  },
+  "bae-jetstream-31": {
+   "credit": "Alan Wilson",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:British_Aerospace_Jetstream_3102_‘G-NFLA.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:British_Aerospace_Jetstream_3102_%E2%80%98G-NFLA.jpg"
+  },
+  "bae-jetstream-41": {
+   "credit": "Adrian Pingstone (Arpingstone)",
+   "licence": "Public domain",
+   "file": "File:Easternairways_j41_g-majx_arp.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Easternairways_j41_g-majx_arp.jpg"
+  },
+  "britten-norman-islander": {
+   "credit": "Dale Coleman",
+   "licence": "GFDL 1.2",
+   "file": "File:Britten-Norman_BN-2A-26_Islander,_Winair_-_Windward_Islands_Airways_JP5823246.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Britten-Norman_BN-2A-26_Islander,_Winair_-_Windward_Islands_Airways_JP5823246.jpg"
+  },
+  "comac-arj21-700": {
+   "credit": "N509FZ",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:B-605U@PEK_(20200802164328).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:B-605U@PEK_(20200802164328).jpg"
+  },
+  "comac-c919": {
+   "credit": "N509FZ",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:B-919A@PEK_(20221226151722).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:B-919A@PEK_(20221226151722).jpg"
+  },
+  "convair-880": {
+   "credit": "RuthAS",
+   "licence": "CC BY 3.0",
+   "file": "File:Convair_880_N8802E_Delta_ATL_15.04.72_edited-2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Convair_880_N8802E_Delta_ATL_15.04.72_edited-2.jpg"
+  },
+  "convair-990": {
+   "credit": "San Diego Air &amp; Space Museum Archives",
+   "licence": "Public domain",
+   "file": "File:Swissair_Convair_990_in_flight.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Swissair_Convair_990_in_flight.jpg"
+  },
+  "convair-cv-240": {
+   "credit": "SAS Scandinavian Airlines",
+   "licence": "Public domain",
+   "file": "File:SAS_Convair_CV-440_Metropolitan,_Ivar_Viking_LN-KLB_in_the_air,_in_flight.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:SAS_Convair_CV-440_Metropolitan,_Ivar_Viking_LN-KLB_in_the_air,_in_flight.jpg"
+  },
+  "convair-cv-440": {
+   "credit": "SAS Scandinavian Airlines",
+   "licence": "Public domain",
+   "file": "File:SAS_Convair_CV-440_Metropolitan,_Ivar_Viking_LN-KLB_in_the_air,_in_flight.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:SAS_Convair_CV-440_Metropolitan,_Ivar_Viking_LN-KLB_in_the_air,_in_flight.jpg"
+  },
+  "dehavilland-dash8-q400": {
+   "credit": "MarcelX42",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Hamburg_Airport_Widerøe_Bombardier_DHC-8-402Q_LN-WDR_(DSC08713).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Hamburg_Airport_Wider%C3%B8e_Bombardier_DHC-8-402Q_LN-WDR_(DSC08713).jpg"
+  },
+  "dehavilland-dash8-300": {
+   "credit": "MarcelX42",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Hamburg_Airport_Widerøe_Bombardier_DHC-8-402Q_LN-WDR_(DSC08713).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Hamburg_Airport_Wider%C3%B8e_Bombardier_DHC-8-402Q_LN-WDR_(DSC08713).jpg"
+  },
+  "dornier-228": {
+   "credit": "Airwolfhound from  Hertfordshire, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Do228NG_-_RIAT_2012_(18649688613).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Do228NG_-_RIAT_2012_(18649688613).jpg"
+  },
+  "dornier-328": {
+   "credit": "Ole Simon",
+   "licence": "GFDL 1.2",
+   "file": "File:Sun-Air_Do-328.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sun-Air_Do-328.jpg"
+  },
+  "douglas-dc-2": {
+   "credit": "Unknown",
+   "licence": "Public domain",
+   "file": "File:Douglas_DC-2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Douglas_DC-2.jpg"
+  },
+  "douglas-dc-3": {
+   "credit": "Towpilot",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Douglas_DC-3,_SE-CFP.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Douglas_DC-3,_SE-CFP.jpg"
+  },
+  "douglas-dc-4": {
+   "credit": "SDASM",
+   "licence": "Public domain",
+   "file": "File:American_Airlines_NC90423.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:American_Airlines_NC90423.jpg"
+  },
+  "douglas-dc-6b": {
+   "credit": "Unknown authorUnknown author",
+   "licence": "Public domain",
+   "file": "File:Western_Airlines_DC-6.tif",
+   "page": "https://commons.wikimedia.org/wiki/File:Western_Airlines_DC-6.tif"
+  },
+  "douglas-dc-7c": {
+   "credit": "K.W. Gullers",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:SAS_DC_7_i_luften_färg_-_Nordiska_museet_-_NMAx.0011022.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:SAS_DC_7_i_luften_f%C3%A4rg_-_Nordiska_museet_-_NMAx.0011022.jpg"
+  },
+  "douglas-dc-8-32": {
+   "credit": "Pedro Aragão",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Douglas_DC-8-61,_Nationair_Canada_JP52505.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Douglas_DC-8-61,_Nationair_Canada_JP52505.jpg"
+  },
+  "douglas-dc-8-63": {
+   "credit": "Pedro Aragão",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Douglas_DC-8-61,_Nationair_Canada_JP52505.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Douglas_DC-8-61,_Nationair_Canada_JP52505.jpg"
+  },
+  "embraer-e170": {
+   "credit": "Richard Vandervord",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:KLM_Cityhopper_-_Embraer_190LR_-_AN2571563.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:KLM_Cityhopper_-_Embraer_190LR_-_AN2571563.jpg"
+  },
+  "embraer-e175": {
+   "credit": "Richard Vandervord",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:KLM_Cityhopper_-_Embraer_190LR_-_AN2571563.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:KLM_Cityhopper_-_Embraer_190LR_-_AN2571563.jpg"
+  },
+  "embraer-e190": {
+   "credit": "Richard Vandervord",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:KLM_Cityhopper_-_Embraer_190LR_-_AN2571563.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:KLM_Cityhopper_-_Embraer_190LR_-_AN2571563.jpg"
+  },
+  "embraer-e195": {
+   "credit": "Richard Vandervord",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:KLM_Cityhopper_-_Embraer_190LR_-_AN2571563.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:KLM_Cityhopper_-_Embraer_190LR_-_AN2571563.jpg"
+  },
+  "embraer-e175-e2": {
+   "credit": "Valentin Hintikka from Finland",
+   "licence": "CC BY 2.0",
+   "file": "File:Widerøe,_LN-WEA,_Embraer_E190-E2_@_HEL.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Wider%C3%B8e,_LN-WEA,_Embraer_E190-E2_@_HEL.jpg"
+  },
+  "embraer-e190-e2": {
+   "credit": "Valentin Hintikka from Finland",
+   "licence": "CC BY 2.0",
+   "file": "File:Widerøe,_LN-WEA,_Embraer_E190-E2_@_HEL.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Wider%C3%B8e,_LN-WEA,_Embraer_E190-E2_@_HEL.jpg"
+  },
+  "embraer-e195-e2": {
+   "credit": "Valentin Hintikka from Finland",
+   "licence": "CC BY 2.0",
+   "file": "File:Widerøe,_LN-WEA,_Embraer_E190-E2_@_HEL.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Wider%C3%B8e,_LN-WEA,_Embraer_E190-E2_@_HEL.jpg"
+  },
+  "embraer-emb-110": {
+   "credit": "Ministério da Defesa",
+   "licence": "CC BY 2.0",
+   "file": "File:Embraer_EMB_110_(Forca_Aerea_Brasileira)_Ágata_7_(8780126305).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Embraer_EMB_110_(Forca_Aerea_Brasileira)_%C3%81gata_7_(8780126305).jpg"
+  },
+  "embraer-emb-120": {
+   "credit": "ERIC  SALARD from PARIS, FRANCE",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:N569SW_LAX_(26322494726).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:N569SW_LAX_(26322494726).jpg"
+  },
+  "embraer-erj-135": {
+   "credit": "Aldo Bidini",
+   "licence": "GFDL 1.2",
+   "file": "File:Embraer_ERJ-145LU,_Air_France_(Regional_Compagnie_Aerienne)_JP6914566.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Embraer_ERJ-145LU,_Air_France_(Regional_Compagnie_Aerienne)_JP6914566.jpg"
+  },
+  "embraer-erj-140": {
+   "credit": "Aldo Bidini",
+   "licence": "GFDL 1.2",
+   "file": "File:Embraer_ERJ-145LU,_Air_France_(Regional_Compagnie_Aerienne)_JP6914566.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Embraer_ERJ-145LU,_Air_France_(Regional_Compagnie_Aerienne)_JP6914566.jpg"
+  },
+  "embraer-erj-145": {
+   "credit": "Aldo Bidini",
+   "licence": "GFDL 1.2",
+   "file": "File:Embraer_ERJ-145LU,_Air_France_(Regional_Compagnie_Aerienne)_JP6914566.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Embraer_ERJ-145LU,_Air_France_(Regional_Compagnie_Aerienne)_JP6914566.jpg"
+  },
+  "fairchild-metro-iii": {
+   "credit": "Robert Frola",
+   "licence": "GFDL",
+   "file": "File:VH-VEK_Fairchild_SA-227DC_Metro_23_Vee_H_Aviation_(10877945016).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:VH-VEK_Fairchild_SA-227DC_Metro_23_Vee_H_Aviation_(10877945016).jpg"
+  },
+  "fokker-70": {
+   "credit": "Laurent ERRERA from L'Union, France",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Fokker_100_(KLM)_PH-OFN_(10676665315).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Fokker_100_(KLM)_PH-OFN_(10676665315).jpg"
+  },
+  "fokker-100": {
+   "credit": "Laurent ERRERA from L'Union, France",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Fokker_100_(KLM)_PH-OFN_(10676665315).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Fokker_100_(KLM)_PH-OFN_(10676665315).jpg"
+  },
+  "fokker-f28": {
+   "credit": "Rolf Wallner",
+   "licence": "GFDL 1.2",
+   "file": "File:Piedmont_F-28-1000.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Piedmont_F-28-1000.jpg"
+  },
+  "fokker-50": {
+   "credit": "Pieter van Marion from Netherlands",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:PH-LXP_KLM_(393104846).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:PH-LXP_KLM_(393104846).jpg"
+  },
+  "ford-trimotor": {
+   "credit": "Alexf",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Ford_Trimotor_EAA.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Ford_Trimotor_EAA.jpg"
+  },
+  "handley-page-herald": {
+   "credit": "Tim Rees",
+   "licence": "GFDL 1.2",
+   "file": "File:Handley_Page_HPR-7_Herald_401,_Air_UK_AN1104923.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Handley_Page_HPR-7_Herald_401,_Air_UK_AN1104923.jpg"
+  },
+  "handley-page-hermes": {
+   "credit": "RuthAS",
+   "licence": "CC BY 3.0",
+   "file": "File:HP.81_Hermes_4_G-ALDT_Air_Safaris_Ringway_12.08.61_edited-3.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:HP.81_Hermes_4_G-ALDT_Air_Safaris_Ringway_12.08.61_edited-3.jpg"
+  },
+  "harbin-y-12": {
+   "credit": "Shahram Sharifi - Iranian Spotters",
+   "licence": "GFDL 1.2",
+   "file": "File:Iran_-_Revolutionary_Guard_Air_Force_Harbin_Y12-II.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Iran_-_Revolutionary_Guard_Air_Force_Harbin_Y12-II.jpg"
+  },
+  "hs-748": {
+   "credit": "Ken Fielding",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:C-FYDU_HS.748_Srs_2A(F)_Air_North_YVR_18JUL13_(9323744804).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:C-FYDU_HS.748_Srs_2A(F)_Air_North_YVR_18JUL13_(9323744804).jpg"
+  },
+  "hawker-siddeley-trident-1c": {
+   "credit": "clipperarctic",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:British_Airways_Trident3B_(7107744185).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:British_Airways_Trident3B_(7107744185).jpg"
+  },
+  "ilyushin-il-12": {
+   "credit": "calflier001",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Il-12s_AT_THE_DATANSHAN_CHINESE_AVIATION_MUSEUM_BEIJING_CHINA_OCT_2012_(8153302082).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Il-12s_AT_THE_DATANSHAN_CHINESE_AVIATION_MUSEUM_BEIJING_CHINA_OCT_2012_(8153302082).jpg"
+  },
+  "ilyushin-il-62m": {
+   "credit": "Sergey Lysenko",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Air-to-air_with_a_Russian_Air_Force_Ilyushin_Il-62M_(retouched).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Air-to-air_with_a_Russian_Air_Force_Ilyushin_Il-62M_(retouched).jpg"
+  },
+  "ilyushin-il-86": {
+   "credit": "Konstantin von Wedelstaedt",
+   "licence": "GFDL 1.2",
+   "file": "File:Aeroflot_RA_Ilyushin_Il-86_von_Wedelstaedt.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Aeroflot_RA_Ilyushin_Il-86_von_Wedelstaedt.jpg"
+  },
+  "ilyushin-il-96-300": {
+   "credit": "N509FZ",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:CU-T1250@PEK_(20181107114529).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:CU-T1250@PEK_(20181107114529).jpg"
+  },
+  "ilyushin-il-96-400t": {
+   "credit": "N509FZ",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:CU-T1250@PEK_(20181107114529).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:CU-T1250@PEK_(20181107114529).jpg"
+  },
+  "irkut-mc-21-300": {
+   "credit": "Denis Fedorko",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:MC-21-300_maiden_flight_in_Irkutsk_(2).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MC-21-300_maiden_flight_in_Irkutsk_(2).jpg"
+  },
+  "kamov-ka-32": {
+   "credit": "Timofeich at Russian Wikipedia",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Kamov_Ka-32S.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Kamov_Ka-32S.jpg"
+  },
+  "leonardo-aw139": {
+   "credit": "Contando Estrelas",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Augusta_Westland_AW-139_EC-KXA_de_Helimer,_Salvamento_Marítimo_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Augusta_Westland_AW-139_EC-KXA_de_Helimer,_Salvamento_Mar%C3%ADtimo_(cropped).jpg"
+  },
+  "let-l-410": {
+   "credit": "Stradalova",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:L410_UVP-E20.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:L410_UVP-E20.jpg"
+  },
+  "lisunov-li-2": {
+   "credit": "Julian Herzog (Website)",
+   "licence": "CC BY 4.0",
+   "file": "File:Lisunov_Li-2T_HA-LIX_Hahnweide_2011_02.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Lisunov_Li-2T_HA-LIX_Hahnweide_2011_02.jpg"
+  },
+  "lockheed-l-049": {
+   "credit": "USAF",
+   "licence": "Public domain",
+   "file": "File:C-69.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:C-69.jpg"
+  },
+  "lockheed-l-1049": {
+   "credit": "RuthAS",
+   "licence": "CC BY 3.0",
+   "file": "File:Lockheed_L1049C_CF-TGC_TCA_LAP_12.09.54_edited-2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Lockheed_L1049C_CF-TGC_TCA_LAP_12.09.54_edited-2.jpg"
+  },
+  "lockheed-l-1649": {
+   "credit": "Ken Fielding",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:LX-LGZ_L1649_Starliner_Luxair_PMI_11SEP65_(5938051769).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:LX-LGZ_L1649_Starliner_Luxair_PMI_11SEP65_(5938051769).jpg"
+  },
+  "lockheed-l-188": {
+   "credit": "Clinton Groves",
+   "licence": "GFDL 1.2",
+   "file": "File:Varig_Lockheed_L-188A_Electra_Groves-1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Varig_Lockheed_L-188A_Electra_Groves-1.jpg"
+  },
+  "mdhelicopters-md-902": {
+   "credit": "Smudge 9000 (North Kent Coast, England)",
+   "licence": "CC BY 2.0",
+   "file": "File:(cropped)_London_Air_Ambulance_G-EHMS.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:(cropped)_London_Air_Ambulance_G-EHMS.jpg"
+  },
+  "martin-2-0-2": {
+   "credit": "RuthAS",
+   "licence": "CC BY 3.0",
+   "file": "File:Martin_202_HK-1484_FLL_07.10.73_edited-2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Martin_202_HK-1484_FLL_07.10.73_edited-2.jpg"
+  },
+  "martin-4-0-4": {
+   "credit": "RuthAS",
+   "licence": "CC BY 3.0",
+   "file": "File:Martin_404_N145S_Southern_Aws_ATL_15.04.72_edited-2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Martin_404_N145S_Southern_Aws_ATL_15.04.72_edited-2.jpg"
+  },
+  "mcdonnell-douglas-dc-10-10": {
+   "credit": "Danielkang7744 at English Wikipedia",
+   "licence": "Public domain",
+   "file": "File:Continental_Airlines_DC-10.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Continental_Airlines_DC-10.jpg"
+  },
+  "douglas-dc-10-30": {
+   "credit": "Danielkang7744 at English Wikipedia",
+   "licence": "Public domain",
+   "file": "File:Continental_Airlines_DC-10.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Continental_Airlines_DC-10.jpg"
+  },
+  "douglas-dc-9-30": {
+   "credit": "Anthony92931",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Northwest_N756NW_DC9_(cropped_16_9).JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Northwest_N756NW_DC9_(cropped_16_9).JPG"
+  },
+  "mcdonnell-douglas-dc-9-50": {
+   "credit": "Anthony92931",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Northwest_N756NW_DC9_(cropped_16_9).JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Northwest_N756NW_DC9_(cropped_16_9).JPG"
+  },
+  "mcdonnell-md-11": {
+   "credit": "Björn Strey",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:McDonnell_Douglas_MD-11P_KLM_PH-KCC.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:McDonnell_Douglas_MD-11P_KLM_PH-KCC.jpg"
+  },
+  "mcdonnell-douglas-md-11f": {
+   "credit": "Björn Strey",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:McDonnell_Douglas_MD-11P_KLM_PH-KCC.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:McDonnell_Douglas_MD-11P_KLM_PH-KCC.jpg"
+  },
+  "mcdonnell-md-82": {
+   "credit": "AKS.9955",
+   "licence": "CC0",
+   "file": "File:MD83_Aircraft_of_TezJet.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MD83_Aircraft_of_TezJet.jpg"
+  },
+  "mcdonnell-md-83": {
+   "credit": "AKS.9955",
+   "licence": "CC0",
+   "file": "File:MD83_Aircraft_of_TezJet.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MD83_Aircraft_of_TezJet.jpg"
+  },
+  "mcdonnell-douglas-md-87": {
+   "credit": "AKS.9955",
+   "licence": "CC0",
+   "file": "File:MD83_Aircraft_of_TezJet.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MD83_Aircraft_of_TezJet.jpg"
+  },
+  "mcdonnell-douglas-md-88": {
+   "credit": "AKS.9955",
+   "licence": "CC0",
+   "file": "File:MD83_Aircraft_of_TezJet.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MD83_Aircraft_of_TezJet.jpg"
+  },
+  "mcdonnell-md-90-30": {
+   "credit": "Eddie Maloney from  North Las Vegas, USA",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Delta_McDonnell_Douglas_MD-90-30_N908DA_(2933350864).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Delta_McDonnell_Douglas_MD-90-30_N908DA_(2933350864).jpg"
+  },
+  "mil-mi-8t-civil": {
+   "credit": "Igor Dvurekov",
+   "licence": "CC BY 3.0",
+   "file": "File:Mil_Mi-8P,_Baltic_Airlines_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Mil_Mi-8P,_Baltic_Airlines_(cropped).jpg"
+  },
+  "mil-mi-8": {
+   "credit": "Igor Dvurekov",
+   "licence": "CC BY 3.0",
+   "file": "File:Mil_Mi-8P,_Baltic_Airlines_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Mil_Mi-8P,_Baltic_Airlines_(cropped).jpg"
+  },
+  "namc-ys-11": {
+   "credit": "Ken H / @chippyho",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:'Japan_Navy_Schedule_21'_Atsugi_route_4_departure._(8382459963).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:%27Japan_Navy_Schedule_21%27_Atsugi_route_4_departure._(8382459963).jpg"
+  },
+  "robinson-r22": {
+   "credit": "Jeroen Stroes Aviation Photography",
+   "licence": "CC BY 2.0",
+   "file": "File:R22_N4044D_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:R22_N4044D_(cropped).jpg"
+  },
+  "robinson-r44": {
+   "credit": "D. Miller",
+   "licence": "CC BY 2.0",
+   "file": "File:Robinson_R44_II_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Robinson_R44_II_(cropped).jpg"
+  },
+  "robinson-r66": {
+   "credit": "Alan Wilson",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Robinson_R66_G-CIZG.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Robinson_R66_G-CIZG.jpg"
+  },
+  "saab-2000": {
+   "credit": "ISORauscht",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Etihad_Saab_2000_take_off.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Etihad_Saab_2000_take_off.jpg"
+  },
+  "saab-340b": {
+   "credit": "Ronnie Robertson",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Saab_340_G-LGNC_IMG_3425_(11712072893).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Saab_340_G-LGNC_IMG_3425_(11712072893).jpg"
+  },
+  "shorts-330": {
+   "credit": "Tomás Del Coro from Las Vegas, Nevada, USA",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:N106SW_MN_Aviation_Short_330-200_cn_SH3072_(8448603091).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:N106SW_MN_Aviation_Short_330-200_cn_SH3072_(8448603091).jpg"
+  },
+  "shorts-360": {
+   "credit": "Biggerben",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Pacific_Coastal_Airlines_Short_360-300_C-GPCF_in_CYVR.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Pacific_Coastal_Airlines_Short_360-300_C-GPCF_in_CYVR.jpg"
+  },
+  "sikorsky-s-76": {
+   "credit": "Contando Estrelas from Vigo, España / Spain",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Pesca_1_(3737941060).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Pesca_1_(3737941060).jpg"
+  },
+  "sikorsky-s-92": {
+   "credit": "Ronnie Robertson",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:S92_G-IACF_IMG_7005_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:S92_G-IACF_IMG_7005_(cropped).jpg"
+  },
+  "sud-aviation-caravelle-3": {
+   "credit": "Ralf Manteufel",
+   "licence": "GFDL 1.2",
+   "file": "File:Sud_SE-210_Caravelle_III,_F-BHRS,_Air_France_Manteufel-1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sud_SE-210_Caravelle_III,_F-BHRS,_Air_France_Manteufel-1.jpg"
+  },
+  "sukhoi-ssj100": {
+   "credit": "SuperJet  International",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Sukhoi_Superjet_100_(5096752902)_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sukhoi_Superjet_100_(5096752902)_(cropped).jpg"
+  },
+  "yakovlev-sj-100": {
+   "credit": "SuperJet  International",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Sukhoi_Superjet_100_(5096752902)_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sukhoi_Superjet_100_(5096752902)_(cropped).jpg"
+  },
+  "tupolev-tu-104": {
+   "credit": "Lars Söderström",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Aeroflot_Tupolev_Tu-104A_at_Arlanda,_July_1972.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Aeroflot_Tupolev_Tu-104A_at_Arlanda,_July_1972.jpg"
+  },
+  "tupolev-tu-114": {
+   "credit": "Hugo van Gelderen / Anefo",
+   "licence": "CC0",
+   "file": "File:De_Toepoelew_114_s_werelds_grooste_vliegtuig_op_Schiphol,_Bestanddeelnr_916-4888.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:De_Toepoelew_114_s_werelds_grooste_vliegtuig_op_Schiphol,_Bestanddeelnr_916-4888.jpg"
+  },
+  "tupolev-tu-124": {
+   "credit": "Lars Söderström",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Aeroflot_Tupolev_Tu-124_at_Arlanda,_April_1966.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Aeroflot_Tupolev_Tu-124_at_Arlanda,_April_1966.jpg"
+  },
+  "tupolev-tu-134": {
+   "credit": "Leonid Faerberg (transport-photo.com)",
+   "licence": "GFDL 1.2",
+   "file": "File:Tretyakovo_Tupolev_Tu-134.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Tretyakovo_Tupolev_Tu-134.jpg"
+  },
+  "tupolev-tu-144": {
+   "credit": "clipperarctic",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Tupolev_TU-144_(6060104119).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Tupolev_TU-144_(6060104119).jpg"
+  },
+  "tupolev-tu-154m": {
+   "credit": "Aktug Ates",
+   "licence": "GFDL 1.2",
+   "file": "File:Tupolev_Tu-154M,_Iran_Air_Tours_JP6511800.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Tupolev_Tu-154M,_Iran_Air_Tours_JP6511800.jpg"
+  },
+  "tupolev-tu-204-100": {
+   "credit": "Fedor Leukhin",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Air_Koryo,_Tupolev_Tu-204-100B,_P-633_(2).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Air_Koryo,_Tupolev_Tu-204-100B,_P-633_(2).jpg"
+  },
+  "tupolev-tu-204-300": {
+   "credit": "Fedor Leukhin",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Air_Koryo,_Tupolev_Tu-204-100B,_P-633_(2).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Air_Koryo,_Tupolev_Tu-204-100B,_P-633_(2).jpg"
+  },
+  "tupolev-tu-214": {
+   "credit": "Fedor Leukhin",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Air_Koryo,_Tupolev_Tu-204-100B,_P-633_(2).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Air_Koryo,_Tupolev_Tu-204-100B,_P-633_(2).jpg"
+  },
+  "vickers-vc10": {
+   "credit": "Chris Lofting",
+   "licence": "GFDL 1.2",
+   "file": "File:RAF_Vickers_VC10_K3_over_the_North_Sea_Lofting.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:RAF_Vickers_VC10_K3_over_the_North_Sea_Lofting.jpg"
+  },
+  "vickers-vanguard": {
+   "credit": "Richard Vandervord",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Invicta_International_Airlines_Vickers_952_Vanguard.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Invicta_International_Airlines_Vickers_952_Vanguard.jpg"
+  },
+  "vickers-viscount-800": {
+   "credit": "Ralf Manteufel",
+   "licence": "GFDL 1.2",
+   "file": "File:Cambrian_Airways_Vickers_Viscount_Manteufel-5.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Cambrian_Airways_Vickers_Viscount_Manteufel-5.jpg"
+  },
+  "xian-ma60": {
+   "credit": "byeangel from Tsingtao, China",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:B-3706_-_Okay_Airways_-_Modern_Ark_60_-_DLC_(9575868910).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:B-3706_-_Okay_Airways_-_Modern_Ark_60_-_DLC_(9575868910).jpg"
+  },
+  "yakovlev-yak-40": {
+   "credit": "Aktug Ates",
+   "licence": "GFDL 1.2",
+   "file": "File:Yakovlev_Yak-40,_Centr_Ug_JP7586206.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Yakovlev_Yak-40,_Centr_Ug_JP7586206.jpg"
+  },
+  "yakovlev-yak-42d": {
+   "credit": "Konstantin Nikiforov",
+   "licence": "GFDL 1.2",
+   "file": "File:International_Jet_Tour_Yakovlev_Yak-42D_Nikiforov.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:International_Jet_Tour_Yakovlev_Yak-42D_Nikiforov.jpg"
+  },
+  "dh-dove": {
+   "credit": "Alan Wilson from Stilton, Peterborough, Cambs, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:De_Havilland_DH104_Dove_8_‘D-INKA’_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:De_Havilland_DH104_Dove_8_%E2%80%98D-INKA%E2%80%99_(cropped).jpg"
+  },
+  "dh-heron": {
+   "credit": "Ken Fielding",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:G-AOXL_DH114_Heron_1_BUIA_LGW_29APR69_(6812537759).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:G-AOXL_DH114_Heron_1_BUIA_LGW_29APR69_(6812537759).jpg"
+  },
+  "dhc-6-twin-otter": {
+   "credit": "Timo Breidenstein",
+   "licence": "GFDL 1.2",
+   "file": "File:WinAir_De_Havilland_Canada_DHC-6-300_Twin_Otter_Breidenstein.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:WinAir_De_Havilland_Canada_DHC-6-300_Twin_Otter_Breidenstein.jpg"
+  },
+  "dhc-7-dash-7": {
+   "credit": "Steve Fitzgerald",
+   "licence": "GFDL 1.2",
+   "file": "File:De_Havilland_Canada_DHC-7-110_Dash_7,_Brymon_Airways_AN2141415.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:De_Havilland_Canada_DHC-7-110_Dash_7,_Brymon_Airways_AN2141415.jpg"
+  },
+  "aidc-at-3": {
+   "credit": "玄史生",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Thundertigers_AT-3_Flight_over_Hualien_AFB.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Thundertigers_AT-3_Flight_over_Hualien_AFB.jpg"
+  },
+  "aidc-f-ck-1": {
+   "credit": "O8447",
+   "licence": "CC BY 3.0",
+   "file": "File:IDF-Wan_Chien.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:IDF-Wan_Chien.jpg"
+  },
+  "aeritalia-g-222": {
+   "credit": "(Unknown)",
+   "licence": "Public domain",
+   "file": "File:DF-ST-98-01305.JPEG",
+   "page": "https://commons.wikimedia.org/wiki/File:DF-ST-98-01305.JPEG"
+  },
+  "aermacchi-mb-326": {
+   "credit": "Daniel Tanner",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:RAAF_Commonwealth_CA-30_(MB-326H)_landing_at_RAAF_Air_Base_Edinburgh.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:RAAF_Commonwealth_CA-30_(MB-326H)_landing_at_RAAF_Air_Base_Edinburgh.jpg"
+  },
+  "aermacchi-mb-339": {
+   "credit": "Tim Felce (Airwolfhound)",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:MB339_-_RIAT_2008_(2674540983).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MB339_-_RIAT_2008_(2674540983).jpg"
+  },
+  "aero-l-159a": {
+   "credit": "Milan Nykodym from Kutna Hora, Czech Republic",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Aero_L-159_(6063)_in_flight_(1).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Aero_L-159_(6063)_in_flight_(1).jpg"
+  },
+  "aero-l-29": {
+   "credit": "Oren Rozen",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:CF15_L-29_ZK-SSU_040415_03.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:CF15_L-29_ZK-SSU_040415_03.jpg"
+  },
+  "aero-l-39-albatros": {
+   "credit": "Milan Nykodym",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:L-39ZA_Albatros_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:L-39ZA_Albatros_(cropped).jpg"
+  },
+  "aichi-d3a": {
+   "credit": "USN",
+   "licence": "Public domain",
+   "file": "File:Japanese_planes_preparing-Pearl_Harbor.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Japanese_planes_preparing-Pearl_Harbor.jpg"
+  },
+  "airbus-a330-mrtt": {
+   "credit": "U.S. Air Force photo by Christian Turner",
+   "licence": "Public domain",
+   "file": "File:KC-30_A39-002_refuelling_an_USAF_F-16_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:KC-30_A39-002_refuelling_an_USAF_F-16_(cropped).jpg"
+  },
+  "airbus-a400m": {
+   "credit": "Peng Chen",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:German_Air_Force_Airbus_A400M_(out_cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:German_Air_Force_Airbus_A400M_(out_cropped).jpg"
+  },
+  "airbus-c-295": {
+   "credit": "Gerard van der Schaaf",
+   "licence": "CC BY 2.0",
+   "file": "File:Polish_Air_Force_C-295_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Polish_Air_Force_C-295_(cropped).jpg"
+  },
+  "airbus-h225m": {
+   "credit": "Dylan Agbagni",
+   "licence": "CC0",
+   "file": "File:French_Air_Force_EC725_lift_off.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:French_Air_Force_EC725_lift_off.jpg"
+  },
+  "airbus-tiger": {
+   "credit": "Alan Lebeda",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:20170810034242!Eurocopter_EC-665_Tiger_UHT,_Germany_-_Army_AN1547188_(2).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:20170810034242!Eurocopter_EC-665_Tiger_UHT,_Germany_-_Army_AN1547188_(2).jpg"
+  },
+  "albatros-d-iii": {
+   "credit": "Unknown authorUnknown author",
+   "licence": "Public domain",
+   "file": "File:Albad3.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Albad3.jpg"
+  },
+  "antonov-an-12": {
+   "credit": "Igor Dvurekov",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Antonov_An-12BK,_Russia_-_Air_Force_AN1879625.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Antonov_An-12BK,_Russia_-_Air_Force_AN1879625.jpg"
+  },
+  "antonov-an-124": {
+   "credit": "Alex Beltyukov",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Антонов_Ан-124_9773054055093,_Москва_-_Домодедово_RP2297.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2_%D0%90%D0%BD-124_9773054055093,_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0_-_%D0%94%D0%BE%D0%BC%D0%BE%D0%B4%D0%B5%D0%B4%D0%BE%D0%B2%D0%BE_RP2297.jpg"
+  },
+  "antonov-an-2": {
+   "credit": "Artem Katranzhi",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Antonov_An-2_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Antonov_An-2_(cropped).jpg"
+  },
+  "antonov-an-225": {
+   "credit": "Myroslav Kaplun",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Antonov_Design_Bureau_Antonov_An-225_Mriya_at_Leipzig_Halle_(EDDP-LEJ).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Antonov_Design_Bureau_Antonov_An-225_Mriya_at_Leipzig_Halle_(EDDP-LEJ).jpg"
+  },
+  "antonov-an-26": {
+   "credit": "A1C GREG L. DAVIS, USAF",
+   "licence": "Public domain",
+   "file": "File:An-26B(UN).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:An-26B(UN).jpg"
+  },
+  "antonov-an-32": {
+   "credit": "Paul Spijkers",
+   "licence": "GFDL",
+   "file": "File:AirMark_Antonov_An-32_Spijkers-2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:AirMark_Antonov_An-32_Spijkers-2.jpg"
+  },
+  "antonov-an-70": {
+   "credit": "Vitaly V. Kuzmin",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Antonov_An-70_Ramenskoye_Airport_2013_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Antonov_An-70_Ramenskoye_Airport_2013_(cropped).jpg"
+  },
+  "avia-b534": {
+   "credit": "Autor neznámý / Author unknown",
+   "licence": "Public domain",
+   "file": "File:Avia_B-534_IV._verze.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Avia_B-534_IV._verze.jpg"
+  },
+  "avro-vulcan-b2": {
+   "credit": "Alastair Barbour",
+   "licence": "CC BY 2.5",
+   "file": "File:XH558_(G-VLCN)_Avro_Vulcan_-_Last_Flight_over_Farnborough_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:XH558_(G-VLCN)_Avro_Vulcan_-_Last_Flight_over_Farnborough_(cropped).jpg"
+  },
+  "airbus-alouette-iii": {
+   "credit": "Christian Hanuise",
+   "licence": "GFDL 1.2",
+   "file": "File:Aerospatiale_SA-319B_Alouette_III,_France_-_Navy_AN0330160.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Aerospatiale_SA-319B_Alouette_III,_France_-_Navy_AN0330160.jpg"
+  },
+  "airbus-sa330-puma": {
+   "credit": "Tim Felce (Airwolfhound)",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Puma_-_RIAT_2010_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Puma_-_RIAT_2010_(cropped).jpg"
+  },
+  "airbus-sa342-gazelle": {
+   "credit": "Tim Felce",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Gazelle_-_RIAT_2014_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Gazelle_-_RIAT_2014_(cropped).jpg"
+  },
+  "bae-taranis": {
+   "credit": "FOX 52",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:BAE_Systems_Taranis_art.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:BAE_Systems_Taranis_art.jpg"
+  },
+  "baykar-tb2": {
+   "credit": "Bayhaluk",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Bayraktar_TB2_Runway.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bayraktar_TB2_Runway.jpg"
+  },
+  "beechcraft-t-34": {
+   "credit": "PHCS R. L. LAWSON",
+   "licence": "Public domain",
+   "file": "File:T-34B-1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:T-34B-1.jpg"
+  },
+  "beechcraft-t-34c": {
+   "credit": "PHCS R. L. LAWSON",
+   "licence": "Public domain",
+   "file": "File:T-34B-1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:T-34B-1.jpg"
+  },
+  "beechcraft-t-6-texan-ii": {
+   "credit": "U.S. Air Force photo by Master Sgt. David Richards",
+   "licence": "Public domain",
+   "file": "File:T-6A_Texan_II.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:T-6A_Texan_II.jpg"
+  },
+  "bell-ah-1j": {
+   "credit": "Communication Specialist Seaman Mark Hays",
+   "licence": "Public domain",
+   "file": "File:AH-1W_Super_Cobra_assigned_to_HMLA_167.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:AH-1W_Super_Cobra_assigned_to_HMLA_167.jpg"
+  },
+  "bell-ah-1z": {
+   "credit": "Cpl. Jonathan L. Gonzalez",
+   "licence": "Public domain",
+   "file": "File:AH-1Z_attack_helicopter_with_Marine_Light_Attack_Helicopter_Squadron_775_Group_41,_execute_pre-flight_checks_and_procedures_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:AH-1Z_attack_helicopter_with_Marine_Light_Attack_Helicopter_Squadron_775_Group_41,_execute_pre-flight_checks_and_procedures_(cropped).jpg"
+  },
+  "bell-214a": {
+   "credit": "Sky Larson",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Bell_214_home_bound_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bell_214_home_bound_(cropped).jpg"
+  },
+  "bell-206-oh-58": {
+   "credit": "U.S. Army",
+   "licence": "Public domain",
+   "file": "File:OH-58D_1st_Squadron,_17th_Cavalry_Regiment_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:OH-58D_1st_Squadron,_17th_Cavalry_Regiment_(cropped).jpg"
+  },
+  "bell-p-39q-airacobra": {
+   "credit": "USAAF",
+   "licence": "Public domain",
+   "file": "File:P-39N_Airacobra_of_the_357th_Fighter_Group_at_Hamilton_Field_in_July_1943.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:P-39N_Airacobra_of_the_357th_Fighter_Group_at_Hamilton_Field_in_July_1943.jpg"
+  },
+  "bell-p-63a-kingcobra": {
+   "credit": "SDASM Archives",
+   "licence": "Public domain",
+   "file": "File:Bell_P-63A_Kingcobra_42-68871_(16139504242).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bell_P-63A_Kingcobra_42-68871_(16139504242).jpg"
+  },
+  "bell-uh-1h": {
+   "credit": "Airwolfhound from  Hertfordshire, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:UH1_Huey_-_Fly_Navy_2017_(26938005897).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:UH1_Huey_-_Fly_Navy_2017_(26938005897).jpg"
+  },
+  "bell-boeing-v-22": {
+   "credit": "FOX 52",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:MV-22_mcas_Miramar_2014.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:MV-22_mcas_Miramar_2014.JPG"
+  },
+  "beriev-a-50": {
+   "credit": "Sergey Lutsenko, Timofey Nikishin",
+   "licence": "CC BY 4.0",
+   "file": "File:Airborne_early_warning_and_control_aircraft_A-50U_(Red_41).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Airborne_early_warning_and_control_aircraft_A-50U_(Red_41).jpg"
+  },
+  "blackburn-buccaneer-s2": {
+   "credit": "Pedro Aragão",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Hawker_Siddeley_Buccaneer_S2B,_UK_-_Air_Force_AN0334965.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Hawker_Siddeley_Buccaneer_S2B,_UK_-_Air_Force_AN0334965.jpg"
+  },
+  "bloch-mb-152": {
+   "credit": "Unknown authorUnknown author",
+   "licence": "Public domain",
+   "file": "File:Bloch_MB.151_in_flight_1938.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bloch_MB.151_in_flight_1938.jpg"
+  },
+  "boeing-ah-64d": {
+   "credit": "\"Photo Courtesy of U.S. Army\" - by Tech. Sgt. Andy Dunaway",
+   "licence": "Public domain",
+   "file": "File:AH-64D_Apache_Longbow.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:AH-64D_Apache_Longbow.jpg"
+  },
+  "boeing-b-17g": {
+   "credit": "Airwolfhound",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:B17_-_Chino_Airshow_2014_(framed).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:B17_-_Chino_Airshow_2014_(framed).jpg"
+  },
+  "boeing-b-29": {
+   "credit": "Alan Wilson",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Boeing_TB-29-70-BW_Superfortress_‘469972’_“Doc”_(N69972)_(50871638276).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Boeing_TB-29-70-BW_Superfortress_%E2%80%98469972%E2%80%99_%E2%80%9CDoc%E2%80%9D_(N69972)_(50871638276).jpg"
+  },
+  "boeing-b-47": {
+   "credit": "National Nuclear Security Administration / Nevada Site Office",
+   "licence": "Public domain",
+   "file": "File:NNSA-NSO-990.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:NNSA-NSO-990.jpg"
+  },
+  "boeing-b-52h": {
+   "credit": "Airman 1st Class Victor J. Caputo",
+   "licence": "Public domain",
+   "file": "File:B-52_Stratofortress_assigned_to_the_307th_Bomb_Wing_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:B-52_Stratofortress_assigned_to_the_307th_Bomb_Wing_(cropped).jpg"
+  },
+  "boeing-c-17": {
+   "credit": "U.S. Air Force",
+   "licence": "Public domain",
+   "file": "File:C-17_test_sortie.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:C-17_test_sortie.jpg"
+  },
+  "boeing-ch-46": {
+   "credit": "Andrew Schmidt",
+   "licence": "CC0",
+   "file": "File:CH-46_Sea_Knight_Helicopter.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:CH-46_Sea_Knight_Helicopter.jpg"
+  },
+  "boeing-ch-47f": {
+   "credit": "Sgt. Steven Galimore",
+   "licence": "CC0",
+   "file": "File:CH-47_assigned_to_3rd_General_Support_Aviation_Battalion,_82nd_Combat_Aviation_Brigade.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:CH-47_assigned_to_3rd_General_Support_Aviation_Battalion,_82nd_Combat_Aviation_Brigade.jpg"
+  },
+  "boeing-e-3": {
+   "credit": "Senior Airman Roslyn Ward",
+   "licence": "Public domain",
+   "file": "File:E-3_Sentry_Airborne_Warning_and_Control_System_(AWACS)_conducts_a_mission.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:E-3_Sentry_Airborne_Warning_and_Control_System_(AWACS)_conducts_a_mission.jpg"
+  },
+  "boeing-f-15ex": {
+   "credit": "Ethan Wagner",
+   "licence": "Public domain",
+   "file": "File:F-15EX_Eagle_II.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:F-15EX_Eagle_II.jpg"
+  },
+  "boeing-fa-18e": {
+   "credit": "U.S. Navy photo by Seaman Kevin T. Murray Jr.",
+   "licence": "Public domain",
+   "file": "File:US_Navy_071203-N-8923M-074_An_F-A-18F_Super_Hornet,_from_the_Red_Rippers_of_Strike_Fighter_Squadron_(VFA)_11,_makes_a_sharp_turn_above_the_flight_deck_aboard_the_Nimitz-class_nuclear-powered_aircraft_carrier_USS_Harry_S._Truman.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:US_Navy_071203-N-8923M-074_An_F-A-18F_Super_Hornet,_from_the_Red_Rippers_of_Strike_Fighter_Squadron_(VFA)_11,_makes_a_sharp_turn_above_the_flight_deck_aboard_the_Nimitz-class_nuclear-powered_aircraft_carrier_USS_Harry_S._Truman.jpg"
+  },
+  "boeing-kc-135": {
+   "credit": "U.S. Air Force photo/Tech. Sgt. Angelique Perez",
+   "licence": "Public domain",
+   "file": "File:F-15C_Eagle_from_the_67th_Fighter_Squadron_at_Kadena_AB_is_refueled_by_a_KC-135R_Stratotanker_from_the_909th_Air_Refueling_Squadron_.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:F-15C_Eagle_from_the_67th_Fighter_Squadron_at_Kadena_AB_is_refueled_by_a_KC-135R_Stratotanker_from_the_909th_Air_Refueling_Squadron_.jpg"
+  },
+  "boeing-kc-46": {
+   "credit": "USAF Christopher Okula",
+   "licence": "Public domain",
+   "file": "File:KC-46_Pegasus_prepares_to_refuel_C-17_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:KC-46_Pegasus_prepares_to_refuel_C-17_(cropped).jpg"
+  },
+  "boeing-mq-25": {
+   "credit": "United States Navy photo courtesy of Boeing",
+   "licence": "Public domain",
+   "file": "File:MQ-25_refuels_F-35C_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MQ-25_refuels_F-35C_(cropped).jpg"
+  },
+  "boeing-p-8": {
+   "credit": "Darren Koch",
+   "licence": "GFDL 1.2",
+   "file": "File:US_Navy_P-8_Poseidon_taking_off_at_Perth_Airport.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:US_Navy_P-8_Poseidon_taking_off_at_Perth_Airport.jpg"
+  },
+  "boeing-rc-135": {
+   "credit": "U.S. Air Force photo by Master Sgt. Lance Cheung",
+   "licence": "Public domain",
+   "file": "File:RC-135_Rivet_Joint_in_flight.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:RC-135_Rivet_Joint_in_flight.jpg"
+  },
+  "boulton-paul-defiant-mk-i": {
+   "credit": "RAF",
+   "licence": "Public domain",
+   "file": "File:Mk1_Defiant.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Mk1_Defiant.jpg"
+  },
+  "brewster-f2a-3-buffalo": {
+   "credit": "Unknown",
+   "licence": "Public domain",
+   "file": "File:Brewster_F2A-3_Buffalo_in_flight_near_NAS_Miami,_Florida_(USA),_on_2_August_1942_(NH_97540).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Brewster_F2A-3_Buffalo_in_flight_near_NAS_Miami,_Florida_(USA),_on_2_August_1942_(NH_97540).jpg"
+  },
+  "bristol-beaufighter-mk-vif": {
+   "credit": "Umeyou",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Bristol_Beaufighter_Mk.IC_1944.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bristol_Beaufighter_Mk.IC_1944.jpg"
+  },
+  "bristol-blenheim-iv": {
+   "credit": "Airwolfhound from  Hertfordshire, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Blenheim_-_RIAT_2015_(19998104414).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Blenheim_-_RIAT_2015_(19998104414).jpg"
+  },
+  "bristol-f2b": {
+   "credit": "Alan Wilson from Stilton, Peterborough, Cambs, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Bristol_F2b_Fighter_‘D8096_D’_(G-AEPH)_(30273241577).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bristol_F2b_Fighter_%E2%80%98D8096_D%E2%80%99_(G-AEPH)_(30273241577).jpg"
+  },
+  "british-aerospace-harrier-gr7": {
+   "credit": "Staff Sgt. Aaron Allmon",
+   "licence": "Public domain",
+   "file": "File:RAF_Harrier_GR9.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:RAF_Harrier_GR9.JPG"
+  },
+  "british-aerospace-hawk-t1": {
+   "credit": "Tim Felce (Airwolfhound)",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Hawk_-_RIAT_2011_(6122004254).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Hawk_-_RIAT_2011_(6122004254).jpg"
+  },
+  "british-aerospace-sea-harrier-frs1": {
+   "credit": "Andrew P Clarke (D2180s at English Wikipedia",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:SeaHarrier_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:SeaHarrier_(cropped).jpg"
+  },
+  "casa-cn-235": {
+   "credit": "Contando Estrelas from Vigo, España / Spain",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Festival_Aéreo_de_Vigo_2010_(4807526294).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Festival_A%C3%A9reo_de_Vigo_2010_(4807526294).jpg"
+  },
+  "casc-ch-5": {
+   "credit": "Infinty 0",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:CH-4_at_Airshow_China_Zhuhai_2022.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:CH-4_at_Airshow_China_Zhuhai_2022.jpg"
+  },
+  "cessna-a-37": {
+   "credit": "TSGT KEN HAMMOND",
+   "licence": "Public domain",
+   "file": "File:OA-37B-1_(centered).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:OA-37B-1_(centered).jpg"
+  },
+  "cessna-t-37": {
+   "credit": "Staff Sgt. Andy Dunaway",
+   "licence": "Public domain",
+   "file": "File:T-37_021203-O-9999G-003.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:T-37_021203-O-9999G-003.jpg"
+  },
+  "cessna-t-41": {
+   "credit": "US Air Force",
+   "licence": "Public domain",
+   "file": "File:Cessna_T-41_Mescalero_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Cessna_T-41_Mescalero_(cropped).jpg"
+  },
+  "changhe-z-10": {
+   "credit": "3GO*CHN-405/mjordan_6",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:PLAAF_Changhe_WZ-10_-_Jordan.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:PLAAF_Changhe_WZ-10_-_Jordan.jpg"
+  },
+  "chengdu-j-10a": {
+   "credit": "Alert5",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:J-10B_with_PL-10_and_PL-12.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:J-10B_with_PL-10_and_PL-12.jpg"
+  },
+  "chengdu-j-10c": {
+   "credit": "Alert5",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:J-10B_with_PL-10_and_PL-12.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:J-10B_with_PL-10_and_PL-12.jpg"
+  },
+  "chengdu-j-20": {
+   "credit": "N509FZ",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:J-20_at_CCAS2022_(20220827103424).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:J-20_at_CCAS2022_(20220827103424).jpg"
+  },
+  "chengdu-j-7": {
+   "credit": "Bangladesh Air Force",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Bangladesh_Air_Force_F-7BGI_inflight.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Bangladesh_Air_Force_F-7BGI_inflight.png"
+  },
+  "consolidated-b-24j": {
+   "credit": "U.S. Air Force photos",
+   "licence": "Public domain",
+   "file": "File:Maxwell_B-24_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Maxwell_B-24_(cropped).jpg"
+  },
+  "convair-b-58": {
+   "credit": "US Air Force",
+   "licence": "Public domain",
+   "file": "File:B-58_(modified).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:B-58_(modified).jpg"
+  },
+  "convair-f-102a": {
+   "credit": "USAF",
+   "licence": "Public domain",
+   "file": "File:Convair_YF-102_FC-782.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Convair_YF-102_FC-782.jpg"
+  },
+  "convair-f-106a": {
+   "credit": "Staff Sgt. John K. McDowell",
+   "licence": "Public domain",
+   "file": "File:F-106A_Chase_Dart.JPEG",
+   "page": "https://commons.wikimedia.org/wiki/File:F-106A_Chase_Dart.JPEG"
+  },
+  "curtiss-p-36a-hawk": {
+   "credit": "Alan Wilson from Stilton, Peterborough, Cambs, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Curtiss_P-36C_Hawk_‘PA-50’_(G-CIXJ)_(35522160474).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Curtiss_P-36C_Hawk_%E2%80%98PA-50%E2%80%99_(G-CIXJ)_(35522160474).jpg"
+  },
+  "curtiss-p-40e-warhawk": {
+   "credit": "Alan Wilson from Stilton, Peterborough, Cambs, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Curtiss_P-40M_Warhawk_'2104590_-_44'_(G-KITT)_(26830598751).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Curtiss_P-40M_Warhawk_%272104590_-_44%27_(G-KITT)_(26830598751).jpg"
+  },
+  "curtiss-p-40n-warhawk": {
+   "credit": "Alan Wilson from Stilton, Peterborough, Cambs, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Curtiss_P-40M_Warhawk_'2104590_-_44'_(G-KITT)_(26830598751).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Curtiss_P-40M_Warhawk_%272104590_-_44%27_(G-KITT)_(26830598751).jpg"
+  },
+  "curtiss-sb2c": {
+   "credit": "Unknown authorUnknown author",
+   "licence": "Public domain",
+   "file": "File:Curtiss_SB2C-5_Helldiver_warbird_in_flight.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Curtiss_SB2C-5_Helldiver_warbird_in_flight.jpg"
+  },
+  "curtiss-c-46": {
+   "credit": "usaf",
+   "licence": "Public domain",
+   "file": "File:C-46_Commando.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:C-46_Commando.jpg"
+  },
+  "dassault-atlantique-2": {
+   "credit": "OTOMATICC",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Breguet_1150_Atlantique_2_2.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Breguet_1150_Atlantique_2_2.png"
+  },
+  "dassault-mirage-2000c": {
+   "credit": "SRA GREG L. DAVIS, USAF",
+   "licence": "Public domain",
+   "file": "File:Mirage_2000C_in-flight_2_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Mirage_2000C_in-flight_2_(cropped).jpg"
+  },
+  "dassault-mirage-5": {
+   "credit": "Chris Lofting",
+   "licence": "GFDL 1.2",
+   "file": "File:Chile_Air_Force_Dassault_(SABCA)_Mirage_5MA_Elkan_Lofting-2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Chile_Air_Force_Dassault_(SABCA)_Mirage_5MA_Elkan_Lofting-2.jpg"
+  },
+  "dassault-mirage-f1c": {
+   "credit": "MSgt Eric Harris",
+   "licence": "Public domain",
+   "file": "File:French_Air_Force_Mirage_F1_returns_to_it's_mission_after_receiving_fuel_from_a_KC-10_Extender.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:French_Air_Force_Mirage_F1_returns_to_it%27s_mission_after_receiving_fuel_from_a_KC-10_Extender.jpg"
+  },
+  "dassault-mirage-iiie": {
+   "credit": "TSGT CURT EDDINGS",
+   "licence": "Public domain",
+   "file": "File:Two_Mirage_III_of_the_Royal_Australian_Air_Force_1.JPEG",
+   "page": "https://commons.wikimedia.org/wiki/File:Two_Mirage_III_of_the_Royal_Australian_Air_Force_1.JPEG"
+  },
+  "dassault-mystere-iva": {
+   "credit": "Jean-Christophe BENOIST",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Dassault_Mystère_IV.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Dassault_Myst%C3%A8re_IV.jpg"
+  },
+  "dassault-rafale-c": {
+   "credit": "Tim Felce (Airwolfhound)",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Rafale_-_RIAT_2009_(3751416421).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Rafale_-_RIAT_2009_(3751416421).jpg"
+  },
+  "dassault-super-etendard": {
+   "credit": "Tim Felce (Airwolfhound)",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Super_Etendard_-_RIAT_2005_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Super_Etendard_-_RIAT_2005_(cropped).jpg"
+  },
+  "dassault-neuron": {
+   "credit": "Aerolegende",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:NEUROn_-_Dassault_Aviation_-_Démonstrateur_de_drone_de_combat_(cropped).jpeg",
+   "page": "https://commons.wikimedia.org/wiki/File:NEUROn_-_Dassault_Aviation_-_D%C3%A9monstrateur_de_drone_de_combat_(cropped).jpeg"
+  },
+  "dassault-dornier-alpha-jet-e": {
+   "credit": "Tim Felce (Airwolfhound)",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Alpha_Jet_-_RIAT_2007_(2544737153).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Alpha_Jet_-_RIAT_2007_(2544737153).jpg"
+  },
+  "dewoitine-d520": {
+   "credit": "D.520_Le_Bourget_01.jpg: User:PpPachy",
+   "licence": "CC BY-SA 2.5",
+   "file": "File:D.520_in_museum.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:D.520_in_museum.jpg"
+  },
+  "dornier-do-17z": {
+   "credit": "Ketelhohn [Kettelhohn]",
+   "licence": "CC BY-SA 3.0 de",
+   "file": "File:Bundesarchiv_Bild_101I-342-0603-25,_Belgien-Frankreich,_Flugzeuge_Dornier_Do_17.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-342-0603-25,_Belgien-Frankreich,_Flugzeuge_Dornier_Do_17.jpg"
+  },
+  "dornier-do-335": {
+   "credit": "Ad Meskens, zie ook:vliegtuigen",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Dornier_Pfeil2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Dornier_Pfeil2.jpg"
+  },
+  "douglas-a-1": {
+   "credit": "Clemens Vasters from Viersen, Germany",
+   "licence": "CC BY 2.0",
+   "file": "File:Douglas_A-1_Skyraider_(AD-4NA,_126965)_(7911148090).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Douglas_A-1_Skyraider_(AD-4NA,_126965)_(7911148090).jpg"
+  },
+  "douglas-a-20g": {
+   "credit": "USAAF",
+   "licence": "Public domain",
+   "file": "File:Douglas_A-20G_Havoc.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Douglas_A-20G_Havoc.jpg"
+  },
+  "douglas-a-26": {
+   "credit": "Ragnhild &amp; Neil Crawford",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Douglas_A26_Invader-2362.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Douglas_A26_Invader-2362.jpg"
+  },
+  "douglas-a-4": {
+   "credit": "Lt.JG Nelson, U.S. Navy",
+   "licence": "Public domain",
+   "file": "File:Douglas_A-4E_Skyhawk_of_VA-164_in_flight_over_Vietnam_on_21_November_1967_(6430101).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Douglas_A-4E_Skyhawk_of_VA-164_in_flight_over_Vietnam_on_21_November_1967_(6430101).jpg"
+  },
+  "douglas-c-133": {
+   "credit": "USAF",
+   "licence": "Public domain",
+   "file": "File:C-133b-sanfrancsiscobay.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:C-133b-sanfrancsiscobay.jpg"
+  },
+  "douglas-c-47": {
+   "credit": "Airwolfhound",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:C47_Skytrain_-_Duxford_D-Day_Show_2014_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:C47_Skytrain_-_Duxford_D-Day_Show_2014_(cropped).jpg"
+  },
+  "douglas-c-54": {
+   "credit": "en:User:Signaleer first uploaded to English WP, User:Alaniaris re-uploaded it here",
+   "licence": "Public domain",
+   "file": "File:An_USAF_C-54_Skymaster.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:An_USAF_C-54_Skymaster.jpg"
+  },
+  "douglas-sbd": {
+   "credit": "Tomás Del Coro",
+   "licence": "CC BY-SA 2.5",
+   "file": "File:NX670AM_Douglas_SBD-5_Dauntless_Bu_No_28536_Planes_of_Fame_Air_Museum_(centered).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:NX670AM_Douglas_SBD-5_Dauntless_Bu_No_28536_Planes_of_Fame_Air_Museum_(centered).jpg"
+  },
+  "elbit-hermes-900": {
+   "credit": "Ronite",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Elbit_Systems_900_take_off.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Elbit_Systems_900_take_off.jpg"
+  },
+  "embraer-emb-312": {
+   "credit": "Chris Lofting",
+   "licence": "GFDL 1.2",
+   "file": "File:Peru_Air_Force_-_Embraer_T-27_Tucano_-_Lofting.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Peru_Air_Force_-_Embraer_T-27_Tucano_-_Lofting.jpg"
+  },
+  "embraer-emb-314": {
+   "credit": "Matt Morgan",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Embraer_EMB-314_Super_Tucano_Brazilian_Air_Force_1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Embraer_EMB-314_Super_Tucano_Brazilian_Air_Force_1.jpg"
+  },
+  "embraer-kc-390": {
+   "credit": "Matti Blume",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Embraer_KC-390,_Paris_Air_Show_2019,_Le_Bourget_(SIAE0824).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Embraer_KC-390,_Paris_Air_Show_2019,_Le_Bourget_(SIAE0824).jpg"
+  },
+  "english-electric-lightning-f6": {
+   "credit": "Mike Freer - Touchdown-aviation",
+   "licence": "GFDL 1.2",
+   "file": "File:English_Electric_Lightning_F6,_UK_-_Air_Force_AN2260192.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:English_Electric_Lightning_F6,_UK_-_Air_Force_AN2260192.jpg"
+  },
+  "eurofighter-typhoon": {
+   "credit": "Chris Lofting",
+   "licence": "GFDL 1.2",
+   "file": "File:RAF_Eurofighter_EF-2000_Typhoon_F2_Lofting-1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:RAF_Eurofighter_EF-2000_Typhoon_F2_Lofting-1.jpg"
+  },
+  "fairchild-c-119": {
+   "credit": "U.S. Air Force",
+   "licence": "Public domain",
+   "file": "File:Fairchild_C-119B_of_the_314th_Troop_Carrier_Group_in_flight,_1952_(021001-O-9999G-016).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Fairchild_C-119B_of_the_314th_Troop_Carrier_Group_in_flight,_1952_(021001-O-9999G-016).jpg"
+  },
+  "fairchild-c-123": {
+   "credit": "Dan R. Boyd, PH3, USCG",
+   "licence": "Public domain",
+   "file": "File:AC_Fairchild_C123_colour.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:AC_Fairchild_C123_colour.jpg"
+  },
+  "fairchild-a-10": {
+   "credit": "Master Sgt. William Greer, U.S. Air Force",
+   "licence": "Public domain",
+   "file": "File:Fairchild_Republic_A-10_Thunderbolt_II_-_32156159151.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Fairchild_Republic_A-10_Thunderbolt_II_-_32156159151.jpg"
+  },
+  "fairey-firefly-mk-i": {
+   "credit": "RuthAS",
+   "licence": "CC BY 3.0",
+   "file": "File:Fairey_Firefly_FR.1_Z2030_Ringway_04.46_edited-2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Fairey_Firefly_FR.1_Z2030_Ringway_04.46_edited-2.jpg"
+  },
+  "fairey-swordfish": {
+   "credit": "John5199",
+   "licence": "CC BY 2.0",
+   "file": "File:Shoreham_Airshow_2013_(9700275620).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Shoreham_Airshow_2013_(9700275620).jpg"
+  },
+  "fiat-cr42": {
+   "credit": "Unknown authorUnknown author",
+   "licence": "Public domain",
+   "file": "File:Fiat_CR.42_-_Aegean_Islands.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Fiat_CR.42_-_Aegean_Islands.jpg"
+  },
+  "fiat-g50": {
+   "credit": "Sturm",
+   "licence": "CC BY-SA 3.0 de",
+   "file": "File:Bundesarchiv_Bild_101I-425-0338-16A,_Flugzeuge_Fiat_G.50_und_Messerschmitt_Me_110.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-425-0338-16A,_Flugzeuge_Fiat_G.50_und_Messerschmitt_Me_110.jpg"
+  },
+  "fiat-g91r": {
+   "credit": "Pajx",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Luftwaffe_Museum_Fiat_G91_2007.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Luftwaffe_Museum_Fiat_G91_2007.jpg"
+  },
+  "focke-wulf-fw-189": {
+   "credit": "Unknown authorUnknown author",
+   "licence": "Public domain",
+   "file": "File:Focke_Wulf_Fw189_(2).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Focke_Wulf_Fw189_(2).jpg"
+  },
+  "focke-wulf-fw-190a": {
+   "credit": "RAF",
+   "licence": "Public domain",
+   "file": "File:Fw_190A-3_JG_2_in_Britain_1942.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Fw_190A-3_JG_2_in_Britain_1942.jpg"
+  },
+  "focke-wulf-fw-190d9": {
+   "credit": "RAF",
+   "licence": "Public domain",
+   "file": "File:Fw_190A-3_JG_2_in_Britain_1942.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Fw_190A-3_JG_2_in_Britain_1942.jpg"
+  },
+  "focke-wulf-ta-152h": {
+   "credit": "SDASM Archives",
+   "licence": "Public domain",
+   "file": "File:Focke-Wulf_Ta-152_H_(15269691122).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Focke-Wulf_Ta-152_H_(15269691122).jpg"
+  },
+  "fokker-d-vii": {
+   "credit": "United States Air Force",
+   "licence": "Public domain",
+   "file": "File:Fokker_D._VII_USAF.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Fokker_D._VII_USAF.jpg"
+  },
+  "fokker-d-xxi": {
+   "credit": "Stahlkocher",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Fokker_D.XXI_Soesterberg.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Fokker_D.XXI_Soesterberg.jpg"
+  },
+  "fokker-dr-i": {
+   "credit": "Collectie Van Beek",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Fokker_Dr.I_driedekker_2161_026221.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Fokker_Dr.I_driedekker_2161_026221.jpg"
+  },
+  "fokker-f27": {
+   "credit": "US Army",
+   "licence": "Public domain",
+   "file": "File:Fokker_F27_Friendship_US_Army_Golden_Knight.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Fokker_F27_Friendship_US_Army_Golden_Knight.jpg"
+  },
+  "fouga-cm-170-magister": {
+   "credit": "Tandorini",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Belgium_Fouga_Magister.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Belgium_Fouga_Magister.jpg"
+  },
+  "ga-mq-1": {
+   "credit": "Lt. Col. Leslie Pratt",
+   "licence": "Public domain",
+   "file": "File:MQ-1_Predator,_armed_with_AGM-114_Hellfire_missiles.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MQ-1_Predator,_armed_with_AGM-114_Hellfire_missiles.jpg"
+  },
+  "ga-mq-1c": {
+   "credit": "Photo Courtesy of U.S. Army",
+   "licence": "Public domain",
+   "file": "File:MQ-1C_Warrior_(2005-08-11).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MQ-1C_Warrior_(2005-08-11).jpg"
+  },
+  "ga-mq-9": {
+   "credit": "Lt. Col. Leslie Pratt",
+   "licence": "Public domain",
+   "file": "File:MQ-9_Reaper_UAV_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MQ-9_Reaper_UAV_(cropped).jpg"
+  },
+  "general-dynamics-f-111f": {
+   "credit": "Master Sgt. Patrick Nugent",
+   "licence": "Public domain",
+   "file": "File:AFR_F-111_air_to_air_refueling.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:AFR_F-111_air_to_air_refueling.jpg"
+  },
+  "general-dynamics-f-16c": {
+   "credit": "Master Sgt. Andy Dunaway",
+   "licence": "Public domain",
+   "file": "File:F-16_June_2008.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:F-16_June_2008.jpg"
+  },
+  "gloster-gladiator-mk-ii": {
+   "credit": "Airwolfhound",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Gloster_Gladiator_7985K.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Gloster_Gladiator_7985K.jpg"
+  },
+  "gloster-meteor-f8": {
+   "credit": "Chris Phutully",
+   "licence": "CC BY 2.0",
+   "file": "File:Gloster_Meteor_Centenary_of_Military_Aviation_2014_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Gloster_Meteor_Centenary_of_Military_Aviation_2014_(cropped).jpg"
+  },
+  "grob-g-120tp": {
+   "credit": "Alan Wilson",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Grob_120_TP-A_‘D-ETPX’.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Grob_120_TP-A_%E2%80%98D-ETPX%E2%80%99.jpg"
+  },
+  "grumman-a-6": {
+   "credit": "U.S. Navy",
+   "licence": "Public domain",
+   "file": "File:Grumman_KA-6D_Intruder_of_VA-34_in_flight,_in_1988.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Grumman_KA-6D_Intruder_of_VA-34_in_flight,_in_1988.jpg"
+  },
+  "grumman-c-2": {
+   "credit": "US Navy",
+   "licence": "Public domain",
+   "file": "File:C-2A_NP-2000_VRC-40_in_flight_2009_(modified).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:C-2A_NP-2000_VRC-40_in_flight_2009_(modified).jpg"
+  },
+  "grumman-e-2": {
+   "credit": "US Navy",
+   "licence": "Public domain",
+   "file": "File:E-2D_Advanced_Hawkeye_aircraft_conduct_a_test_flight.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:E-2D_Advanced_Hawkeye_aircraft_conduct_a_test_flight.jpg"
+  },
+  "grumman-f-14a": {
+   "credit": "U.S. Navy photo",
+   "licence": "Public domain",
+   "file": "File:US_Navy_051105-F-5480T-005_An_F-14D_Tomcat_conducts_a_mission_over_the_Persian_Gulf-region.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:US_Navy_051105-F-5480T-005_An_F-14D_Tomcat_conducts_a_mission_over_the_Persian_Gulf-region.jpg"
+  },
+  "grumman-f4f-4-wildcat": {
+   "credit": "The original uploader was Felix c at English Wikipedia.",
+   "licence": "Public domain",
+   "file": "File:F4F-3_new_pitot_tube_of_later_model.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:F4F-3_new_pitot_tube_of_later_model.jpg"
+  },
+  "grumman-f6f-5-hellcat": {
+   "credit": "USN;",
+   "licence": "Public domain",
+   "file": "File:Hellcats_F6F-3,_May_1943.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Hellcats_F6F-3,_May_1943.jpg"
+  },
+  "grumman-f8f-1-bearcat": {
+   "credit": "Airwolfhound from  Hertfordshire, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Bearcat_-_Fly_Navy_Day_2016_(27564576372).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bearcat_-_Fly_Navy_Day_2016_(27564576372).jpg"
+  },
+  "grumman-f9f-5": {
+   "credit": "U.S. Navy",
+   "licence": "Public domain",
+   "file": "File:Grumman_F9F-2_Panther_of_VF-112_in_flight,_circa_in_1951_(1564-78).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Grumman_F9F-2_Panther_of_VF-112_in_flight,_circa_in_1951_(1564-78).jpg"
+  },
+  "grumman-tbf": {
+   "credit": "Airwolfhound from  Hertfordshire, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:TBM3_Avenger_-_Chino_Airshow_2014_(14344070442).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:TBM3_Avenger_-_Chino_Airshow_2014_(14344070442).jpg"
+  },
+  "hal-ajeet": {
+   "credit": "Rameshng",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Ajeet_at_HAL_Museum_7693.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Ajeet_at_HAL_Museum_7693.JPG"
+  },
+  "hal-dhruv": {
+   "credit": "Arpingstone",
+   "licence": "Public domain",
+   "file": "File:Indian_air_force_dhruv_helicopter_j4042_arp.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Indian_air_force_dhruv_helicopter_j4042_arp.jpg"
+  },
+  "hal-hf-24-marut": {
+   "credit": "SDASM Archives",
+   "licence": "Public domain",
+   "file": "File:HAL_(Hindustan_Aeronautics),_HF-24,_Marut_(7585415088).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:HAL_(Hindustan_Aeronautics),_HF-24,_Marut_(7585415088).jpg"
+  },
+  "hal-hjt-16-kiran": {
+   "credit": "Aeroprints.com",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:U2484_HAL_HJT-16_Kiran_Indian_Air_Force_(_Surya_Kiran_Aerobatic_Team_)_(8414605364).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:U2484_HAL_HJT-16_Kiran_Indian_Air_Force_(_Surya_Kiran_Aerobatic_Team_)_(8414605364).jpg"
+  },
+  "hesa-azarakhsh": {
+   "credit": "Marjan-shivA",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:An_IRIAF_HESA_Azarakhsh_in_Vahdati_Airbase_Air_Show.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:An_IRIAF_HESA_Azarakhsh_in_Vahdati_Airbase_Air_Show.JPG"
+  },
+  "hesa-karrar": {
+   "credit": "سید حسین تهوری  (Hossein Tahavori)",
+   "licence": "CC BY 4.0",
+   "file": "File:کرار_-_هشتمین_همایش_و_نمایشگاه_هوایی_و_هوانوردی_کشور_در_کیش_(1)_(01).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:%DA%A9%D8%B1%D8%A7%D8%B1_-_%D9%87%D8%B4%D8%AA%D9%85%DB%8C%D9%86_%D9%87%D9%85%D8%A7%DB%8C%D8%B4_%D9%88_%D9%86%D9%85%D8%A7%DB%8C%D8%B4%DA%AF%D8%A7%D9%87_%D9%87%D9%88%D8%A7%DB%8C%DB%8C_%D9%88_%D9%87%D9%88%D8%A7%D9%86%D9%88%D8%B1%D8%AF%DB%8C_%DA%A9%D8%B4%D9%88%D8%B1_%D8%AF%D8%B1_%DA%A9%DB%8C%D8%B4_(1)_(01).jpg"
+  },
+  "hesa-kowsar": {
+   "credit": "Tasnim News Agency",
+   "licence": "CC BY 4.0",
+   "file": "File:HESA_Kowsar4.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:HESA_Kowsar4.jpg"
+  },
+  "hesa-saeqeh": {
+   "credit": "Shahram Sharifi",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:A_HESA_Saeqeh_of_IRIAF.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:A_HESA_Saeqeh_of_IRIAF.jpg"
+  },
+  "hesa-shabaviz-2-75": {
+   "credit": "Alan Radecki",
+   "licence": "CC BY 2.5",
+   "file": "File:Kfd-205-N408KC-050430-05_(framed).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Kfd-205-N408KC-050430-05_(framed).jpg"
+  },
+  "hesa-shafaq": {
+   "credit": "Aspahbod at English Wikipedia",
+   "licence": "CC BY 3.0",
+   "file": "File:ShafaqFighter.png",
+   "page": "https://commons.wikimedia.org/wiki/File:ShafaqFighter.png"
+  },
+  "hesa-simorgh": {
+   "credit": "HESA",
+   "licence": "Public domain",
+   "file": "File:HESA_company.png",
+   "page": "https://commons.wikimedia.org/wiki/File:HESA_company.png"
+  },
+  "hesa-yasin": {
+   "credit": "Mohsen Ranginkaman",
+   "licence": "CC BY 4.0",
+   "file": "File:Unveiling_ceremony_of_Yasin_advanced_jet_trainer_(019).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Unveiling_ceremony_of_Yasin_advanced_jet_trainer_(019).jpg"
+  },
+  "handley-page-halifax": {
+   "credit": "British official photographer",
+   "licence": "Public domain",
+   "file": "File:Halifax-mk3.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Halifax-mk3.jpg"
+  },
+  "handley-page-victor-b2": {
+   "credit": "Mike Freer - Touchdown-aviation",
+   "licence": "GFDL 1.2",
+   "file": "File:Handley_Page_HP-80_Victor_K2,_UK_-_Air_Force_AN1926561.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Handley_Page_HP-80_Victor_K2,_UK_-_Air_Force_AN1926561.jpg"
+  },
+  "harbin-z-19": {
+   "credit": "Alert5",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Harbin_Z-19_helicopter_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Harbin_Z-19_helicopter_(cropped).jpg"
+  },
+  "hawker-hunter-f6": {
+   "credit": "Tim Felce (Airwolfhound)",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Hunter_-_Shuttleworth_Military_Pageant_June_2013_(9187713516).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Hunter_-_Shuttleworth_Military_Pageant_June_2013_(9187713516).jpg"
+  },
+  "hawker-hurricane-mk-i": {
+   "credit": "Alan Wilson from Stilton, Peterborough, Cambs, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Hawker_Hurricane_I_'R4118_UP-W'_(G-HUPW)_(41455530471).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Hawker_Hurricane_I_%27R4118_UP-W%27_(G-HUPW)_(41455530471).jpg"
+  },
+  "hawker-hurricane-mk-iic": {
+   "credit": "Alan Wilson from Stilton, Peterborough, Cambs, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Hawker_Hurricane_I_'R4118_UP-W'_(G-HUPW)_(41455530471).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Hawker_Hurricane_I_%27R4118_UP-W%27_(G-HUPW)_(41455530471).jpg"
+  },
+  "hawker-sea-fury-fb-11": {
+   "credit": "Alan Wilson from Stilton, Peterborough, Cambs, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Hawker_Fury_FB.11_‘SR661’_(G-CBEL)_(35902999510).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Hawker_Fury_FB.11_%E2%80%98SR661%E2%80%99_(G-CBEL)_(35902999510).jpg"
+  },
+  "hawker-tempest-mk-v": {
+   "credit": "RAF",
+   "licence": "Public domain",
+   "file": "File:Hawker_Tempest_V_in_flight_Nov_1944.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Hawker_Tempest_V_in_flight_Nov_1944.jpg"
+  },
+  "hawker-typhoon-mk-ib": {
+   "credit": "Royal Air Force (RAF) official photographer",
+   "licence": "Public domain",
+   "file": "File:The_Royal_Air_Force_in_Britain,_May_1943_TR1091.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:The_Royal_Air_Force_in_Britain,_May_1943_TR1091.jpg"
+  },
+  "hawker-siddeley-harrier-gr3": {
+   "credit": "Lieutenant Commander John R. Leenhouts, U.S. Navy; post-work FOX 52",
+   "licence": "Public domain",
+   "file": "File:Spanish_Hawker_Siddeley_AV-8S_Matador_in_flight_over_the_Mediterranean_Sea,_1_June_1988_(6430231).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Spanish_Hawker_Siddeley_AV-8S_Matador_in_flight_over_the_Mediterranean_Sea,_1_June_1988_(6430231).jpg"
+  },
+  "hawkersiddeley-nimrod": {
+   "credit": "Dale Coleman",
+   "licence": "GFDL 1.2",
+   "file": "File:British_Aerospace_Nimrod_MR.2,_United_Kingdom_-_Royal_Air_Force_(RAF)_JP506967.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:British_Aerospace_Nimrod_MR.2,_United_Kingdom_-_Royal_Air_Force_(RAF)_JP506967.jpg"
+  },
+  "heinkel-he-111h": {
+   "credit": "Schödl (e)",
+   "licence": "CC BY-SA 3.0 de",
+   "file": "File:Bundesarchiv_Bild_101I-343-0694-21,_Belgien-Frankreich,_Flugzeug_Heinkel_He_111.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-343-0694-21,_Belgien-Frankreich,_Flugzeug_Heinkel_He_111.jpg"
+  },
+  "heinkel-he-177": {
+   "credit": "Unknown authorUnknown author",
+   "licence": "Public domain",
+   "file": "File:Heinkel_He_177A-02_in_flight_1942.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Heinkel_He_177A-02_in_flight_1942.jpg"
+  },
+  "heinkel-he-219": {
+   "credit": "Unknown authorUnknown author",
+   "licence": "Public domain",
+   "file": "File:Heinkel_219_2012.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Heinkel_219_2012.jpg"
+  },
+  "henschel-hs-129": {
+   "credit": "USAAF; original uploader to en.wikipedia was en:user:Maury Markowitz",
+   "licence": "Public domain",
+   "file": "File:Henschel_Hs_129B.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Henschel_Hs_129B.jpg"
+  },
+  "hongdu-gj-11": {
+   "credit": "颐园居",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Gongji-11_20221020.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Gongji-11_20221020.jpg"
+  },
+  "hongdu-jl-8": {
+   "credit": "Bangladesh Air Force",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Bangladesh_Air_Force_K-8_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bangladesh_Air_Force_K-8_(cropped).jpg"
+  },
+  "hongdu-l-15": {
+   "credit": "Xu Zheng",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Hongdu_L-15_Falcon.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Hongdu_L-15_Falcon.jpg"
+  },
+  "iai-heron": {
+   "credit": "MathKnight and Zachi Evenor",
+   "licence": "CC BY 4.0",
+   "file": "File:IAF-Eitan--Independence-Day-2017-Tel-Nof-IZE-099.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:IAF-Eitan--Independence-Day-2017-Tel-Nof-IZE-099.jpg"
+  },
+  "iaio-fotros": {
+   "credit": "Mohamad Agah",
+   "licence": "CC BY 4.0",
+   "file": "File:Fotros.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Fotros.jpg"
+  },
+  "iaio-qaher-313": {
+   "credit": "Yunes Khani",
+   "licence": "CC BY 4.0",
+   "file": "File:Unveiling_ceremony_of_Qaher-313_fighter_(24).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Unveiling_ceremony_of_Qaher-313_fighter_(24).jpg"
+  },
+  "iar-80": {
+   "credit": "Sorin Tulea",
+   "licence": "Public domain",
+   "file": "File:IAR-80.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:IAR-80.jpg"
+  },
+  "ilyushin-il-10": {
+   "credit": "RuthAS",
+   "licence": "CC BY 3.0",
+   "file": "File:Ilyushin_Il-10M_Soviet_AF_Monino_29.08.94_edited-3.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Ilyushin_Il-10M_Soviet_AF_Monino_29.08.94_edited-3.jpg"
+  },
+  "ilyushin-il-14": {
+   "credit": "Lars Söderström",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Aeroflot_Ilyushin_Il-14_at_Arlanda,_November_1970.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Aeroflot_Ilyushin_Il-14_at_Arlanda,_November_1970.jpg"
+  },
+  "ilyushin-il-18": {
+   "credit": "Sergey Riabsev",
+   "licence": "GFDL 1.2",
+   "file": "File:Rossiya_Ilyushin_Il-18.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Rossiya_Ilyushin_Il-18.jpg"
+  },
+  "ilyushin-il-2": {
+   "credit": "no info",
+   "licence": "Public domain",
+   "file": "File:Il2_sturmovik.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Il2_sturmovik.jpg"
+  },
+  "ilyushin-il-28": {
+   "credit": "Wisnia6522",
+   "licence": "Public domain",
+   "file": "File:Ił_28_(2).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:I%C5%82_28_(2).jpg"
+  },
+  "ilyushin-il-38": {
+   "credit": "Sergey Krivchikov",
+   "licence": "GFDL 1.2",
+   "file": "File:Ilyushin_Il-38SD_Krivchikov_2007.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Ilyushin_Il-38SD_Krivchikov_2007.jpg"
+  },
+  "ilyushin-il-4": {
+   "credit": "Mike1979 Russia",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Il-4_front_view_Moscow.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Il-4_front_view_Moscow.jpg"
+  },
+  "ilyushin-il-76": {
+   "credit": "Ministry of Defence (Russia)",
+   "licence": "CC BY 4.0",
+   "file": "File:Il-76MD-90A_RF-78653.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Il-76MD-90A_RF-78653.jpg"
+  },
+  "ilyushin-il-78": {
+   "credit": "Konstantin Tyurpeko",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Ilyushin_Il-78M_inflight.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Ilyushin_Il-78M_inflight.jpg"
+  },
+  "junkers-ju-87b": {
+   "credit": "PK-Kriegsberichter Karnerth",
+   "licence": "CC BY-SA 3.0 de",
+   "file": "File:Junkers_Ju_87Ds_in_flight_Oct_1943.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Junkers_Ju_87Ds_in_flight_Oct_1943.jpg"
+  },
+  "junkers-ju-87d": {
+   "credit": "PK-Kriegsberichter Karnerth",
+   "licence": "CC BY-SA 3.0 de",
+   "file": "File:Junkers_Ju_87Ds_in_flight_Oct_1943.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Junkers_Ju_87Ds_in_flight_Oct_1943.jpg"
+  },
+  "junkers-ju-88a4": {
+   "credit": "Rompel",
+   "licence": "CC BY-SA 3.0 de",
+   "file": "File:Bundesarchiv_Bild_101I-363-2258-11,_Flugzeug_Junkers_Ju_88_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-363-2258-11,_Flugzeug_Junkers_Ju_88_(cropped).jpg"
+  },
+  "kai-fa-50": {
+   "credit": "Senior Airman Mitchell Corley",
+   "licence": "Public domain",
+   "file": "File:Philippine_Air_Force_FA-50PH.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Philippine_Air_Force_FA-50PH.jpg"
+  },
+  "kai-t-50": {
+   "credit": "Senior Airman Mitchell Corley",
+   "licence": "Public domain",
+   "file": "File:Philippine_Air_Force_FA-50PH.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Philippine_Air_Force_FA-50PH.jpg"
+  },
+  "kai-kt-1": {
+   "credit": "Doo Ho Kim",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Demonstration_Flight_of_ROKAF_New_Light_Trainer_KT-1_'Woongbi'(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Demonstration_Flight_of_ROKAF_New_Light_Trainer_KT-1_%27Woongbi%27(cropped).jpg"
+  },
+  "kai-kuh-1": {
+   "credit": "Korea Aerospace Industries",
+   "licence": "CC BY 2.0",
+   "file": "File:KUH-1P_Chamsuri_Demo_Flight_(13614397264).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:KUH-1P_Chamsuri_Demo_Flight_(13614397264).jpg"
+  },
+  "kamov-ka-27": {
+   "credit": "Jason R. Zalasky, U.S. Navy",
+   "licence": "Public domain",
+   "file": "File:A_Russian_Helix_KA-27_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:A_Russian_Helix_KA-27_(cropped).jpg"
+  },
+  "kamov-ka-52": {
+   "credit": "Dmitriy Pichugin",
+   "licence": "GFDL 1.2",
+   "file": "File:Russian_Air_Force_Kamov_Ka-50.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Russian_Air_Force_Kamov_Ka-50.jpg"
+  },
+  "kawanishi-n1k2-j": {
+   "credit": "USAF",
+   "licence": "Public domain",
+   "file": "File:Kawanishi_N1K2-J_050317-F-1234P-015.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Kawanishi_N1K2-J_050317-F-1234P-015.jpg"
+  },
+  "kawasaki-c-2": {
+   "credit": "Hunini",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:JASDF_C-2_fly_over_at_Miho_Air_Base.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:JASDF_C-2_fly_over_at_Miho_Air_Base.jpg"
+  },
+  "kawasaki-ki-100": {
+   "credit": "Murgatroyd49",
+   "licence": "CC BY 4.0",
+   "file": "File:Kawasaki_Ki-100_1b.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Kawasaki_Ki-100_1b.jpg"
+  },
+  "kawasaki-ki-45": {
+   "credit": "Unknown authorUnknown author",
+   "licence": "Public domain",
+   "file": "File:Ki_45_001.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Ki_45_001.jpg"
+  },
+  "kawasaki-ki-61": {
+   "credit": "Unknown",
+   "licence": "Public domain",
+   "file": "File:Kawasaki_Ki-61-14.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Kawasaki_Ki-61-14.jpg"
+  },
+  "kawasaki-t-4": {
+   "credit": "Jerry Gunner",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:20171009133407!66-5748_Kawasaki_T-4_Sotai_Shireibu_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:20171009133407!66-5748_Kawasaki_T-4_Sotai_Shireibu_(cropped).jpg"
+  },
+  "ltv-a-7": {
+   "credit": "Robert L. Lawson, U.S. Navy",
+   "licence": "Public domain",
+   "file": "File:A-7E_Corsair_II_of_VA-146_in_flight_on_16_November_1974_(NNAM.1996.253.7100.039).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:A-7E_Corsair_II_of_VA-146_in_flight_on_16_November_1974_(NNAM.1996.253.7100.039).jpg"
+  },
+  "lavochkin-la-5fn": {
+   "credit": "Неизвестен",
+   "licence": "Public domain",
+   "file": "File:Советский_истребитель_Ла-5Ф_В._Расторгуева_в_полете.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D0%B8%D1%81%D1%82%D1%80%D0%B5%D0%B1%D0%B8%D1%82%D0%B5%D0%BB%D1%8C_%D0%9B%D0%B0-5%D0%A4_%D0%92._%D0%A0%D0%B0%D1%81%D1%82%D0%BE%D1%80%D0%B3%D1%83%D0%B5%D0%B2%D0%B0_%D0%B2_%D0%BF%D0%BE%D0%BB%D0%B5%D1%82%D0%B5.jpg"
+  },
+  "lavochkin-la-7": {
+   "credit": "Alan Wilson from Stilton, Peterborough, Cambs, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Lavochkin_La-7_’27_white’_(25168790698).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Lavochkin_La-7_%E2%80%9927_white%E2%80%99_(25168790698).jpg"
+  },
+  "lavochkin-lagg-3": {
+   "credit": "Unknown authorUnknown author",
+   "licence": "Public domain",
+   "file": "File:LaGG-3_series_66.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:LaGG-3_series_66.jpg"
+  },
+  "leonardo-a129": {
+   "credit": "Aldo Bidini",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:20150506052017!Agusta_A129A_Mangusta,_Italy_-_Army_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:20150506052017!Agusta_A129A_Mangusta,_Italy_-_Army_(cropped).jpg"
+  },
+  "leonardo-aw101": {
+   "credit": "Gian Marco Anzellotti",
+   "licence": "CC BY 2.0",
+   "file": "File:AgustaWestland_HH-101A_Caesar_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:AgustaWestland_HH-101A_Caesar_(cropped).jpg"
+  },
+  "lockheed-ac-130": {
+   "credit": "MSgt Christopher Boitz",
+   "licence": "Public domain",
+   "file": "File:AC-130_(5872).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:AC-130_(5872).jpg"
+  },
+  "lockheed-c-130e": {
+   "credit": "U.S. Air Force photo by Tech. Sgt. Howard Blair",
+   "licence": "Public domain",
+   "file": "File:Lockheed_C-130_Hercules.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Lockheed_C-130_Hercules.jpg"
+  },
+  "lockheed-c-130h": {
+   "credit": "U.S. Air Force photo by Tech. Sgt. Howard Blair",
+   "licence": "Public domain",
+   "file": "File:Lockheed_C-130_Hercules.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Lockheed_C-130_Hercules.jpg"
+  },
+  "lockheed-c-141": {
+   "credit": "U.S. Air Force",
+   "licence": "Public domain",
+   "file": "File:C-141_Starlifter_58-4561.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:C-141_Starlifter_58-4561.jpg"
+  },
+  "lockheed-c-5": {
+   "credit": "U.S. Air Force photo by Brett Snow",
+   "licence": "Public domain",
+   "file": "File:USAF_C-5_Galaxy_in_flight.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:USAF_C-5_Galaxy_in_flight.jpg"
+  },
+  "lockheed-f-104g": {
+   "credit": "Alan Wilson",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Lockheed_F-104G_Starfighter_D-8114_(9179542542).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Lockheed_F-104G_Starfighter_D-8114_(9179542542).jpg"
+  },
+  "lockheed-f-117a": {
+   "credit": "Staff Sgt. Aaron Allmon II",
+   "licence": "Public domain",
+   "file": "File:F-117_Nighthawk_Front.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:F-117_Nighthawk_Front.jpg"
+  },
+  "lockheed-f-5e-lightning": {
+   "credit": "CindyN",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:P38_Lightning.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:P38_Lightning.jpg"
+  },
+  "lockheed-p-38j-lightning": {
+   "credit": "CindyN",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:P38_Lightning.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:P38_Lightning.jpg"
+  },
+  "lockheed-f-80c": {
+   "credit": "USAF",
+   "licence": "Public domain",
+   "file": "File:P80-1_300_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:P80-1_300_(cropped).jpg"
+  },
+  "lockheed-p-3": {
+   "credit": "海上自衛隊",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:P-3c_03l_(modified).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:P-3c_03l_(modified).jpg"
+  },
+  "lockheed-sr-71": {
+   "credit": "USAF / Judson Brohmer",
+   "licence": "Public domain",
+   "file": "File:Lockheed_SR-71_Blackbird.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Lockheed_SR-71_Blackbird.jpg"
+  },
+  "lockheed-t-33a": {
+   "credit": "Alejandro Pena  Edited by: FOX 52 and Bammesk",
+   "licence": "Public domain",
+   "file": "File:Arctic_Thunder_160729-F-YH552-021_-_edit1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Arctic_Thunder_160729-F-YH552-021_-_edit1.jpg"
+  },
+  "lockheed-u-2": {
+   "credit": "United States Department of the Air Force",
+   "licence": "Public domain",
+   "file": "File:Usaf.u2.750pix.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Usaf.u2.750pix.jpg"
+  },
+  "lockheedmartin-c-130j": {
+   "credit": "USAF",
+   "licence": "Public domain",
+   "file": "File:C-130J_135th_AS_Maryland_ANG_in_flight.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:C-130J_135th_AS_Maryland_ANG_in_flight.jpg"
+  },
+  "lockheed-martin-f-22a": {
+   "credit": "F-22_Raptor.JPG: Master Sgt. Andy Dunaway",
+   "licence": "Public domain",
+   "file": "File:F-22_Raptor_edit1_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:F-22_Raptor_edit1_(cropped).jpg"
+  },
+  "lockheed-martin-f-35a": {
+   "credit": "U.S. Air Force photo by Master Sgt. Donald R. Allen",
+   "licence": "Public domain",
+   "file": "File:F-35A_flight_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:F-35A_flight_(cropped).jpg"
+  },
+  "lockheed-martin-f-35b": {
+   "credit": "U.S. Air Force photo by Master Sgt. Donald R. Allen",
+   "licence": "Public domain",
+   "file": "File:F-35A_flight_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:F-35A_flight_(cropped).jpg"
+  },
+  "lockheed-rq-170": {
+   "credit": "FOX 52",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:RQ-170_art_impression.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:RQ-170_art_impression.jpg"
+  },
+  "airbus-bo-105": {
+   "credit": "Elisabeth Klimeschmodified by FOX 52",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:MBB_BO-105CBS-5,_Luftrettung_-_Bundesministerium_des_Innern_(modified).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MBB_BO-105CBS-5,_Luftrettung_-_Bundesministerium_des_Innern_(modified).jpg"
+  },
+  "mcdonnell-md-500": {
+   "credit": "SSGT Arnold W. Kalmanson",
+   "licence": "Public domain",
+   "file": "File:Hughes_530MG,_PROLOG_'85.JPEG",
+   "page": "https://commons.wikimedia.org/wiki/File:Hughes_530MG,_PROLOG_%2785.JPEG"
+  },
+  "macchi-c200": {
+   "credit": "USAAF",
+   "licence": "Public domain",
+   "file": "File:Macchi_MC-200_920901-F-1234P-073.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Macchi_MC-200_920901-F-1234P-073.jpg"
+  },
+  "macchi-c205": {
+   "credit": "fotografo  ufficiale",
+   "licence": "Public domain",
+   "file": "File:C.205V_352_Sq_20_Gr.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:C.205V_352_Sq_20_Gr.jpg"
+  },
+  "martin-b-26": {
+   "credit": "Photo by: Charles E. Brown. The original uploader was Bzuk at English Wikipedia., 2007-02-14 (original upload date)",
+   "licence": "Public domain",
+   "file": "File:B_26.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:B_26.jpg"
+  },
+  "mcdonnell-f-101b": {
+   "credit": "USAF",
+   "licence": "Public domain",
+   "file": "File:F-101B_New_York_ANG_in_flight_1978.jpeg",
+   "page": "https://commons.wikimedia.org/wiki/File:F-101B_New_York_ANG_in_flight_1978.jpeg"
+  },
+  "mcdonnell-f2h-3": {
+   "credit": "USN",
+   "licence": "Public domain",
+   "file": "File:McDonnell_F2H-2_Banshee_in_flight_(colour).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:McDonnell_F2H-2_Banshee_in_flight_(colour).jpg"
+  },
+  "mcdonnell-f3h-2": {
+   "credit": "U.S. Navy",
+   "licence": "Public domain",
+   "file": "File:McDonnell_F3H-2N_Demon_in_flight_in_1956.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:McDonnell_F3H-2N_Demon_in_flight_in_1956.jpg"
+  },
+  "mcdonnell-douglas-av-8b": {
+   "credit": "Aldo Bidini",
+   "licence": "GFDL 1.2",
+   "file": "File:Boeing_AV-8B_Harrier_II,_Italy_-_Navy_JP7306232.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Boeing_AV-8B_Harrier_II,_Italy_-_Navy_JP7306232.jpg"
+  },
+  "mcdonnell-douglas-f-15c": {
+   "credit": "Airman 1st Class Matthew Seefeldt",
+   "licence": "Public domain",
+   "file": "File:F-15C_Eagle_from_the_44th_Fighter_Squadron_flies_during_a_routine_training_exercise_April_15,_2019.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:F-15C_Eagle_from_the_44th_Fighter_Squadron_flies_during_a_routine_training_exercise_April_15,_2019.jpg"
+  },
+  "mcdonnell-douglas-f-15e": {
+   "credit": "Staff Sgt. Sean Carnes",
+   "licence": "Public domain",
+   "file": "File:F-15E_takes_on_fuel_from_KC-10.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:F-15E_takes_on_fuel_from_KC-10.jpg"
+  },
+  "mcdonnell-douglas-f-4d": {
+   "credit": "USAF",
+   "licence": "Public domain",
+   "file": "File:QF-4_Holloman_AFB.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:QF-4_Holloman_AFB.jpg"
+  },
+  "mcdonnell-douglas-f-4e": {
+   "credit": "USAF",
+   "licence": "Public domain",
+   "file": "File:QF-4_Holloman_AFB.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:QF-4_Holloman_AFB.jpg"
+  },
+  "mcdonnell-douglas-fa-18c": {
+   "credit": "US Air Force",
+   "licence": "Public domain",
+   "file": "File:FA-18C_desert_refueling.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:FA-18C_desert_refueling.jpg"
+  },
+  "mcdonnelldouglas-kc-10": {
+   "credit": "U.S. Air Force photo by Staff Sgt. Jerry Morrison",
+   "licence": "Public domain",
+   "file": "File:KC-10_Extender_(2151957820).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:KC-10_Extender_(2151957820).jpg"
+  },
+  "messerschmitt-bf-109e": {
+   "credit": "Hebenstreit",
+   "licence": "CC BY-SA 3.0 de",
+   "file": "File:Bundesarchiv_Bild_101I-662-6659-37,_Flugzeug_Messerschmitt_Me_109.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-662-6659-37,_Flugzeug_Messerschmitt_Me_109.jpg"
+  },
+  "messerschmitt-bf-109f": {
+   "credit": "Hebenstreit",
+   "licence": "CC BY-SA 3.0 de",
+   "file": "File:Bundesarchiv_Bild_101I-662-6659-37,_Flugzeug_Messerschmitt_Me_109.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-662-6659-37,_Flugzeug_Messerschmitt_Me_109.jpg"
+  },
+  "messerschmitt-bf-109g": {
+   "credit": "Hebenstreit",
+   "licence": "CC BY-SA 3.0 de",
+   "file": "File:Bundesarchiv_Bild_101I-662-6659-37,_Flugzeug_Messerschmitt_Me_109.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-662-6659-37,_Flugzeug_Messerschmitt_Me_109.jpg"
+  },
+  "messerschmitt-bf-109k": {
+   "credit": "Hebenstreit",
+   "licence": "CC BY-SA 3.0 de",
+   "file": "File:Bundesarchiv_Bild_101I-662-6659-37,_Flugzeug_Messerschmitt_Me_109.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-662-6659-37,_Flugzeug_Messerschmitt_Me_109.jpg"
+  },
+  "messerschmitt-bf-110": {
+   "credit": "Jakobsen [Jacobsen]",
+   "licence": "CC BY-SA 3.0 de",
+   "file": "File:Bundesarchiv_Bild_101I-377-2801-013,_Flugzeug_Messerschmitt_Me_110.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-377-2801-013,_Flugzeug_Messerschmitt_Me_110.jpg"
+  },
+  "messerschmitt-me-210": {
+   "credit": "Hönicke",
+   "licence": "CC BY-SA 3.0 de",
+   "file": "File:Bundesarchiv_Bild_101I-363-2270-18,_Frankreich,_Flugzeug_Me_210.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-363-2270-18,_Frankreich,_Flugzeug_Me_210.jpg"
+  },
+  "messerschmitt-me-262a": {
+   "credit": "USAF museum",
+   "licence": "Public domain",
+   "file": "File:Messerschmitt_Me_262A_at_the_National_Museum_of_the_USAF_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Messerschmitt_Me_262A_at_the_National_Museum_of_the_USAF_(cropped).jpg"
+  },
+  "messerschmitt-me-410": {
+   "credit": "Mike Freer - Touchdown-aviation",
+   "licence": "GFDL 1.2",
+   "file": "File:Messerschmitt_Me-410A-1-U2_Hornisse,_Germany_-_Air_Force_AN1139884.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Messerschmitt_Me-410A-1-U2_Hornisse,_Germany_-_Air_Force_AN1139884.jpg"
+  },
+  "mikoyan-mig-15bis": {
+   "credit": "slezo",
+   "licence": "CC BY 2.0",
+   "file": "File:MiG-15_(52544074366).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MiG-15_(52544074366).jpg"
+  },
+  "mikoyan-mig-17f": {
+   "credit": "Balon Greyjoy",
+   "licence": "CC0",
+   "file": "File:MiG-17_Takes_to_the_Sky_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MiG-17_Takes_to_the_Sky_(cropped).jpg"
+  },
+  "mikoyan-mig-19s": {
+   "credit": "U.S. Air Force photo",
+   "licence": "Public domain",
+   "file": "File:Mikoyan-Gurevich_MiG-19S_Farmer_USAF.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Mikoyan-Gurevich_MiG-19S_Farmer_USAF.jpg"
+  },
+  "mikoyan-mig-21bis": {
+   "credit": "Gojanovic123456789",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Croatian_MiG-21_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Croatian_MiG-21_(cropped).jpg"
+  },
+  "mikoyan-mig-23ml": {
+   "credit": "DoD photo",
+   "licence": "Public domain",
+   "file": "File:Mig-23-DNST8908431_JPG.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Mig-23-DNST8908431_JPG.jpg"
+  },
+  "mikoyan-mig-25p": {
+   "credit": "Leonid Faerberg (transport-photo.com)",
+   "licence": "GFDL 1.2",
+   "file": "File:Russian_Air_Force_MiG-25.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Russian_Air_Force_MiG-25.jpg"
+  },
+  "mikoyan-mig-27": {
+   "credit": "Rob Schleiffert",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:MiG-27_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MiG-27_(cropped).jpg"
+  },
+  "mikoyan-mig-29a": {
+   "credit": "Artem Katranzhi from Bakashikha, Russia",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:VVS_100th_IMG_0691_(7727464290)_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:VVS_100th_IMG_0691_(7727464290)_(cropped).jpg"
+  },
+  "mikoyan-mig-29smt": {
+   "credit": "Artem Katranzhi from Bakashikha, Russia",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:VVS_100th_IMG_0691_(7727464290)_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:VVS_100th_IMG_0691_(7727464290)_(cropped).jpg"
+  },
+  "mikoyan-mig-29ub": {
+   "credit": "Artem Katranzhi from Bakashikha, Russia",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:VVS_100th_IMG_0691_(7727464290)_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:VVS_100th_IMG_0691_(7727464290)_(cropped).jpg"
+  },
+  "mikoyan-mig-31": {
+   "credit": "Dmitriy Pichugin",
+   "licence": "GFDL 1.2",
+   "file": "File:Russian_Air_Force_Mikoyan-Gurevich_MiG-31P.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Russian_Air_Force_Mikoyan-Gurevich_MiG-31P.jpg"
+  },
+  "mikoyan-mig-35": {
+   "credit": "Ministry of Defence (Russia)",
+   "licence": "CC BY 4.0",
+   "file": "File:1MiG-35.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:1MiG-35.jpg"
+  },
+  "mikoyan-mig-9": {
+   "credit": "Mike1979 Russia",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:MiG-9_VVS_museum.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MiG-9_VVS_museum.jpg"
+  },
+  "mikoyan-gurevich-mig-3": {
+   "credit": "Alan Wilson",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Mikoyan_MiG-3_65_red_(RA-1563G)_(8607661358).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Mikoyan_MiG-3_65_red_(RA-1563G)_(8607661358).jpg"
+  },
+  "mil-mi-17": {
+   "credit": "Vitaly V. Kuzmin",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Russian_Air_Force_Mil_Mi-17_yellow_62.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Russian_Air_Force_Mil_Mi-17_yellow_62.jpg"
+  },
+  "mil-mi-2": {
+   "credit": "bomberpilot",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Mil_mi-2(modified).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Mil_mi-2(modified).jpg"
+  },
+  "mil-mi-24v": {
+   "credit": "File:Mi24CP (modified).jpg: Cezary Piwowarskimodified by FOX 52\nderivative work: Georgfotoart",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Mi24CP_(modified)_b.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Mi24CP_(modified)_b.jpg"
+  },
+  "mil-mi-26": {
+   "credit": "Vitaly V. Kuzmin",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:MAKS_Airshow_2013_(Ramenskoye_Airport,_Russia)_(cropped)).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MAKS_Airshow_2013_(Ramenskoye_Airport,_Russia)_(cropped)).jpg"
+  },
+  "mil-mi-28n": {
+   "credit": "Anna Zvereva from Tallinn, Estonia",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Russian_Air_Force,_RF-13489,_Mil_Mi-28NM_(49581609382).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Russian_Air_Force,_RF-13489,_Mil_Mi-28NM_(49581609382).jpg"
+  },
+  "mil-mi-6": {
+   "credit": "Rob Schleiffert",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Mi-6_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Mi-6_(cropped).jpg"
+  },
+  "mitsubishi-a5m4": {
+   "credit": "User Kgbudge on en.wikipedia",
+   "licence": "Public domain",
+   "file": "File:A5M_Claude.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:A5M_Claude.jpg"
+  },
+  "mitsubishi-a6m2": {
+   "credit": "Kogo",
+   "licence": "GFDL",
+   "file": "File:A6M3_Zero_N712Z_1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:A6M3_Zero_N712Z_1.jpg"
+  },
+  "mitsubishi-a6m5": {
+   "credit": "Kogo",
+   "licence": "GFDL",
+   "file": "File:A6M3_Zero_N712Z_1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:A6M3_Zero_N712Z_1.jpg"
+  },
+  "mitsubishi-f-1": {
+   "credit": "Rob Schleiffert",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:F-1_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:F-1_(cropped).jpg"
+  },
+  "mitsubishi-f-2": {
+   "credit": "航空自衛隊",
+   "licence": "CC BY 4.0",
+   "file": "File:Mitsubishi_F-2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Mitsubishi_F-2.jpg"
+  },
+  "mitsubishi-j2m3": {
+   "credit": "Unknown",
+   "licence": "Public domain",
+   "file": "File:Mitsubishi_J2M.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Mitsubishi_J2M.JPG"
+  },
+  "mitsubishi-ki-21": {
+   "credit": "\"Akemi shashinkan\" at Chitose-cho Hamamatsu, Shizuoka, Japan. 浜松市千歳町のアケミ写真館撮影。",
+   "licence": "Public domain",
+   "file": "File:Ki-21_97juubaku_b.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Ki-21_97juubaku_b.jpg"
+  },
+  "mitsubishi-ki-46": {
+   "credit": "撮影者不明",
+   "licence": "Public domain",
+   "file": "File:Ki-46_100sitei.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Ki-46_100sitei.jpg"
+  },
+  "mitsubishi-t-2": {
+   "credit": "Rob Schleiffert",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:T-2_Misawa_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:T-2_Misawa_(cropped).jpg"
+  },
+  "morane-saulnier-ms-406": {
+   "credit": "Kogo",
+   "licence": "GFDL",
+   "file": "File:Morane_D-3801_J-143.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Morane_D-3801_J-143.jpg"
+  },
+  "nhindustries-nh90": {
+   "credit": "U.S. Navy photo by Mass Communication Specialist 3rd Class David Flewellyn",
+   "licence": "Public domain",
+   "file": "File:French_Navy_NH90_lands_on_USS_Antietam_(CG-54)_in_the_Bay_of_Bengal_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:French_Navy_NH90_lands_on_USS_Antietam_(CG-54)_in_the_Bay_of_Bengal_(cropped).jpg"
+  },
+  "nakajima-b5n": {
+   "credit": "SDASM",
+   "licence": "Public domain",
+   "file": "File:Nakajima_B5N.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Nakajima_B5N.jpg"
+  },
+  "nakajima-ki-27": {
+   "credit": "Unknown authorUnknown author",
+   "licence": "Public domain",
+   "file": "File:Ki-27_2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Ki-27_2.jpg"
+  },
+  "nakajima-ki-43": {
+   "credit": "Unknown authorUnknown author",
+   "licence": "Public domain",
+   "file": "File:Wagner_Book_(16334919801)_brightened,_expanded.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Wagner_Book_(16334919801)_brightened,_expanded.jpg"
+  },
+  "nakajima-ki-44": {
+   "credit": "Unknown authorUnknown author",
+   "licence": "Public domain",
+   "file": "File:Nakajima_Ki-44-II_Otsu_at_Clark_1945.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Nakajima_Ki-44-II_Otsu_at_Clark_1945.jpg"
+  },
+  "nakajima-ki-84": {
+   "credit": "RuthAS",
+   "licence": "CC BY 3.0",
+   "file": "File:Nakajima_Ki84_Hayate_N3385G_ONT_18.10.70_edited-3.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Nakajima_Ki84_Hayate_N3385G_ONT_18.10.70_edited-3.jpg"
+  },
+  "nanchang-cj-6": {
+   "credit": "Cialowicz",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Nanchang_CJ-6A_Airplane_over_California_Coastline_N4183E_20110219.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Nanchang_CJ-6A_Airplane_over_California_Coastline_N4183E_20110219.jpg"
+  },
+  "nieuport-17": {
+   "credit": "Nieuport",
+   "licence": "Public domain",
+   "file": "File:Nieuport_23_C.1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Nieuport_23_C.1.jpg"
+  },
+  "north-american-a-36-apache": {
+   "credit": "USAAF",
+   "licence": "Public domain",
+   "file": "File:A-36A_training_unit_in_Louisiana.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:A-36A_training_unit_in_Louisiana.jpg"
+  },
+  "north-american-b-25j": {
+   "credit": "Airwolfhound from  Hertfordshire, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:B25_Mitchell_-_Chino_Airshow_2014_(14033501440).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:B25_Mitchell_-_Chino_Airshow_2014_(14033501440).jpg"
+  },
+  "north-american-f-100d": {
+   "credit": "Michaela Pereckas",
+   "licence": "CC BY 2.0",
+   "file": "File:F-100_Airventure_2015.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:F-100_Airventure_2015.jpg"
+  },
+  "north-american-f-86f": {
+   "credit": "U.S. Air Force photo by J.M. Eddins Jr.",
+   "licence": "Public domain",
+   "file": "File:F-86_Sabre_hertiage_flight.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:F-86_Sabre_hertiage_flight.jpg"
+  },
+  "north-american-p-51b": {
+   "credit": "USAAF/361st FG Association (via Al Richards)",
+   "licence": "Public domain",
+   "file": "File:P-51-361.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:P-51-361.jpg"
+  },
+  "north-american-p-51d": {
+   "credit": "USAAF/361st FG Association (via Al Richards)",
+   "licence": "Public domain",
+   "file": "File:P-51-361.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:P-51-361.jpg"
+  },
+  "north-american-t-2-buckeye": {
+   "credit": "Ens Darin K. Russell",
+   "licence": "Public domain",
+   "file": "File:US_Navy_040303_VT-9_(Buckeye).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:US_Navy_040303_VT-9_(Buckeye).jpg"
+  },
+  "north-american-t-6": {
+   "credit": "USAAF",
+   "licence": "Public domain",
+   "file": "File:AT-6C_Texans_in_flight_1943.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:AT-6C_Texans_in_flight_1943.jpg"
+  },
+  "northamerican-ov-10": {
+   "credit": "NASA",
+   "licence": "Public domain",
+   "file": "File:NASA_OV-10.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:NASA_OV-10.jpg"
+  },
+  "northrop-f-5a": {
+   "credit": "Peng Chen",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:J-3005.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:J-3005.jpg"
+  },
+  "northrop-f-5e": {
+   "credit": "Peng Chen",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:J-3005.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:J-3005.jpg"
+  },
+  "northrop-f-5f": {
+   "credit": "Peng Chen",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:J-3005.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:J-3005.jpg"
+  },
+  "northrop-p-61b-black-widow": {
+   "credit": "Unknown",
+   "licence": "Public domain",
+   "file": "File:Northrop_P-61_green_airborne.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Northrop_P-61_green_airborne.jpg"
+  },
+  "northrop-t-38a": {
+   "credit": "U.S. Department of Defense",
+   "licence": "Public domain",
+   "file": "File:T-38_Talon_over_Edwards_AFB.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:T-38_Talon_over_Edwards_AFB.jpg"
+  },
+  "northrop-b-21": {
+   "credit": "USAF",
+   "licence": "Public domain",
+   "file": "File:B-21-in-flight.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:B-21-in-flight.jpg"
+  },
+  "northropgrumman-e-8": {
+   "credit": "US Air Force",
+   "licence": "Public domain",
+   "file": "File:E-8_JSTARS_18061F484519-913.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:E-8_JSTARS_18061F484519-913.jpg"
+  },
+  "northrop-rq-4": {
+   "credit": "U.S. Air Force photo by Bobbi Zapka",
+   "licence": "Public domain",
+   "file": "File:Global_Hawk_1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Global_Hawk_1.jpg"
+  },
+  "northrop-x-47b": {
+   "credit": "US Navy",
+   "licence": "Public domain",
+   "file": "File:X-47B_operating_in_the_Atlantic_Test_Range_(modified).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:X-47B_operating_in_the_Atlantic_Test_Range_(modified).jpg"
+  },
+  "pac-jf-17": {
+   "credit": "Shimin Gu",
+   "licence": "GFDL 1.2",
+   "file": "File:Pakistan_Air_Force_Chengdu_JF-17_Gu.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Pakistan_Air_Force_Chengdu_JF-17_Gu.jpg"
+  },
+  "panha-toufan": {
+   "credit": "Atarod2003",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Balgard_tofan6_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Balgard_tofan6_(cropped).jpg"
+  },
+  "pzl-p11c": {
+   "credit": "Alan Wilson",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:PZL_P.11c_'39_-_2'_(14336386246).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:PZL_P.11c_%2739_-_2%27_(14336386246).jpg"
+  },
+  "pzl-130-orlik": {
+   "credit": "Ronnie Macdonald",
+   "licence": "CC BY 2.0",
+   "file": "File:Orlik_Aerobatic_Team_PZL-130_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Orlik_Aerobatic_Team_PZL-130_(cropped).jpg"
+  },
+  "panavia-tornado-adv": {
+   "credit": "Chris Lofting",
+   "licence": "GFDL 1.2",
+   "file": "File:Royal_Air_Force_Panavia_Tornado_F3_Lofting-3.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Royal_Air_Force_Panavia_Tornado_F3_Lofting-3.jpg"
+  },
+  "petlyakov-pe-2": {
+   "credit": "Aeroprints.com",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Unmarked_Petlyakov_Pe.2FT_(7985693559).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Unmarked_Petlyakov_Pe.2FT_(7985693559).jpg"
+  },
+  "pilatus-pc-21": {
+   "credit": "Bidgee",
+   "licence": "CC BY-SA 3.0 au",
+   "file": "File:Royal_Australian_Air_Force_(A54-032)_Pilatus_PC-21_taking_off_for_the_RAAF_Roulettes_display_at_the_2023_Australian_International_Airshow.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Royal_Australian_Air_Force_(A54-032)_Pilatus_PC-21_taking_off_for_the_RAAF_Roulettes_display_at_the_2023_Australian_International_Airshow.jpg"
+  },
+  "pilatus-pc-7": {
+   "credit": "Yannick Bammert",
+   "licence": "CC BY 2.0",
+   "file": "File:Swiss_Air_Force_Pilatus_PC-7_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Swiss_Air_Force_Pilatus_PC-7_(cropped).jpg"
+  },
+  "pilatus-pc-9": {
+   "credit": "MORH / J. Kopi",
+   "licence": "CC BY 4.0",
+   "file": "File:Pilatus_PC-9_of_the_Croatian_Air_Force.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Pilatus_PC-9_of_the_Croatian_Air_Force.jpg"
+  },
+  "polikarpov-i-153": {
+   "credit": "Pline",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Poliakarpov_I-153_Musee_du_Bourget_P1010993.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Poliakarpov_I-153_Musee_du_Bourget_P1010993.JPG"
+  },
+  "polikarpov-i-16": {
+   "credit": "Angelmersaenz",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Polikarpov_I-16_republicano.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Polikarpov_I-16_republicano.jpg"
+  },
+  "qods-mohajer-6": {
+   "credit": "Hadi Hirbodvash",
+   "licence": "CC BY 4.0",
+   "file": "File:IRGC_Ground_New_Equipment_2021_(09).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:IRGC_Ground_New_Equipment_2021_(09).jpg"
+  },
+  "reggiane-re2005": {
+   "credit": "sconosciuto",
+   "licence": "Public domain",
+   "file": "File:Reggiane_Re.2005_Sagittario.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Reggiane_Re.2005_Sagittario.jpg"
+  },
+  "republic-f-105d": {
+   "credit": "USAF",
+   "licence": "Public domain",
+   "file": "File:Republic_F-105D-30-RE_(SN_62-4234)_in_flight_with_full_bomb_load_060901-F-1234S-013.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Republic_F-105D-30-RE_(SN_62-4234)_in_flight_with_full_bomb_load_060901-F-1234S-013.jpg"
+  },
+  "republic-f-84f": {
+   "credit": "United States Air Force",
+   "licence": "Public domain",
+   "file": "File:91st_Tactical_Fighter_Squadron_-_Republic_F-84F-50-RE_Thunderstreak_-_52-6852.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:91st_Tactical_Fighter_Squadron_-_Republic_F-84F-50-RE_Thunderstreak_-_52-6852.jpg"
+  },
+  "republic-f-84g": {
+   "credit": "USAF",
+   "licence": "Public domain",
+   "file": "File:F-84E_of_9th_Fighter-Bomber_Squadron_in_Korea.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:F-84E_of_9th_Fighter-Bomber_Squadron_in_Korea.jpg"
+  },
+  "republic-p-47d-thunderbolt": {
+   "credit": "Tim Felce",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:P47_Thunderbolt_-_Chino_2014_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:P47_Thunderbolt_-_Chino_2014_(cropped).jpg"
+  },
+  "republic-p-47n-thunderbolt": {
+   "credit": "Tim Felce",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:P47_Thunderbolt_-_Chino_2014_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:P47_Thunderbolt_-_Chino_2014_(cropped).jpg"
+  },
+  "rockwell-b-1b": {
+   "credit": "USAF",
+   "licence": "Public domain",
+   "file": "File:B-1B_air_refueling.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:B-1B_air_refueling.jpg"
+  },
+  "raf-se-5a": {
+   "credit": "Alan Wilson",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:RAF_SE5a_F904_(G-EBIA)_(6736738219).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:RAF_SE5a_F904_(G-EBIA)_(6736738219).jpg"
+  },
+  "siai-marchetti-sf-260": {
+   "credit": "Rob Schleiffert",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:SF260_Libya_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:SF260_Libya_(cropped).jpg"
+  },
+  "spad-s-xiii": {
+   "credit": "U.S. Air Force photo",
+   "licence": "Public domain",
+   "file": "File:SPAD_XIII_040510-F-1234P-019.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:SPAD_XIII_040510-F-1234P-019.jpg"
+  },
+  "saab-j-29f": {
+   "credit": "TunaFish Spotting",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Saab_J_29F_Tunnan_29670_SE-DXB_på_uppvisning_i_Karlstad_2025_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Saab_J_29F_Tunnan_29670_SE-DXB_p%C3%A5_uppvisning_i_Karlstad_2025_(cropped).jpg"
+  },
+  "saab-j-35f": {
+   "credit": "Blockhaj",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:J_35F_1972_(cropped,_removal_of_damage_and_dirt_using_clone_tool).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:J_35F_1972_(cropped,_removal_of_damage_and_dirt_using_clone_tool).jpg"
+  },
+  "saab-ja-37": {
+   "credit": "Airwolfhound from Hertfordshire, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Viggen_(52526298757).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Viggen_(52526298757).jpg"
+  },
+  "saab-jas-39c": {
+   "credit": "Tuomo Salonen / SIMFinnish Aviation Museum",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Saab_JAS_39_Gripen_at_Kaivopuisto_Air_Show,_June_2017_(altered)_copy.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Saab_JAS_39_Gripen_at_Kaivopuisto_Air_Show,_June_2017_(altered)_copy.jpg"
+  },
+  "saab-jas-39e": {
+   "credit": "Tuomo Salonen / SIMFinnish Aviation Museum",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Saab_JAS_39_Gripen_at_Kaivopuisto_Air_Show,_June_2017_(altered)_copy.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Saab_JAS_39_Gripen_at_Kaivopuisto_Air_Show,_June_2017_(altered)_copy.jpg"
+  },
+  "scottish-aviation-bulldog": {
+   "credit": "John5199",
+   "licence": "CC BY 2.0",
+   "file": "File:Shoreham_Airshow_2012_(7945666372).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Shoreham_Airshow_2012_(7945666372).jpg"
+  },
+  "shahed-129": {
+   "credit": "Mehdi Bakhtiari",
+   "licence": "CC BY 4.0",
+   "file": "File:Shahed_129_(4).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Shahed_129_(4).jpg"
+  },
+  "shahed-149": {
+   "credit": "Mehrdad Esfahani",
+   "licence": "Attribution",
+   "file": "File:Students_from_Kashan_on_Rahian-e-Pishraft_Tour_(11).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Students_from_Kashan_on_Rahian-e-Pishraft_Tour_(11).jpg"
+  },
+  "shenyang-j-11b": {
+   "credit": "Mil.ru",
+   "licence": "CC BY 4.0",
+   "file": "File:J-11BChel.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:J-11BChel.jpg"
+  },
+  "shenyang-j-15": {
+   "credit": "Z3144228",
+   "licence": "CC0",
+   "file": "File:Two_J-15Ts_and_a_J-15D_in_Zhuhai_airshow_2024.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Two_J-15Ts_and_a_J-15D_in_Zhuhai_airshow_2024.jpg"
+  },
+  "shenyang-j-16": {
+   "credit": "Ministry of Defence of the Russian Federation",
+   "licence": "CC BY 4.0",
+   "file": "File:J-16_2021.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:J-16_2021.jpg"
+  },
+  "shenyang-j-35": {
+   "credit": "中国新闻社",
+   "licence": "CC BY 4.0",
+   "file": "File:J-35_Navy.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:J-35_Navy.jpg"
+  },
+  "shenyang-j-5": {
+   "credit": "Peng Chen",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:China_airforce_J5.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:China_airforce_J5.jpg"
+  },
+  "shenyang-j-6": {
+   "credit": "Alert5",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Shenyang_J-6_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Shenyang_J-6_(cropped).jpg"
+  },
+  "shenyang-j-8ii": {
+   "credit": "Windmemories",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:20220804_J-8II_Fighter_on_Display_at_Jinming_Service_Area_02_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:20220804_J-8II_Fighter_on_Display_at_Jinming_Service_Area_02_(cropped).jpg"
+  },
+  "short-stirling": {
+   "credit": "Press Agency photographer",
+   "licence": "Public domain",
+   "file": "File:RAF_Bomber_Command_HU107752.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:RAF_Bomber_Command_HU107752.jpg"
+  },
+  "short-belfast": {
+   "credit": "Montague Smith",
+   "licence": "GFDL 1.2",
+   "file": "File:HeavyLift_Cargo_Airlines_Short_Belfast_PER_Monty.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:HeavyLift_Cargo_Airlines_Short_Belfast_PER_Monty.jpg"
+  },
+  "sikorsky-ch-53e": {
+   "credit": "Sgt. Seth Starr",
+   "licence": "Public domain",
+   "file": "File:A_CH-53E_Super_Stallion_with_the_22nd_Marine_Expeditionary_Unit.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:A_CH-53E_Super_Stallion_with_the_22nd_Marine_Expeditionary_Unit.jpg"
+  },
+  "sikorsky-ch-53k": {
+   "credit": "Lance Cpl. Elias E. Pimentel IIIcropped by FOX 52",
+   "licence": "Public domain",
+   "file": "File:CH-53K-King-Stallion-induction-NAS-Patuxent-River-_cropped.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:CH-53K-King-Stallion-induction-NAS-Patuxent-River-_cropped.jpg"
+  },
+  "sikorsky-mh-60r": {
+   "credit": "Unknown",
+   "licence": "Public domain",
+   "file": "File:SH-60B_Seahawk2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:SH-60B_Seahawk2.jpg"
+  },
+  "sikorsky-sh-3": {
+   "credit": "US Navy",
+   "licence": "Public domain",
+   "file": "File:SH3H_HS15_CVW15_1995_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:SH3H_HS15_CVW15_1995_(cropped).jpg"
+  },
+  "sikorsky-uh-60m": {
+   "credit": "147th Aviation Regiment",
+   "licence": "Public domain",
+   "file": "File:National-Guard-UH-60-Black-Hawk-operations-at-Fort-McCoy.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:National-Guard-UH-60-Black-Hawk-operations-at-Fort-McCoy.jpg"
+  },
+  "slingsby-t67-firefly": {
+   "credit": "Alf van Beem",
+   "licence": "CC0",
+   "file": "File:Slingsby_T67M-200_PH-KAJ_pic1.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Slingsby_T67M-200_PH-KAJ_pic1.JPG"
+  },
+  "sopwith-camel": {
+   "credit": "Airwolfhound",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Sopwith_Camel_-_Season_Premiere_Airshow_2018_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sopwith_Camel_-_Season_Premiere_Airshow_2018_(cropped).jpg"
+  },
+  "sukhoi-su-15": {
+   "credit": "Unknown",
+   "licence": "Public domain",
+   "file": "File:Su-15_Flagon.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Su-15_Flagon.jpg"
+  },
+  "sukhoi-su-17m": {
+   "credit": "Hoangprs5",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Vietnamese_Su-22M4_with_Kh-25s.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Vietnamese_Su-22M4_with_Kh-25s.jpg"
+  },
+  "sukhoi-su-22m4": {
+   "credit": "Hoangprs5",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:Vietnamese_Su-22M4_with_Kh-25s.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Vietnamese_Su-22M4_with_Kh-25s.jpg"
+  },
+  "sukhoi-su-24m": {
+   "credit": "Alexander Mishin",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Sukhoi_Su-24_inflight_Mishin-2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sukhoi_Su-24_inflight_Mishin-2.jpg"
+  },
+  "sukhoi-su-25": {
+   "credit": "Fedor Leukhin",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Sukhoi_Su-25_of_the_Russian_Air_Force_landing_at_Vladivostok_(8683076150).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sukhoi_Su-25_of_the_Russian_Air_Force_landing_at_Vladivostok_(8683076150).jpg"
+  },
+  "sukhoi-su-27s": {
+   "credit": "Dmitriy Pichugin",
+   "licence": "GFDL 1.2",
+   "file": "File:Sukhoi_Su-27SKM_at_MAKS-2005_airshow.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sukhoi_Su-27SKM_at_MAKS-2005_airshow.jpg"
+  },
+  "sukhoi-su-30mki": {
+   "credit": "wallycacsabre",
+   "licence": "CC BY 2.0",
+   "file": "File:Darwin_Pitch_Black_2022_5WAL8054_(52336923377).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Darwin_Pitch_Black_2022_5WAL8054_(52336923377).jpg"
+  },
+  "sukhoi-su-30sm": {
+   "credit": "Alex Beltyukov",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Sukhoi_Su-30SM_in_flight_2014.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sukhoi_Su-30SM_in_flight_2014.jpg"
+  },
+  "sukhoi-su-33": {
+   "credit": "Dmitry Terekhov from Odintsovo, Russian Federation",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Sukhoi_Su-33_77_RED_(30268117476).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sukhoi_Su-33_77_RED_(30268117476).jpg"
+  },
+  "sukhoi-su-34": {
+   "credit": "Vitaly V. Kuzmin",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:MAKS2015part1-10_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:MAKS2015part1-10_(cropped).jpg"
+  },
+  "sukhoi-su-35s": {
+   "credit": "Anna Zvereva from Tallinn, Estonia",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Russian_Air_Force,_RF-81719,_Sukhoi_Su-35S_(49581740157).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Russian_Air_Force,_RF-81719,_Sukhoi_Su-35S_(49581740157).jpg"
+  },
+  "sukhoi-su-57": {
+   "credit": "Anna Zvereva from Tallinn, Estonia",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Sukhoi_Design_Bureau,_054,_Sukhoi_T-50_(Su-57_prototype)_(49581303977).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sukhoi_Design_Bureau,_054,_Sukhoi_T-50_(Su-57_prototype)_(49581303977).jpg"
+  },
+  "sukhoi-su-7b": {
+   "credit": "Mike Freer - Touchdown-aviation",
+   "licence": "GFDL 1.2",
+   "file": "File:Sukhoi_Su-7BKL,_Poland_-_Air_Force_AN2202869.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sukhoi_Su-7BKL,_Poland_-_Air_Force_AN2202869.jpg"
+  },
+  "sukhoi-su-9": {
+   "credit": "Alan Wilson from Stilton, Peterborough, Cambs, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Sukhoi_Su-9_’52_blue’_(26272824739).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sukhoi_Su-9_%E2%80%9952_blue%E2%80%99_(26272824739).jpg"
+  },
+  "supermarine-seafire-mk-iii": {
+   "credit": "Royal Canadian Air Force",
+   "licence": "Public domain",
+   "file": "File:Seafire_1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Seafire_1.jpg"
+  },
+  "supermarine-spitfire-mk-i": {
+   "credit": "Airwolfhound",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Spitfire_-_Season_Premiere_Airshow_2018_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Spitfire_-_Season_Premiere_Airshow_2018_(cropped).jpg"
+  },
+  "supermarine-spitfire-mk-ix": {
+   "credit": "I took the photo Cfitzart 1 September 2005.",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Spitfire_at_temora_nswedit.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Spitfire_at_temora_nswedit.jpg"
+  },
+  "supermarine-spitfire-pr-xi": {
+   "credit": "I took the photo Cfitzart 1 September 2005.",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Spitfire_at_temora_nswedit.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Spitfire_at_temora_nswedit.jpg"
+  },
+  "supermarine-spitfire-mk-vb": {
+   "credit": "Unknown",
+   "licence": "Public domain",
+   "file": "File:Spitfire_V_316.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Spitfire_V_316.jpg"
+  },
+  "supermarine-spitfire-mk-xiv": {
+   "credit": "RAF Official, 1945",
+   "licence": "Public domain",
+   "file": "File:Spitfire_22.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Spitfire_22.jpg"
+  },
+  "tai-anka": {
+   "credit": "Mustafa.KarabasTUSAS",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:TAI_Anka.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:TAI_Anka.jpg"
+  },
+  "transall-c-160": {
+   "credit": "bomberpilot",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:C-160_Transall_Germany_50+95_Neubrandenburg_2013_(9965209624).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:C-160_Transall_Germany_50%2B95_Neubrandenburg_2013_(9965209624).jpg"
+  },
+  "tupolev-tu-142": {
+   "credit": "Fedor Leukhin",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Tupolev_Tu-95_(6906568850).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Tupolev_Tu-95_(6906568850).jpg"
+  },
+  "tupolev-tu-16": {
+   "credit": "U.S. Navy",
+   "licence": "Public domain",
+   "file": "File:Tupolev_Tu-16_flies_over_USS_Hewitt_(DD-966)_c1978.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Tupolev_Tu-16_flies_over_USS_Hewitt_(DD-966)_c1978.jpg"
+  },
+  "tupolev-tu-160": {
+   "credit": "Alex Beltyukov",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Tupolev_Tu-160_RF-94109.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Tupolev_Tu-160_RF-94109.jpg"
+  },
+  "tupolev-tu-22": {
+   "credit": "Зимин Василий",
+   "licence": "Public domain",
+   "file": "File:Энгельс_Ту-22РДМ-18_фото_1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%AD%D0%BD%D0%B3%D0%B5%D0%BB%D1%8C%D1%81_%D0%A2%D1%83-22%D0%A0%D0%94%D0%9C-18_%D1%84%D0%BE%D1%82%D0%BE_1.jpg"
+  },
+  "tupolev-tu-22m3": {
+   "credit": "Dmitry Terekhov from Odintsovo, Russian Federation",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Tupolev_Tu-22M3M_GEFEST_(19230388334).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Tupolev_Tu-22M3M_GEFEST_(19230388334).jpg"
+  },
+  "tupolev-tu-2": {
+   "credit": "Flavio Mucia (AMB Brescia)",
+   "licence": "CC BY 2.0",
+   "file": "File:Tupolev_Tu-2_(China_Aviation_Museum).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Tupolev_Tu-2_(China_Aviation_Museum).jpg"
+  },
+  "tupolev-tu-95ms": {
+   "credit": "Sergey Kustov",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Tupolev_Tu-95_over_Moscow_Kustov_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Tupolev_Tu-95_over_Moscow_Kustov_(cropped).jpg"
+  },
+  "utva-lasta-95": {
+   "credit": "Srđan Popović",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Lasta_95_P2_54012_V_i_PVO_VS,_Partner_2011.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Lasta_95_P2_54012_V_i_PVO_VS,_Partner_2011.jpg"
+  },
+  "valmet-l-70-vinka": {
+   "credit": "Htm",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Valmet_L-70_Miltrainer_OH-VAA_1_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Valmet_L-70_Miltrainer_OH-VAA_1_(cropped).jpg"
+  },
+  "vickers-wellington": {
+   "credit": "Photographer not identified, so UK Copyright contended to have lapsed 50 years after publication.",
+   "licence": "Public domain",
+   "file": "File:Vickers_Wellington.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Vickers_Wellington.jpg"
+  },
+  "vought-f-8e": {
+   "credit": "Jimmy Labianco",
+   "licence": "Public domain",
+   "file": "File:F-8E_VMF-212_CVA-34_1965_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:F-8E_VMF-212_CVA-34_1965_(cropped).jpg"
+  },
+  "vought-f4u-1d-corsair": {
+   "credit": "Gerry Metzler",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Vought_F4U_Corsair_(USMC).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Vought_F4U_Corsair_(USMC).jpg"
+  },
+  "vought-f4u-4-corsair": {
+   "credit": "Gerry Metzler",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Vought_F4U_Corsair_(USMC).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Vought_F4U_Corsair_(USMC).jpg"
+  },
+  "westland-lynx": {
+   "credit": "Sgt. Christopher Q. Stone",
+   "licence": "Public domain",
+   "file": "File:British_Lynx_landing_on_Kearsarge.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:British_Lynx_landing_on_Kearsarge.jpg"
+  },
+  "westland-sea-king": {
+   "credit": "Anthony Noble",
+   "licence": "GFDL 1.2",
+   "file": "File:Westland_WS-61_Sea_King_HAR3,_UK_-_Air_Force_AN0769355.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Westland_WS-61_Sea_King_HAR3,_UK_-_Air_Force_AN0769355.jpg"
+  },
+  "westland-whirlwind-mk-i": {
+   "credit": "Unknown",
+   "licence": "Public domain",
+   "file": "File:Westland_whirlwind.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Westland_whirlwind.jpg"
+  },
+  "xian-h-6k": {
+   "credit": "日本防衛省·統合幕僚監部",
+   "licence": "CC BY 4.0",
+   "file": "File:H-6K_20211_20151127.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:H-6K_20211_20151127.jpg"
+  },
+  "xian-jh-7a": {
+   "credit": "Dmitriy Pichugin",
+   "licence": "GFDL 1.2",
+   "file": "File:PLAAF_Xian_JH-7A_at_Chelyabinsk_Shagol_Air_Base.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:PLAAF_Xian_JH-7A_at_Chelyabinsk_Shagol_Air_Base.jpg"
+  },
+  "yakovlev-yak-1": {
+   "credit": "Unknown authorUnknown author",
+   "licence": "Public domain",
+   "file": "File:I-26.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:I-26.jpg"
+  },
+  "yakovlev-yak-130": {
+   "credit": "Ministry of Defence",
+   "licence": "CC BY 4.0",
+   "file": "File:Yakovlev_Yak-_130_(modify).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Yakovlev_Yak-_130_(modify).jpg"
+  },
+  "yakovlev-yak-141": {
+   "credit": "Ken Videan",
+   "licence": "GFDL 1.2",
+   "file": "File:Yakovlev_Yak-141_at_1992_Farnborough_Airshow_(2).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Yakovlev_Yak-141_at_1992_Farnborough_Airshow_(2).jpg"
+  },
+  "yakovlev-yak-18": {
+   "credit": "Łukasz Golowanow &amp; Maciej Hypś, Konflikty.pl",
+   "licence": "Attribution",
+   "file": "File:Jak-18_Góraszka_2008_2.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Jak-18_G%C3%B3raszka_2008_2.JPG"
+  },
+  "yakovlev-yak-3": {
+   "credit": "Alan Wilson from Stilton, Peterborough, Cambs, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:Yakolev_Yak-3_(115450123)_(25073819848).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Yakolev_Yak-3_(115450123)_(25073819848).jpg"
+  },
+  "yakovlev-yak-38": {
+   "credit": "Vladimir Rodionov",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Yak-38_(14598742).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Yak-38_(14598742).jpg"
+  },
+  "yakovlev-yak-52": {
+   "credit": "Erik Coekelberghs",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Yakkes_Yak-52_RA-3085K.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Yakkes_Yak-52_RA-3085K.jpg"
+  },
+  "yakovlev-yak-7b": {
+   "credit": "NASAfan575",
+   "licence": "CC0",
+   "file": "File:Yak-7_in_Naryan-Mar.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Yak-7_in_Naryan-Mar.jpg"
+  },
+  "yakovlev-yak-9": {
+   "credit": "Alf van Beem",
+   "licence": "Public domain",
+   "file": "File:Yak-9U_at_Central_Air_Force_Museum_Monino_pic1.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Yak-9U_at_Central_Air_Force_Museum_Monino_pic1.JPG"
+  },
+  "yakovlev-yak-9u": {
+   "credit": "Alf van Beem",
+   "licence": "Public domain",
+   "file": "File:Yak-9U_at_Central_Air_Force_Museum_Monino_pic1.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Yak-9U_at_Central_Air_Force_Museum_Monino_pic1.JPG"
+  },
+  "zlin-z-242": {
+   "credit": "RadekS",
+   "licence": "CC BY-SA 3.0",
+   "file": "File:Zlin_42M_OK-JSB.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Zlin_42M_OK-JSB.jpg"
+  },
+  "de-havilland-mosquito-fb-vi": {
+   "credit": "Fotoafdrukken Koninklijke Luchtmacht / Photo Prints, Royal Netherlands Air Force; restored by Chris Woodrich",
+   "licence": "CC BY-SA 4.0",
+   "file": "File:De_Havilland_DH.98_Mosquito_B_Mk_IV_Series_2_(restoration).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:De_Havilland_DH.98_Mosquito_B_Mk_IV_Series_2_(restoration).jpg"
+  },
+  "de-havilland-vampire-fb5": {
+   "credit": "Pseudopanax",
+   "licence": "Public domain",
+   "file": "File:De_Havilland_DH115_Vampire_banking_with_the_sun_reflecting_off_its_silver_wings_(cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:De_Havilland_DH115_Vampire_banking_with_the_sun_reflecting_off_its_silver_wings_(cropped).jpg"
+  },
+  "de-havilland-venom-fb1": {
+   "credit": "Tony Hisgett from Birmingham, UK",
+   "licence": "CC BY 2.0",
+   "file": "File:Venom_3_(4703782203).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Venom_3_(4703782203).jpg"
+  },
+  "dhc-1-chipmunk": {
+   "credit": "Alan Wilson from Stilton, Peterborough, Cambs, UK",
+   "licence": "CC BY-SA 2.0",
+   "file": "File:DHC1_Chipmunk_T.10_‘WK608_-_906_-_Y’_(33208008603).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:DHC1_Chipmunk_T.10_%E2%80%98WK608_-_906_-_Y%E2%80%99_(33208008603).jpg"
+  }
+ },
+ "missing": [
+  "airbus-a320neo",
+  "vickers-viking",
+  "de-havilland-comet-1",
+  "de-havilland-comet-4",
+  "antonov-an-22",
+  "avro-lancaster-b1",
+  "baykar-akinci",
+  "caig-wing-loong-ii",
+  "english-electric-canberra",
+  "fiat-g55",
+  "gloster-javelin-faw9",
+  "hal-htt-40",
+  "hal-prachand",
+  "hal-tejas-mk1a",
+  "hesa-dorna",
+  "hesa-kaman-22",
+  "harbin-z-9",
+  "iriaf-parastu-14",
+  "kai-kf-21",
+  "kamov-ka-50",
+  "kronshtadt-orion",
+  "leonardo-m-346",
+  "macchi-c202",
+  "mitsubishi-g4m",
+  "northrop-b-2",
+  "owj-tazarve",
+  "panavia-tornado-ids",
+  "petlyakov-pe-3",
+  "qods-ababil-3",
+  "de-havilland-mosquito-b16",
+  "dehavillandcanada-dhc-4",
+  "dehavillandcanada-dhc-5"
+ ],
+ "version": 2
+}
