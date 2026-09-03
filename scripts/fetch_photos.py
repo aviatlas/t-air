@@ -44,8 +44,8 @@ INDEX = os.path.join(ROOT, "data", "photos.json")
 
 API = "https://en.wikipedia.org/w/api.php"
 COMMONS = "https://commons.wikimedia.org/w/api.php"
-UA = ("T-AIR-atlas/1.0 (open aircraft reference database; "
-      "contact: via the project repository)")
+UA = ("T-AIR/1.0 (https://github.com/TA100900/t-air; "
+      "aircraft reference database) python-requests")
 
 SIZES = {"": 880, "thumb": 440, "tiny": 180}   # ≈ 40 + 18 + 4 KB per aircraft
 PAUSE = 0.35          # seconds between API calls
@@ -53,10 +53,24 @@ BATCH = 40            # titles per pageimages query (API allows 50)
 
 
 def get(url, params):
-    r = requests.get(url, params=params, headers={"User-Agent": UA}, timeout=30)
-    r.raise_for_status()
-    time.sleep(PAUSE)
-    return r.json()
+    """One API call, with the patience Wikimedia asks for.
+
+    Their servers answer 429 when a client is going too fast and 5xx when
+    something is briefly wrong. Treating either as fatal is what produced a
+    run that gave up after a handful of files; backing off and trying again
+    is both politer and what actually finishes the job.
+    """
+    for attempt in range(4):
+        r = requests.get(url, params=params, headers={"User-Agent": UA}, timeout=30)
+        if r.status_code in (429, 500, 502, 503, 504):
+            wait = float(r.headers.get("Retry-After") or (2 ** attempt))
+            print(f"  . {r.status_code} from the API, waiting {wait:.0f}s")
+            time.sleep(min(wait, 30))
+            continue
+        r.raise_for_status()
+        time.sleep(PAUSE)
+        return r.json()
+    raise RuntimeError(f"gave up after 4 attempts: {url}")
 
 
 def lead_images(titles):
@@ -95,7 +109,10 @@ def free_licence(licence):
     if not licence:
         return False
     low = licence.lower()
-    if any(bad in low.split() or bad in low for bad in FORBIDDEN):
+    words = set(re.split(r"[^a-z0-9©]+", low))
+    if any(bad in words for bad in FORBIDDEN if " " not in bad):
+        return False
+    if any(bad in low for bad in FORBIDDEN if " " in bad):
         return False
     return any(low.startswith(p) for p in FREE_PREFIXES)
 
@@ -175,6 +192,13 @@ def main():
         index = json.load(open(INDEX, encoding="utf-8"))
     index.setdefault("photos", {})
     index.setdefault("missing", [])
+    # "missing" means: we asked, and there is no freely licensed photograph.
+    # An older version also wrote it when the API simply refused to answer,
+    # which made every later run skip those records forever. Drop a list
+    # written before that distinction existed so they get another chance.
+    if index.get("version") != 2:
+        index["missing"] = []
+    index["version"] = 2
 
     todo = [a for a in aircraft
             if a["id"] not in index["photos"] and a["id"] not in index["missing"]]
@@ -201,14 +225,19 @@ def main():
     for title, records in by_title.items():
         file_title = found.get(title)
         meta = None
+        asked_and_answered = False
         if file_title:
             try:
                 meta = commons_file(file_title)
+                asked_and_answered = True
             except Exception as e:                   # noqa: BLE001
                 print(f"  ! {title}: {e}")
         if not meta:
-            for a in records:
-                index["missing"].append(a["id"])
+            # only remember it as missing when the answer was "no free file",
+            # not when the question itself failed
+            if file_title is None or asked_and_answered:
+                for a in records:
+                    index["missing"].append(a["id"])
             fail += len(records)
             continue
         try:
