@@ -28,10 +28,14 @@ OUT = os.path.join(ROOT, "a")
 DATA = json.load(open(os.path.join(ROOT, "data", "aircraft.json"), encoding="utf-8"))
 AIRCRAFT = DATA["aircraft"]
 
-# The site's own address, once it has one. Relative URLs work everywhere, so
-# this is only needed for the sitemap and the social-preview tags; PUBLISH.md
-# tells the reader to set it after the first deploy.
-BASE = os.environ.get("TAIR_BASE_URL", "").rstrip("/")
+# The site's own address. Relative URLs work everywhere, so this is only
+# needed for the sitemap and the canonical tags — but it has to be a constant,
+# not something the caller remembers to pass. When it came from the
+# environment alone, a build with the variable unset dropped the canonical
+# link from all 656 pages, and CI (which compares the build against what is
+# committed) went red on every push while both builds were individually fine.
+# A fork under a different account overrides it with TAIR_BASE_URL.
+BASE = os.environ.get("TAIR_BASE_URL", "https://ta100900.github.io/t-air").rstrip("/")
 
 TYPE_FA = {
     "narrowbody": "باریک‌پیکر", "widebody": "پهن‌پیکر", "regional": "منطقه‌ای",

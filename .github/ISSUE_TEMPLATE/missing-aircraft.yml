@@ -1,0 +1,34 @@
+name: هواپیمایی جا افتاده / A missing aircraft
+description: مدلی که باید در مجموعه باشد و نیست
+title: "[افزودن] "
+labels: ["data", "new record"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        هر رکورد یک **نسخه‌ی مشخص** است، نه یک خانواده — ۷۳۷-۸۰۰ و ۷۳۷ MAX 8
+        دو رکورد جدا هستند. اگر نسخه‌ی دیگری از خانواده‌ای که هست را می‌خواهید،
+        همین‌جا بنویسید.
+
+  - type: input
+    id: model
+    attributes:
+      label: سازنده و مدل / Manufacturer and model
+      placeholder: Embraer E195-E2
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: چرا اضافه شود / Why it belongs here
+      placeholder: |
+        مثلاً: در ناوگان ایران هست، یا نسخه‌ی پرشماری است که جا افتاده.
+
+  - type: textarea
+    id: source
+    attributes:
+      label: منبع مشخصات / A source for the specifications
+      description: لینکی که ظرفیت، برد، سرعت و ابعاد را می‌دهد.
+    validations:
+      required: true

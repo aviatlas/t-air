@@ -153,6 +153,26 @@ check("no orphan page left behind by a dropped record",
       [f for f in (os.listdir(pages) if os.path.isdir(pages) else [])
        if f.endswith(".html") and f != "index.html" and f[:-5] not in ids])
 
+# The canonical link once came from an environment variable, so a build that
+# forgot to set it silently produced 656 pages without one — and CI, which
+# compares the build against what is committed, went red on every push. The
+# address is a constant now; this check is what would catch it going back.
+check("every static page names its canonical address",
+      [a["id"] for a in AIRCRAFT[:40]
+       if 'rel="canonical"' not in
+       open(os.path.join(pages, a["id"] + ".html"), encoding="utf-8").read(3000)])
+
+# Every record's photograph has to be in the index that the page reads; a
+# file left behind by an earlier run is dead weight nobody can see.
+photos_dir = os.path.join(ROOT, "assets", "photos")
+if os.path.isdir(photos_dir):
+    idx = os.path.join(ROOT, "data", "photos.json")
+    known = set(json.load(open(idx, encoding="utf-8")).get("photos", {})) \
+        if os.path.exists(idx) else set()
+    check("no photograph is orphaned from the index",
+          [f for f in os.listdir(photos_dir)
+           if f.endswith(".webp") and f[:-5] not in known])
+
 # The single-file build carries its fonts as data: URIs. A policy of
 # font-src 'self' refuses those, and the only symptom is a page quietly
 # rendering in a fallback face — worth a check rather than a surprise.

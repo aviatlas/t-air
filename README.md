@@ -25,7 +25,7 @@
 <p align="center">
   <a href="https://ta100900.github.io/t-air/"><b>باز کردن سایت</b></a> ·
   <a href="https://ta100900.github.io/t-air/a/">فهرست همه‌ی هواپیماها</a> ·
-  <a href="dist/t-air.html">نسخه‌ی تک‌فایلی</a> ·
+  <a href="https://ta100900.github.io/t-air/dist/t-air.html">نسخه‌ی تک‌فایلی</a> ·
   <a href="CONTRIBUTING.md">مشارکت</a>
 </p>
 
@@ -85,6 +85,9 @@
 
 `dist/t-air.html` تنهایی کل سایت است — داده، رابط و فونت‌ها همه داخلش. می‌شود در
 تلگرام فرستادش و طرف مقابل بدون اینترنت همه‌ی ۶۵۶ هواپیما را دارد.
+
+[بازش کنید](https://ta100900.github.io/t-air/dist/t-air.html) و با Ctrl+S ذخیره‌اش
+کنید — همان یک فایل، بدون هیچ چیز دیگری، کار می‌کند.
 
 ## اجرای محلی
 

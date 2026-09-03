@@ -1,0 +1,48 @@
+name: عددی اشتباه است / A figure is wrong
+description: یک مقدار در یک رکورد با منبع نمی‌خواند
+title: "[داده] "
+labels: ["data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        برای اینکه اصلاح قابل ردیابی بماند، سه چیز لازم است: کدام رکورد،
+        کدام فیلد، و منبعی که عدد درست را می‌گوید.
+
+        *To keep every correction traceable we need three things: which
+        record, which field, and a source for the correct value.*
+
+  - type: input
+    id: record
+    attributes:
+      label: شناسه‌ی رکورد / Record id
+      description: از انتهای نشانی صفحه — مثلاً `f-14a` در `…/#/f-14a`
+      placeholder: boeing-737-800
+    validations:
+      required: true
+
+  - type: input
+    id: field
+    attributes:
+      label: کدام فیلد / Which field
+      placeholder: rangeKm
+    validations:
+      required: true
+
+  - type: input
+    id: correct
+    attributes:
+      label: مقدار درست / Correct value
+      placeholder: "5,765 km"
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: منبع / Source
+      description: |
+        لینک به کتابچه‌ی سازنده، مقاله‌ی ویکی‌پدیا، یا هر مرجعی که این عدد را
+        می‌گوید. بدون منبع نمی‌شود اصلاح را ثبت کرد.
+    validations:
+      required: true
