@@ -1,8 +1,8 @@
 blank_issues_enabled: true
 contact_links:
   - name: سایت زنده / The live site
-    url: https://ta100900.github.io/t-air/
+    url: https://aviatlas.github.io/t-air/
     about: پیش از باز کردن issue، ببینید رکورد چه می‌گوید و آیا «بررسی‌شده» علامت دارد.
   - name: روش کار با داده / How the data is maintained
-    url: https://github.com/TA100900/t-air/blob/main/CONTRIBUTING.md
+    url: https://github.com/aviatlas/t-air/blob/main/CONTRIBUTING.md
     about: جدول‌های داده دستی ویرایش نمی‌شوند؛ هر اصلاح لایه‌ی خودش را دارد.

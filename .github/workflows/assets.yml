@@ -53,7 +53,7 @@ jobs:
           python3 scripts/merge_parts.py
           python3 scripts/build_data.py
           python3 scripts/build_single.py
-          TAIR_BASE_URL=https://ta100900.github.io/t-air python3 scripts/build_pages.py
+          TAIR_BASE_URL=https://aviatlas.github.io/t-air python3 scripts/build_pages.py
 
       - name: Check before committing
         # A run that fetched something broken should fail here rather than

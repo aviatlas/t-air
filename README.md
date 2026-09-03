@@ -3,9 +3,9 @@
 </p>
 
 <p align="center">
-  <a href="https://ta100900.github.io/t-air/"><img alt="سایت زنده" src="https://img.shields.io/badge/%D8%B3%D8%A7%DB%8C%D8%AA_%D8%B2%D9%86%D8%AF%D9%87-ta100900.github.io%2Ft--air-0b6f80?style=for-the-badge"></a>
-  <a href="https://github.com/TA100900/t-air/releases/latest"><img alt="آخرین نسخه" src="https://img.shields.io/github/v/release/TA100900/t-air?style=for-the-badge&label=%D9%86%D8%B3%D8%AE%D9%87&color=3ec0d1"></a>
-  <a href="https://github.com/TA100900/t-air/actions/workflows/checks.yml"><img alt="بررسی‌ها" src="https://img.shields.io/github/actions/workflow/status/TA100900/t-air/checks.yml?style=for-the-badge&label=%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C%E2%80%8C%D9%87%D8%A7"></a>
+  <a href="https://aviatlas.github.io/t-air/"><img alt="سایت زنده" src="https://img.shields.io/badge/%D8%B3%D8%A7%DB%8C%D8%AA_%D8%B2%D9%86%D8%AF%D9%87-aviatlas.github.io%2Ft--air-0b6f80?style=for-the-badge"></a>
+  <a href="https://github.com/aviatlas/t-air/releases/latest"><img alt="آخرین نسخه" src="https://img.shields.io/github/v/release/aviatlas/t-air?style=for-the-badge&label=%D9%86%D8%B3%D8%AE%D9%87&color=3ec0d1"></a>
+  <a href="https://github.com/aviatlas/t-air/actions/workflows/checks.yml"><img alt="بررسی‌ها" src="https://img.shields.io/github/actions/workflow/status/aviatlas/t-air/checks.yml?style=for-the-badge&label=%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C%E2%80%8C%D9%87%D8%A7"></a>
 </p>
 
 <p align="center">
@@ -22,15 +22,15 @@
 </p>
 
 <p align="center">
-  <a href="https://ta100900.github.io/t-air/">
+  <a href="https://aviatlas.github.io/t-air/">
     <img src="assets/screenshot.png" alt="جست‌وجوی مشخصات ۶۵۶ هواپیما، و صفحه‌ی جزئیات یک مدل" width="100%">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://ta100900.github.io/t-air/"><img alt="باز کردن سایت" src="https://img.shields.io/badge/%E2%96%B6_%D8%A8%D8%A7%D8%B2_%DA%A9%D8%B1%D8%AF%D9%86_%D8%B3%D8%A7%DB%8C%D8%AA-0b6f80?style=for-the-badge"></a>
-  <a href="https://github.com/TA100900/t-air/releases/latest"><img alt="دانلود نسخه‌ی تک‌فایلی" src="https://img.shields.io/badge/%E2%AC%87_%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF_%D9%86%D8%B3%D8%AE%D9%87%E2%80%8C%DB%8C_%D8%AA%DA%A9%E2%80%8C%D9%81%D8%A7%DB%8C%D9%84%DB%8C-1f6f54?style=for-the-badge"></a>
-  <a href="https://ta100900.github.io/t-air/a/"><img alt="فهرست همه‌ی هواپیماها" src="https://img.shields.io/badge/%F0%9F%97%92_%D9%81%D9%87%D8%B1%D8%B3%D8%AA_%DA%A9%D8%A7%D9%85%D9%84-555?style=for-the-badge"></a>
+  <a href="https://aviatlas.github.io/t-air/"><img alt="باز کردن سایت" src="https://img.shields.io/badge/%E2%96%B6_%D8%A8%D8%A7%D8%B2_%DA%A9%D8%B1%D8%AF%D9%86_%D8%B3%D8%A7%DB%8C%D8%AA-0b6f80?style=for-the-badge"></a>
+  <a href="https://github.com/aviatlas/t-air/releases/latest"><img alt="دانلود نسخه‌ی تک‌فایلی" src="https://img.shields.io/badge/%E2%AC%87_%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF_%D9%86%D8%B3%D8%AE%D9%87%E2%80%8C%DB%8C_%D8%AA%DA%A9%E2%80%8C%D9%81%D8%A7%DB%8C%D9%84%DB%8C-1f6f54?style=for-the-badge"></a>
+  <a href="https://aviatlas.github.io/t-air/a/"><img alt="فهرست همه‌ی هواپیماها" src="https://img.shields.io/badge/%F0%9F%97%92_%D9%81%D9%87%D8%B1%D8%B3%D8%AA_%DA%A9%D8%A7%D9%85%D9%84-555?style=for-the-badge"></a>
 </p>
 
 ---
@@ -98,15 +98,15 @@
 
 | | |
 |---|---|
-| **۱. در مرورگر** | [ta100900.github.io/t-air](https://ta100900.github.io/t-air/) — چیزی نصب نمی‌شود |
-| **۲. یک فایل، آفلاین** | از [Releases](https://github.com/TA100900/t-air/releases/latest) فایل `t-air-*.html` را بگیرید. کل اطلس داخل همان یک فایل است — داده، رابط و فونت‌ها. می‌شود در تلگرام فرستادش و طرف مقابل بدون اینترنت همه‌ی ۶۵۶ هواپیما را دارد |
+| **۱. در مرورگر** | [aviatlas.github.io/t-air](https://aviatlas.github.io/t-air/) — چیزی نصب نمی‌شود |
+| **۲. یک فایل، آفلاین** | از [Releases](https://github.com/aviatlas/t-air/releases/latest) فایل `t-air-*.html` را بگیرید. کل اطلس داخل همان یک فایل است — داده، رابط و فونت‌ها. می‌شود در تلگرام فرستادش و طرف مقابل بدون اینترنت همه‌ی ۶۵۶ هواپیما را دارد |
 | **۳. داده‌ی خام** | `aircraft-*.json` در همان Releases، یا دکمه‌های خروجی CSV/JSON در خود سایت |
 
 <details>
 <summary><b>اجرای محلی و بازسازی داده</b></summary>
 
 ```bash
-git clone https://github.com/TA100900/t-air.git
+git clone https://github.com/aviatlas/t-air.git
 cd t-air
 python3 -m http.server 8000     # بعد http://localhost:8000
 ```
@@ -208,7 +208,7 @@ scripts/check.sh              همه‌ی بالا با یک دستور
 ---
 
 <p align="center">
-  <sub>ساخته‌ی <a href="https://github.com/TA100900">TA100900</a> ·
+  <sub>ساخته‌ی <a href="https://github.com/aviatlas">aviatlas</a> ·
   کد MIT، داده CC BY-SA 4.0 ·
-  <a href="https://ta100900.github.io/t-air/">ta100900.github.io/t-air</a></sub>
+  <a href="https://aviatlas.github.io/t-air/">aviatlas.github.io/t-air</a></sub>
 </p>

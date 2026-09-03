@@ -44,7 +44,7 @@ INDEX = os.path.join(ROOT, "data", "photos.json")
 
 API = "https://en.wikipedia.org/w/api.php"
 COMMONS = "https://commons.wikimedia.org/w/api.php"
-UA = ("T-AIR/1.0 (https://github.com/TA100900/t-air; "
+UA = ("T-AIR/1.0 (https://github.com/aviatlas/t-air; "
       "aircraft reference database) python-requests")
 
 SIZES = {"": 880, "thumb": 440, "tiny": 180}   # ≈ 40 + 18 + 4 KB per aircraft

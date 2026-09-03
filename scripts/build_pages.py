@@ -35,7 +35,7 @@ AIRCRAFT = DATA["aircraft"]
 # link from all 656 pages, and CI (which compares the build against what is
 # committed) went red on every push while both builds were individually fine.
 # A fork under a different account overrides it with TAIR_BASE_URL.
-BASE = os.environ.get("TAIR_BASE_URL", "https://ta100900.github.io/t-air").rstrip("/")
+BASE = os.environ.get("TAIR_BASE_URL", "https://aviatlas.github.io/t-air").rstrip("/")
 
 TYPE_FA = {
     "narrowbody": "باریک‌پیکر", "widebody": "پهن‌پیکر", "regional": "منطقه‌ای",
