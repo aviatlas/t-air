@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="T-AIR">
+  <title>T-AIR</title>
+  <!-- The mark is a T-tail: a swept vertical stabilizer with the tailplane
+       mounted on its tip. Together they draw the letter T — the tail
+       configuration of the Fokker 100, MD-80 and Tu-154 that defined the
+       fleet this database was built around. -->
+  <g fill="currentColor">
+    <path d="M19.4 42a1.1 1.1 0 0 1-1.1-1.2l4.9-28.6h7.4v28.7a1.1 1.1 0 0 1-1.1 1.1Z"/>
+    <path d="M4.6 7.4h38.8a2.3 2.3 0 0 1 2.2 2.9l-.3 1a1.9 1.9 0 0 1-1.9 1.4H4.6a1.9 1.9 0 0 1-1.9-1.4l-.3-1a2.3 2.3 0 0 1 2.2-2.9Z"/>
+  </g>
+  <path d="M22.5 25.9h8.2v5h-9.1Z" fill="#e0a040"/>
+</svg>

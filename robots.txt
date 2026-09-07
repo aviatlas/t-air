@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aviatlas.github.io/t-air/sitemap.xml
